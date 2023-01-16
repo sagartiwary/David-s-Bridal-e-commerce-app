@@ -1,0 +1,23 @@
+{
+  "name": "sore-sugar-4125",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch ./database/db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sagartiwary/sore-sugar-4125.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sagartiwary/sore-sugar-4125/issues"
+  },
+  "homepage": "https://github.com/sagartiwary/sore-sugar-4125#readme",
+  "dependencies": {
+    "json-server": "^0.17.1"
+  }
+}
