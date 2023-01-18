@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ItemVIew Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@300&family=Noto+Sans+Mono&family=Poppins:wght@300&family=Satisfy&display=swap');
+
+        * {
+            /* margin: 0px; */
+            font-family: poppins;
+        }
+
+        #navBar {
+            display: flex;
+            gap: 20px;
+            font-size: 10px;
+            border: 1px solid black;
+        }
+
+        #logo {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+        }
+
+        #searchBar {
+            width: 250px;
+            border: none;
+            border-bottom: 1px solid black;
+
+        }
+
+        #navBar>h2 {
+            border: 1px solid black;
+
+        }
+
+        #selectors {
+            color: gray;
+        }
+
+        .abhi {
+            color: gray;
+            letter-spacing: 2px;
+        }
+
+        .abhi:hover {
+            color: red;
+            cursor: pointer;
+        }
+
+        #headOne {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .imageShow {
+            width: 265px;
+        }
+
+        #itemsLoader {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 265px;
+            margin: 0px 30px 45px 0px;
+        }
+
+        #content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #leftBar {
+            position: sticky;
+            left: 50px;
+            top: 0px;
+        }
+
+        #rightBar {
+            width: 900px;
+        }
+
+        .leftItems {
+            display: flex;
+            width: 220px;
+            justify-content: space-between;
+            border-bottom: 1px solid rgb(180, 179, 179);
+            margin: 10px;
+            align-items: center;
+            
+        }
+
+        .leftItems>h2 {
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+
+        #pagination-buttons {
+            text-align: center;
+        }
+
+        .pagination {
+            /* width: 50px; */
+            padding: 10px 30px;
+            text-align: center;
+        }
+
+        #footer>div>h4 {
+            font-size: 16px;
+        }
+
+        #footer>div>p {
+            font-size: 12px;
+        }
+
+        #footer {
+            padding: 20px 50px;
+        }
+
+        #mainContainer {
+            width: 1220px;
+            margin: 0 auto;
+        }
+
+        #footerFAQ {
+            padding: 10px 70px;
+        }
+
+        #footerFAQ>div {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #answerOne,
+        #answerTwo,
+        #answerThree,
+        #answerFour,
+        #answerFive,
+        #answerSix,
+        #answerSeven,
+        #answerEight {
+            display: none;
+        }
+
+        #questionOne,
+        #questionTwo,
+        #questionThree,
+        #questionFour,
+        #questionFive,
+        #questionSix,
+        #questionSeven,
+        #questionEight {
+            border-bottom: 1px solid rgb(192, 192, 192);
+        }
+
+        #reference {
+            display: flex;
+            padding: 20px 80px;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgb(192, 192, 192);
+        }
+
+        #footerMain {
+            display: flex;
+            padding: 20px 70px;
+        }
+
+        #first {
+            font-size: 12px;
+            width: 300px;
+            padding: 20px;
+        }
+
+        #second {
+            font-size: 12px;
+            width: 400px;
+            padding: 20px;
+        }
+
+        #third {
+            font-size: 12px;
+            width: 200px;
+            padding: 20px;
+        }
+
+        #fourth {
+            font-size: 12px;
+            width: 400px;
+            padding: 20px;
+        }
+
+        #fifth {
+            font-size: 12px;
+            width: 500px;
+            padding: 20px;
+        }
+        .card>h4:hover{
+            color: red;
+            cursor: pointer;
+        }
+        .card>h4{
+            margin-top: -10px;
+        }
+        .priceList{
+            margin-top: -10px;
+        }
+        #sort{
+            border: none;
+            padding: 0px 40px 0pc 0px ;
+        }
+        .itemsInside{
+            display: flex;
+            flex-direction: column;
+            display: none;
+            /* grid-template-rows: repeat(7,1fr); */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mainContainer">
+
+        <!-- NAVIGATION BAR -->
+
+        <div id="navBar">
+            <div id="burgerMenu">-</div>
+            <div id="logo">
+                <h1>David's</h1>
+            </div>
+            <h2>SHOP</h2>
+            <h2>HOT DEAL</h2>
+            <h2>PLANNING</h2>
+            <h2>ABOUT</h2>
+            <h2>BOOK APPOINTMENT</h2>
+            <input type="search" id="searchBar" placeholder="Search...">
+        </div>
+        <img src="https://www.davidsbridal.com/media/banner/banner/12.6_BR_125_PLP_Phoenix_Desktop.jpg" width="100%" alt="">
+        <!-- MAIN CONTENT -->
+
+        <div id="content">
+            <div id="leftBar">
+                <!-- leftBar content -->
+                <div style="height: 120px;"></div>
+                <div class="leftItems">
+                    <h3></h3>
+                    <div>
+                        <h3>get it fast</h3>
+                        <p>in-stock & ready to ship</p>
+                    </div>
+                    <h3>+</h3>
+                </div>
+                <div class="leftItems">
+                    <h2>straps sleeves</h2>
+                    <h2>+</h2>
+                </div>
+                <div class="itemsInside">
+                    <input type="checkbox" value="3/4 sleeves">3/4 sleeves
+                    <input type="checkbox" value="cop sleeves">cop sleeves
+                    <input type="checkbox" value="copelet">copelet
+                    <input type="checkbox" value="elbow sleeves">elbow sleeves
+                    <input type="checkbox" value="halter">halter
+                    <input type="checkbox" value="jacket">jacket
+                    <input type="checkbox" value="long sleeves">long sleeves
+                </div>
+                <div class="leftItems">
+                    <h2>silhouette</h2>
+                    <h2>+</h2>
+                </div>
+                <div class="leftItems">
+                    <h2>color</h2>
+                    <h2>+</h2>
+                </div>
+                <div class="leftItems">
+                    <h2>size</h2>
+                    <h2>+</h2>
+                </div>
+                <div class="leftItems">
+                    <h2>length</h2>
+                    <h2>+</h2>
+                </div>
+                <div class="leftItems">
+                    <h2>neckline</h2>
+                    <h2>+</h2>
+                </div>
+                <div class="leftItems">
+                    <h2>price</h2>
+                    <h2>+</h2>
+                </div>
+                <div class="leftItems">
+                    <h2>style</h2>
+                    <h2>+</h2>
+                </div>
+                <div class="leftItems">
+                    <h2>fabric</h2>
+                    <h2>+</h2>
+                </div>
+                <div class="leftItems">
+                    <h2>brand</h2>
+                    <h2>+</h2>
+                </div>
+                <div class="leftItems">
+                    <h2>train type</h2>
+                    <h2>+</h2>
+                </div>
+                <div class="leftItems">
+                    <h2>back bodice detail</h2>
+                    <h2>+</h2>
+                </div>
+                <div class="leftItems">
+                    <h2>waistline</h2>
+                    <h2>+</h2>
+                </div>
+            </div>
+
+            <!-- Right Items -->
+            <div id="rightBar">
+                <div id="selectors">
+                    <h4><span class="abhi">home</span> /<span class="abhi"> brides</span> /<span class="abhi"> wedding
+                            dresses</span></h4>
+                </div>
+                <div id="headOne">
+                    <div style="display: flex; align-items: center;gap: 20px;">
+                        <h1>wedding dresses</h1>
+                        <h4 id="itemsCount"><!-- items counts to be mentioned here --></h4>
+                    </div>
+                    <select id="sort">
+                        <option value="">best option</option>
+                        <option value="l2h">Low to High</option>
+                        <option value="h2l">High to Low</option>
+                    </select>
+                </div>
+                <div id="itemsLoader">
+                    <!-- Append here all data using JavaScript -->
+                </div>
+                <!-- Buttons -->
+                <div id="pagination-buttons" class="pagination-buttons"></div>
+            </div>
+        </div>
+        <div id="footer">
+            <div>
+                <h4>Find the Perfect Wedding Dress</h4>
+                <p>You want your wedding dress to reflect your personality, your style, and your love-and we're here to
+                    help you find the perfect match. After all, a bridal gown is more than just another piece of
+                    clothing. We find that thinking about your wedding day is a great way to start your wedding gown
+                    search. What kind of celebration do you imagine? Is it a casual city hall wedding or backyard vows?
+                    We have the perfect casual and simple wedding dresses ! Are you planning a glamorous ballroom event
+                    or a sunny beach ceremony? We have glamorous gowns and wedding dresses perfect for the beach!</p>
+            </div>
+            <div>
+                <h4>Bridal Gowns Online and In Store Styling</h4>
+                <p>Once you have an idea for your day, consider what wedding dress details you're drawn to. If you're
+                    not sure which direction to go, take our wedding dress quiz for style recommendations personalized
+                    just for you. You can also make an appointment for an in-store styling session at a bridal shop near
+                    you, where an expert will guide you through the process of trying on bridal dresses, narrowing down
+                    your options, and accessorizing your favorite with touches like veils that express your unique
+                    style. When you're just getting started and can't tell an A-line from a ball gown or a sheath from a
+                    trumpet, check out our silhouette guide, which breaks down the most popular options with tips, so
+                    you can figure out which wedding dress is right for you. In the end though, all that matters is how
+                    your wedding dress makes you feel-and we hope you feel beautiful.</p>
+            </div>
+            <div>
+                <h4>Find the Perfect Wedding Dress</h4>
+                <p>Celebrate your wedding day in a gown that looks and feels stunning with hundreds of beautiful wedding
+                    dresses from David's Bridal! Find something that matches your vision with a wide selection of
+                    silhouettes, fabrics, and colors, then browse details like wedding veils for the finishing touch.
+                    Whether you're hosting a black tie affair, a casual event, or a destination seaside wedding, David's
+                    has simple and glamorous gowns to perfectly capture your style.</p>
+            </div>
+            <div>
+                <h4>Bridal Gowns Online and In-Store</h4>
+                <p>Looking for the perfect gown but not sure where to start? Get a sense of what styles you like with
+                    our wedding dress quiz, then narrow it down by browsing our silhouette guide. Once you've got an
+                    idea in mind, book a free appointment with one of our personal stylists to try on gowns in your
+                    favorite fits, fabrics, and sizes.</p>
+            </div>
+        </div>
+        <div id="footerFAQ">
+            <div id="questionOne">
+                <h4>Why are wedding dresses white?</h4>
+                <h4 id="showTimeOne">+</h4>
+            </div>
+            <div>
+                <p id="answerOne">The origin of the white wedding dress tradition dates back to 1840, when Queen
+                    Victoria made a
+                    statement by wearing a white lace gown at her royal wedding. Previously, wedding gowns had come in a
+                    wide variety of colors, both for practicality as well as style. White was rarely worn, so the
+                    Queen's choice sparked instant notice and set a new trend of white wedding gowns that endures to
+                    this day.</p>
+            </div>
+            <div id="questionTwo">
+                <h4>Do wedding dresses run small?</h4>
+                <h4 id="showTimeTwo">+</h4>
+            </div>
+            <div>
+                <p id="answerTwo">Depending on the wedding dress designer you choose, the answer is yes. At David's
+                    Bridal, they worked
+                    with over 10,000 real woman to create a set of true wedding dress measurements so most brides find
+                    that their wedding dress size is the same as their normal clothing size.</p>
+            </div>
+            <div id="questionThree">
+                <h4>What is the most popular wedding dress silhouette?</h4>
+                <h4 id="showTimeThree">+</h4>
+            </div>
+            <div>
+                <p id="answerThree">The most popular wedding dress silhouette is the A-line wedding dress because of its
+                    universally
+                    flattering shape. The nipped-in waist hugs your curves while the skirt flares gently for a
+                    comfortable and elegant style that's a timeless favorite.</p>
+            </div>
+            <div id="questionFour">
+                <h4>What to wear under a wedding dress</h4>
+                <h4 id="showTimeFour">+</h4>
+            </div>
+            <div>
+                <p id="answerFour">Brides typically wear slips to keep their skirt in place, adhesive bras for strapless
+                    gowns, and
+                    shaper panties to create a smooth, secure, and confident ensemble. One helpful tip: If you have
+                    undergarments that you plan on using under your dress, bring them to your appointment when you are
+                    dress shopping.</p>
+            </div>
+            <div id="questionFive">
+                <h4>How to bustle a wedding dress</h4>
+                <h4 id="showTimeFive">+</h4>
+            </div>
+            <div>
+                <p id="answerFive">This is a prefect job for your maid of honor, your mom or your mother-in-law.
+                    Depending on the shape
+                    of your gown, most dresses can have hooks added by alterations experts designed to pick up the train
+                    of the gown as they tuck under the silhouette itself. The different bustle styles include French
+                    bustle, under bustle, royal bustle, victorian bustle, ballroom bustle, and bow bustle.</p>
+            </div>
+            <div id="questionSix">
+                <h4>How much is usually a wedding dress?</h4>
+                <h4 id="showTimeSix">+</h4>
+            </div>
+            <div>
+                <p id="answerSix">The average wedding dress in the U.S. costs $2,000-$4,000. David’s Bridal carries
+                    wedding dresses
+                    under $100 but their average gown is around $500, with more elegant options up to $2,000, while
+                    other brands can be up to $10,000.</p>
+            </div>
+            <div id="questionSeven">
+                <h4>Where to buy wedding dresses</h4>
+                <h4 id="showTimeSeven">+</h4>
+            </div>
+            <div>
+                <p id="answerSeven">There are many places you can buy weddings dresses. There are niche bridal boutiques
+                    that are either
+                    online or have physical stores, but one in every three brides will choose David's Bridal for their
+                    wedding dress because of the brand's online and offline wedding dress selections, including nearly
+                    300 stores across the country.</p>
+            </div>
+            <div id="questionEight">
+                <h4>When should I order my wedding dress online?/h4>
+                    <h4 id="showTimeEight">+</h4>
+            </div>
+            <div>
+                <p id="answerEight">The average online bridal dress order is placed nine months before the wedding day.
+                    Ideally brides
+                    should start looking 9-12 months to allow time for alterations. David's Bridal, the nation's largest
+                    wedding dress store, offers thousands of in-stock wedding dresses for brides that want their dresses
+                    sooner than later.</p>
+            </div>
+        </div>
+        <div id="reference">
+            <div>
+                <h4>EXCLUSIVE PARTNERS</h4>
+            </div>
+            <div><img src="https://www.davidsbridal.com/media/footer_logo/footer_logo/01-the-blk-tux.png" width="100px">
+            </div>
+            <div><img src="https://www.davidsbridal.com/media/footer_logo/footer_logo/02-pearl.png" width="100px"></div>
+            <div><img src="https://www.davidsbridal.com/media/footer_logo/footer_logo/03-DN_logo_3_1.png" width="100px">
+            </div>
+            <div><img src="https://www.davidsbridal.com/media/footer_logo/footer_logo/04-shutterfly.png" width="100px">
+            </div>
+            <div><img
+                    src="https://www.davidsbridal.com/media/footer_logo/footer_logo/7fe9cb08ce11419ca542d2bce2f1f814.jpeg"
+                    width="100px"></div>
+        </div>
+
+
+        <div id="footerMain">
+            <div id="first">
+                <img src="">
+                <h4>START PLANNING</h4>
+                <p>Our planning app makes the process a breeze,24/7</p>
+                <div style="display: flex;gap: 20px;">
+                    <img src="https://www.davidsbridal.com/media/footer/download-app-store.png" width="110px" alt="">
+                    <img src="https://www.davidsbridal.com/media/footer/download-google-play.png" width="110px" alt="">
+                </div>
+                <h4>FOLLOW</h4>
+                <div style="display: flex; align-items: center;gap: 10px;">
+                    <img src="https://www.bing.com/th?id=OIP.Rn_QAhme1VqwnvwmPObtXgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+                        width="40px" alt="">
+                    <img src="https://www.bing.com/th?id=OIP.vEwWMNNIVJn5wg8VnExRwwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+                        width="30px" alt="">
+                    <img src="https://www.bing.com/th?id=OIP.5kfepkzG4frnKAVCXiR81wHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+                        width="40px" alt="">
+                    <img src="https://www.bing.com/th?id=OIP.ZdaV2zOEKzHqRo9olgLZagHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+                        width="40px" alt="">
+                    <img src="https://www.bing.com/th?id=OIP.fhZrJF2Bb2lAZTnIFWWIvAHaHa&w=150&h=150&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+                        width="30px" alt="">
+                    <img src="https://www.bing.com/th?id=OIP.NKBPigTOU0UJm6pFXpFIIQHaHu&w=244&h=255&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+                        width="40px" alt="">
+                </div>
+            </div>
+            <div id="second">
+                <h4>ONLINE ORDERS</h4>
+                <div style="line-height: 6px;">
+                    <p>Order Status</p>
+                    <p>Returns & Exchanges</p>
+                    <p>Your Account</p>
+                    <p>International Orders</p>
+                </div>
+                <h4>OUR STORIES</h4>
+                <div style="line-height: 6px;">
+                    <p>Find a Store</p>
+                    <p>Make an Appointment</p>
+                </div>
+            </div>
+            <div id="third">
+                <h4>HELP</h4>
+                <div style="line-height: 6px;">
+                    <p>Contact Us</p>
+                    <p>Help & FAQs</p>
+                </div>
+            </div>
+            <div id="fourth">
+                <h4>ABOUT</h4>
+                <div style="line-height: 10px;font-size: 12px;">
+                    <p>About Davvid's Bridal</p>
+                    <p>Quality & Creaftsmanship</p>
+                    <p>Frontline Fierce</p>
+                    <p>Events</p>
+                    <p>Careers</p>
+                    <p>Media Room</p>
+                    <p>Blog</p>
+                    <p>Media & Investor Relations</p>
+                    <p>Influencer Program</p>
+                </div>
+            </div>
+            <div id="fifth">
+                <h4>REWARDS</h4>
+                <div style="display: flex;gap: 10px;">
+                    <img src="https://d1k0rbiro50qe0.cloudfront.net/footer/aside_0.svg" alt="">
+                    <div>
+                        <h6>Diamond Loyalty Program</h6>
+                        <p>*See Loyalty program details & restrictions, gifts tier descriptions & disclaimers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let paginationButtons = document.getElementById("pagination-buttons")
+    let itemsLoader = document.getElementById("itemsLoader");
+    let myNeededData = [];
+    let itemsCount = document.getElementById("itemsCount")
+    const url = "https://63c3a5f7a9085635752ac992.mockapi.io/davidsBridal";
+
+    // Items load on window Refresh
+
+    window.addEventListener("load", () => {
+        fetchData('?page=1&limit=15');
+    })
+
+
+    // Fetching the data from API
+    function fetchData(data) {
+        fetch(`${url}${data}`)
+            .then((res) => {
+                let totalCount = 50;
+                itemsCount.innerText = totalCount + " items";
+                let totalPages = Math.ceil(totalCount / 15);
+                renderPages(totalPages);
+                console.log(totalPages)
+                return res.json();
+            })
+            .then((data) => {
+                myNeededData = data;
+                renderAllItems(myNeededData);
+            })
+    }
+
+
+    function renderAllItems(data) {
+        itemsLoader.innerHTML = null;
+
+        data.forEach((element, index) => {
+            let card = document.createElement("div");
+            card.setAttribute("class", "card");
+
+
+
+            card.addEventListener("click",()=>{
+                let itemView = [];
+                itemView.push(element);
+                localStorage.setItem("item-view",JSON.stringify(itemView));
+            })
+
+
+            let image = document.createElement("img");
+            image.setAttribute("src", element.image);
+            image.setAttribute("class", "imageShow");
+            let title = document.createElement("p");
+            title.innerText = element.title;
+            let name = document.createElement("h4");
+            name.innerText = element.name.toUpperCase()
+            let regular = document.createElement("p");
+            regular.innerText = "regular";
+            let price = document.createElement("p");
+            price.innerText = "$" + element.price;
+            price.setAttribute("class","priceList")
+            card.append(image, title, name, regular, price);
+            itemsLoader.append(card);
+        })
+    }
+
+
+
+
+    // Pagination has been done here
+
+    function renderPages(num) {
+
+        function listOfButtons() {
+            let arr = [];
+            for (let i = 1; i <= num; i++) {
+                arr.push(createBtn(i));
+            }
+            return arr.join(" ");
+        }
+        paginationButtons.innerHTML = `
+        <div>
+            ${listOfButtons()}
+        </div>    
+        `
+
+        let pagination = document.getElementsByClassName("pagination");
+        for (let i of pagination) {
+            i.addEventListener("click", (e) => {
+                let dataID = e.target.dataset.id;
+                fetchData(`?page=${dataID}&limit=15`)
+            })
+        }
+    }
+
+    function createBtn(text) {
+        return `<button  class="pagination" data-id=${text}>${text}</button>`
+    }
+
+
+
+
+
+    // FooterFAQ's  Here  
+
+    let questionOne = document.getElementById("questionOne")
+    let questionTwo = document.getElementById("questionTwo")
+    let questionThree = document.getElementById("questionThree")
+    let questionFour = document.getElementById("questionFour")
+    let questionFive = document.getElementById("questionFive")
+    let questionSix = document.getElementById("questionSix")
+    let questionSeven = document.getElementById("questionSeven")
+    let questionEight = document.getElementById("questionEight")
+    let answerOne = document.getElementById("answerOne");
+    let answerTwo = document.getElementById("answerTwo")
+    let answerThree = document.getElementById("answerThree")
+    let answerFour = document.getElementById("answerFour")
+    let answerFive = document.getElementById("answerFive")
+    let answerSix = document.getElementById("answerSix")
+    let answerSeven = document.getElementById("answerSeven")
+    let answerEight = document.getElementById("answerEight")
+    let showTimeOne = document.getElementById("showTimeOne")
+    let showTimeTwo = document.getElementById("showTimeTwo")
+    let showTimeThree = document.getElementById("showTimeThree")
+    let showTimeFour = document.getElementById("showTimeFour")
+    let showTimeFive = document.getElementById("showTimeFive")
+    let showTimeSix = document.getElementById("showTimeSix")
+    let showTimeSeven = document.getElementById("showTimeSeven")
+    let showTimeEight = document.getElementById("showTimeEight")
+
+
+
+    // First FAQ
+
+    questionOne.addEventListener("click", () => {
+
+        answerOne.style.display = "block";
+        questionOne.style.borderBottom = "none";
+        answerOne.style.borderBottom = "1px solid rgb(192, 192, 192)"
+        answerOne.style.paddingBottom = "20px";
+        answerOne.style.marginTop = "-10px";
+        showTimeOne.innerText = "-";
+    })
+
+
+    answerOne.addEventListener("click", () => {
+        answerOne.style.display = "none";
+        questionOne.style.borderBottom = "1px solid rgb(192, 192, 192)";
+        showTimeOne.innerText = "+";
+    })
+
+    // First FAQ
+
+
+
+    // Second FAQ
+    questionTwo.addEventListener("click", () => {
+
+        answerTwo.style.display = "block";
+        questionTwo.style.borderBottom = "none";
+        answerTwo.style.borderBottom = "1px solid rgb(192, 192, 192)"
+        answerTwo.style.paddingBottom = "20px";
+        answerTwo.style.marginTop = "-10px";
+        showTimeTwo.innerText = "-";
+    })
+
+
+    answerTwo.addEventListener("click", () => {
+        answerTwo.style.display = "none";
+        questionTwo.style.borderBottom = "1px solid rgb(192, 192, 192)";
+        showTimeTwo.innerText = "+";
+    })
+    // Second FAQ
+
+
+    //Three FAQ
+    questionThree.addEventListener("click", () => {
+
+        answerThree.style.display = "block";
+        questionThree.style.borderBottom = "none";
+        answerThree.style.borderBottom = "1px solid rgb(192, 192, 192)"
+        answerThree.style.paddingBottom = "20px";
+        answerThree.style.marginTop = "-10px";
+        showTimeThree.innerText = "-";
+    })
+
+
+    answerThree.addEventListener("click", () => {
+        answerThree.style.display = "none";
+        questionThree.style.borderBottom = "1px solid rgb(192, 192, 192)";
+        showTimeThree.innerText = "+";
+    })
+    //Three FAQ
+
+
+
+    //Four FAQ
+    questionFour.addEventListener("click", () => {
+
+        answerFour.style.display = "block";
+        questionFour.style.borderBottom = "none";
+        answerFour.style.borderBottom = "1px solid rgb(192, 192, 192)"
+        answerFour.style.paddingBottom = "20px";
+        answerFour.style.marginTop = "-10px";
+        showTimeFour.innerText = "-";
+    })
+
+
+    answerFour.addEventListener("click", () => {
+        answerFour.style.display = "none";
+        questionFour.style.borderBottom = "1px solid rgb(192, 192, 192)";
+        showTimeFour.innerText = "+";
+    })
+    //Four FAQ
+
+
+
+    //Five FAQ
+    questionFive.addEventListener("click", () => {
+
+        answerFive.style.display = "block";
+        questionFive.style.borderBottom = "none";
+        answerFive.style.borderBottom = "1px solid rgb(192, 192, 192)"
+        answerFive.style.paddingBottom = "20px";
+        answerFive.style.marginTop = "-10px";
+        showTimeFive.innerText = "-";
+    })
+
+
+    answerFive.addEventListener("click", () => {
+        answerFive.style.display = "none";
+        questionFive.style.borderBottom = "1px solid rgb(192, 192, 192)";
+        showTimeFive.innerText = "+";
+    })
+    //Five FAQ
+
+
+
+    //Six FAQ
+    questionSix.addEventListener("click", () => {
+
+        answerSix.style.display = "block";
+        questionSix.style.borderBottom = "none";
+        answerSix.style.borderBottom = "1px solid rgb(192, 192, 192)"
+        answerSix.style.paddingBottom = "20px";
+        answerSix.style.marginTop = "-10px";
+        showTimeSix.innerText = "-";
+    })
+
+
+    answerSix.addEventListener("click", () => {
+        answerSix.style.display = "none";
+        questionSix.style.borderBottom = "1px solid rgb(192, 192, 192)";
+        showTimeSix.innerText = "+";
+    })
+    //Six FAQ
+
+
+
+    //Seven FAQ
+    questionSeven.addEventListener("click", () => {
+
+        answerSeven.style.display = "block";
+        questionSeven.style.borderBottom = "none";
+        answerSeven.style.borderBottom = "1px solid rgb(192, 192, 192)"
+        answerSeven.style.paddingBottom = "20px";
+        answerSeven.style.marginTop = "-10px";
+        showTimeSeven.innerText = "-";
+    })
+
+
+    answerSeven.addEventListener("click", () => {
+        answerSeven.style.display = "none";
+        questionSeven.style.borderBottom = "1px solid rgb(192, 192, 192)";
+        showTimeSeven.innerText = "+";
+    })
+    //Seven FAQ
+
+
+
+    //Eight FAQ
+    questionEight.addEventListener("click", () => {
+
+        answerEight.style.display = "block";
+        questionEight.style.borderBottom = "none";
+        answerEight.style.borderBottom = "1px solid rgb(192, 192, 192)"
+        answerEight.style.paddingBottom = "20px";
+        answerEight.style.marginTop = "-10px";
+        showTimeEight.innerText = "-";
+    })
+
+
+    answerEight.addEventListener("click", () => {
+        answerEight.style.display = "none";
+        questionEight.style.borderBottom = "1px solid rgb(192, 192, 192)";
+        showTimeEight.innerText = "+";
+    })
+    //Eight FAQ
+
+
+
+
+
+    //Sorting Here 
+    let sortData = document.getElementById("sort");
+
+    sortData.addEventListener("change", () => {
+
+        if (sortData.value == "l2h") {
+            myNeededData.sort((a, b) => a.price - b.price)
+        }
+        if (sortData.value == "h2l") {
+            myNeededData.sort((a, b) => b.price - a.price)
+        }
+        itemsLoader.innerHTML = null;
+        renderAllItems(myNeededData);
+    })
+    //Sorting Done Here
+</script>
+
+</html>
