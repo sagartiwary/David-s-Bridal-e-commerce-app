@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+      }
+      .firstContainer {
+        width: 100%;
+        height: 500px;
+        /* border: 1px solid red; */
+        display: flex;
+      }
+      .firstContainer > div {
+        /* border: 1px solid black; */
+        width: 50%;
+        height: 100%;
+      }
+      .firstContainer > div:nth-child(1) {
+        padding: 10% 0px 0px 10%;
+        line-height: 70px;
+        background-color: #132122;
+        color: white;
+      }
+      .firstContainer > div:nth-child(1) > h2 {
+        font-size: 50px;
+      }
+      .firstContainer > div:nth-child(1) > h3 {
+        font-size: 30px;
+      }
+      .firstContainer > div:nth-child(1) > p {
+        line-height: 16px;
+      }
+      .firstContainer > div:nth-child(2) > img {
+        width: 100%;
+        height: 100%;
+      }
+      .secondContainer {
+        width: 80%;
+        /* height: 1900px; */
+        /* border: 1px solid black; */
+        margin: auto;
+        margin-top: 20px;
+      }
+      .secondContainer > div {
+        width: 80%;
+        height: 400px;
+        /* border: 1px solid red; */
+        margin: auto;
+        margin-bottom: 10px;
+        /* display: flex; */
+      }
+      .secondContainer > div > div {
+        /* border: 1px solid green; */
+        width: 50%;
+        height: 300px;
+        /* line-height: 30px; */
+      }
+      .secondContainer > div > div > h5,
+      button {
+        line-height: 60px;
+      }
+      .secondContainer > div > div > h3 {
+        font-size: 35px;
+      }
+      button {
+        width: 150px;
+      }
+      .secondContainer > div > div > img {
+        width: 100%;
+        height: 100%;
+      }
+      .secondContainer > div:nth-child(1) > div:nth-child(2) {
+        width: 60%;
+        position: relative;
+        top: -60%;
+        left: 40%;
+        background-color: #faf4ef;
+        z-index: -1;
+        padding-left: 15%;
+      }
+      .secondContainer > div:nth-child(2) > div:nth-child(1) {
+        width: 60%;
+        position: relative;
+        top: 20%;
+        background-color: #faf4ef;
+        padding-right: 15%;
+        padding-left: 2%;
+      }
+
+      .secondContainer > div:nth-child(2) > div:nth-child(2) {
+        position: relative;
+        top: -70%;
+        left: 50%;
+      }
+      .secondContainer > div:nth-child(3) > div:nth-child(2) {
+        width: 60%;
+        position: relative;
+        top: -60%;
+        left: 40%;
+        background-color: #faf4ef;
+        z-index: -1;
+        padding-left: 15%;
+      }
+      .secondContainer > div:nth-child(4) > div:nth-child(1) {
+        width: 60%;
+        position: relative;
+        top: 20%;
+        background-color: #faf4ef;
+        padding-right: 15%;
+        padding-left: 2%;
+      }
+      .secondContainer > div:nth-child(4) > div:nth-child(2) {
+        position: relative;
+        top: -70%;
+        left: 50%;
+      }
+      .secondContainer button:hover {
+        background-color: black;
+        color: white;
+      }
+      .heading {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .thridContainer {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, auto);
+        gap: 10px;
+      }
+      .thridContainer > div {
+        /* border: 1px solid red; */
+        padding: 10px;
+        text-align: center;
+      }
+      .thridContainer > div > img {
+        width: 100%;
+        height: 350px;
+      }
+      .thridContainer > div > h5,
+      button {
+        line-height: 40px;
+      }
+      .thridContainer > div > h3 {
+        margin-bottom: 10px;
+      }
+      /* .thridContainer > div > button:hover {
+        background-color: black;
+        color: white;
+      } */
+      .thridContainer > div > button {
+        background-color: white;
+        border: none;
+        border-bottom: 1px solid gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="firstContainer">
+      <div>
+        <h2>plan with the best</h2>
+        <h3>wedding partners</h3>
+        <p>
+          Savings, inspiration, tips, and more, from the most trusted wedding
+          <br />
+          partners in the business.
+        </p>
+      </div>
+      <div>
+        <img
+          src="https://prod.davidsbridal.com/content/dam/aem-integration/partners/partner_hub/Partnerships-Hub_hero4_RESIZED.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="secondContainer">
+      <div class="child_1">
+        <div>
+          <img
+            src="https://prod.davidsbridal.com/content/dam/aem-integration/partners/partner_hub/Black_Tux_Feature_RESIZED.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <h3>tuxedos & suits for rent and for keeps</h3>
+          <p>
+            The Black Tux crafts modern suits and tuxedos for rent or purchase,
+            designed and manufactured in-house using the finest natural
+            materials and fabrics for a better fit.
+          </p>
+          <h5>from The Black Tux</h5>
+          <button>GET STARTED</button>
+        </div>
+      </div>
+      <div class="child_2">
+        <div>
+          <h3>this rock, flawless</h3>
+          <p>
+            Get all of the sparkle of a diamond for a fraction of the price with
+            Diamond Nexus lab-created diamond simulant jewelry. From engagement
+            rings to everyday jewelry, it's made with elite craftsmanship and
+            set in precious metal, with a lifetime guarantee.
+          </p>
+          <h5>from Diamond Nexus</h5>
+          <button>SHOP FINE JWELLARY</button>
+        </div>
+        <div>
+          <img
+            src="https://prod.davidsbridal.com/content/dam/aem-integration/partners/partner_hub/DN_Module_Partner_Hub.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="child_3">
+        <div>
+          <img
+            src="https://prod.davidsbridal.com/content/dam/aem-integration/partners/partner_hub/Mally_Wedding_Day_Touch_Up_Kit_Lifestyle_NEW_v2.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <h3>the perfect finish for your whole party</h3>
+          <p>
+            No need to worry about makeup mishaps on the big day thanks to the
+            Mally Beauty x David's Bridal Wedding Day Touch-Up and Bridesmaid
+            Survival Kits, packed with full-size makeup products to keep you
+            looking flawless
+          </p>
+          <h5>from David's Bridal x Mally Beauty</h5>
+          <button>SHOP THE KITS</button>
+        </div>
+      </div>
+      <div class="child_4">
+        <div>
+          <h3>capture your love</h3>
+          <p>
+            Take our photography style quiz and enter to win an all-inclusive
+            package valued at $4,800*
+          </p>
+          <h5>from George Street</h5>
+          <button>ENTER TO WIN</button>
+        </div>
+        <div>
+          <img
+            src="https://prod.davidsbridal.com/content/dam/aem-integration/partners/partner_hub/George_Street_Partner_Hub.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div class="heading">
+      <h1>our preferred partners</h1>
+    </div>
+    <div class="thridContainer"></div>
+  </body>
+</html>
+<script>
+  let data = [
+    {
+      imgUrl:
+        "https://prod.davidsbridal.com/content/dam/aem-integration/partners/partner_hub/MAIDSGRP3_DUSTYBLUE_BLACKTUX_FEB_21_1305_RESIZED.jpg",
+      title: "coordinate your wedding party",
+      text: "Tuxedos and suits for rent or purchase, designed with the finest fabrics and delivered to you.",
+      brand: "from The Black Tux",
+      button: "GET STARTED",
+    },
+    {
+      imgUrl:
+        "https://prod.davidsbridal.com/content/dam/aem-integration/partners/partner_hub/2022_ShutterflyUpd_PLAN_SAVE_PAGE_RESIZED.jpg",
+      title: "invite perfection to your big day",
+      text: "Shop save the dates, wedding invitations, and more at The Wedding Shop by Shutterfly.",
+      brand: "from Shutterfly",
+      button: "DESIGN INVITES",
+    },
+    {
+      imgUrl:
+        "https://prod.davidsbridal.com/content/dam/aem-integration/partners/partner_hub/WS_content3CE_767x1147_honeymoon_1118a_RESIZED.jpg",
+      title: "plan a tropical destination wedding",
+      text: "Take your big day to a dream destination with expert tips from Sandals Resorts.",
+      brand: "from Sandals",
+      button: "PLAN TRAVEL",
+    },
+    {
+      imgUrl:
+        "https://prod.davidsbridal.com/content/dam/aem-integration/partners/partner_hub/HS_Clientbox-2_RESIZED.jpg",
+      title: "change miss to mrs. in 3 easy steps",
+      text: "Changing your name is so much easier with HitchSwitch’s simple process. Get it done in three easy steps—and zero stress.",
+      brand: "from HitchSwitch",
+      button: "LEARN MORE",
+    },
+    {
+      imgUrl:
+        "https://prod.davidsbridal.com/content/dam/aem-integration/partners/partner_hub/Reg_Flow_Image_2_002_RESIZED.jpg",
+      title: "say “I do” to wayfair",
+      text: "Wayfair makes it easy to design your most you space—at home or wherever you celebrate",
+      brand: "from Wayfair",
+      button: "SHOP NOW",
+    },
+    {
+      imgUrl:
+        "https://prod.davidsbridal.com/content/dam/aem-integration/partners/partner_hub/website_1_RESIZED.jpg",
+      title: "create your free website & one-stop registry",
+      text: "Create your registry, manage RSVPs, and more. From the big day to birthdays, Blueprint has tools to help plan every event to perfection.",
+      brand: "from Blueprint Registry",
+      button: "BUILD WEBSITE",
+    },
+    {
+      imgUrl:
+        "https://prod.davidsbridal.com/content/dam/aem-integration/partners/partner_hub/CouplesMassage_2_RESIZED.jpg",
+      title: "relax and get a wedding glow",
+      text: "Take some much-needed time to yourself (or with your loved one!) and enjoy a spa experience focused on relaxation and comfort.",
+      brand: "from Hand & Stone",
+      button: "BOOK TREATMENTS",
+    },
+    {
+      imgUrl:
+        "https://prod.davidsbridal.com/content/dam/aem-integration/partners/partner_hub/Copy_of_FLUFFMEDIA-0241_2_RESIZED.jpg",
+      title: "achieve a flawless smile in 10 days",
+      text: "The perfect wedding day smile is possible. Designed by a dentist for his fiancée, Bride Brite brightens smiles at home in just 10 days.",
+      brand: "from Bride Brite",
+      button: "BRIGHTEN TEETH",
+    },
+    {
+      imgUrl:
+        "https://prod.davidsbridal.com/content/dam/aem-integration/partners/partner_hub/website_1_RESIZED.jpg",
+      title: "create your free website & one-stop registry",
+      text: "Create your registry, manage RSVPs, and more. From the big day to birthdays, Blueprint has tools to help plan every event to perfection.",
+      brand: "from Blueprint Registry",
+      button: "BUILD WEBSITE",
+    },
+    {
+      imgUrl:
+        "https://prod.davidsbridal.com/content/dam/aem-integration/partners/partner_hub/CouplesMassage_2_RESIZED.jpg",
+      title: "relax and get a wedding glow",
+      text: "Take some much-needed time to yourself (or with your loved one!) and enjoy a spa experience focused on relaxation and comfort.",
+      brand: "from Hand & Stone",
+      button: "BOOK TREATMENTS",
+    },
+    {
+      imgUrl:
+        "https://prod.davidsbridal.com/content/dam/aem-integration/partners/partner_hub/Copy_of_FLUFFMEDIA-0241_2_RESIZED.jpg",
+      title: "achieve a flawless smile in 10 days",
+      text: "The perfect wedding day smile is possible. Designed by a dentist for his fiancée, Bride Brite brightens smiles at home in just 10 days.",
+      brand: "from Bride Brite",
+      button: "BRIGHTEN TEETH",
+    },
+    {
+      imgUrl:
+        "https://prod.davidsbridal.com/content/dam/aem-integration/partners/partner_hub/SP21_CUSTOM_WEDDING_CTAS_MR_MRS_KNEE-DOWN_COMP_RESIZED.jpg",
+      title: "order your dancing shoes",
+      text: "Opt for comfortable shoes with custom (and cute!) Converse sneaks, for both you and your partner.",
+      brand: "from Converse",
+      button: "DESIGN SHOES",
+    },
+    {
+      imgUrl:
+        "https://prod.davidsbridal.com/content/dam/aem-integration/partners/partner_hub/RECEPTION_MMULTI_GIFT_FALL_21_25_RESIZED.jpg",
+      title: "get inspiration & advice",
+      text: "Your one-stop site for inspiration, Rustic Wedding Chic features real brides and endless ideas.",
+      brand: "from Rustic Wedding Chic",
+      button: "FIND INSPIRATION",
+    },
+    {
+      imgUrl:
+        "https://prod.davidsbridal.com/content/dam/aem-integration/partners/partner_hub/DB_partners_Pearl_RESIZED.jpg",
+      title: "local wedding vendors at your fingertips",
+      text: "Find the perfect vendors with Pearl by David’s Bridal, our online directory of venues, photographers, and more.",
+      brand: "from Pearl by David’s Bridal",
+      button: "FIND VENDORS",
+    },
+    {
+      imgUrl:
+        "https://prod.davidsbridal.com/content/dam/aem-integration/partners/partner_hub/Mally_Wedding_Day_Touch_Up_Kit_Lifestyle_2_RESIZED.jpg",
+      title: "keep your makeup flawless all day",
+      text: "There’s no room for makeup mishaps on the most important day of them all. Shop Mally Beauty x David’s Bridal beauty bundles for the big day!",
+      brand: "from Mally Beauty",
+      button: "TOUCH UP",
+    },
+    {
+      imgUrl:
+        "https://prod.davidsbridal.com/content/dam/aem-integration/partners/partner_hub/Little-Tuxedos-Vendor-LP_RESIZED.jpg",
+      title: "for major milestones",
+      text: "Dress your mini man in Little Tuxedos fancy fits, available in size 6 months to 20H.",
+      brand: "from Little Tuxedos",
+      button: "FIND HIS LOOK",
+    },
+    {
+      imgUrl:
+        "https://prod.davidsbridal.com/content/dam/aem-integration/partners/partner_hub/lily_lime_1_RESIZED.jpg",
+      title: "Find the Perfect Photographer",
+      text: "A new, easy way to book wedding photo & video! Book your favorite photographer online at an affordable price, all from the comfort of your own home.",
+      brand: "from Lily & Lime",
+      button: "LEARN MORE",
+    },
+    {
+      imgUrl:
+        "https://prod.davidsbridal.com/content/dam/aem-integration/partners/partner_hub/george_street_1_RESIZED.jpg",
+      title: "Capture Your Love",
+      text: "True love stories inspired by real people, George Street Photo & Video captures the essence of what it looks like to be in love.",
+      brand: "from George Street",
+      button: "LEARN MORE",
+    },
+  ];
+  data.forEach((el) => {
+    let div = document.createElement("div");
+    let img = document.createElement("img");
+    img.src = el.imgUrl;
+    let title = document.createElement("h3");
+    title.innerText = el.title;
+    let text = document.createElement("p");
+    text.innerText = el.text;
+    let brand = document.createElement("h5");
+    brand.innerText = el.brand;
+    let button = document.createElement("button");
+    button.innerText = el.button;
+    div.append(img, title, text, brand, button);
+    document.querySelector(".thridContainer").append(div);
+  });
+</script>
