@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>   
+</head>
+
+ <style>
+   .topNav{
+        display:flex;
+        text-align:center;
+        position:sticky;
+        padding:0px;
+        height: 40px;
+        background-color:rgb(0, 6, 0);
+        color:white;
+        justify-content: space-evenly;
+        margin:auto;
+   }  
+   
+   .para1{
+        margin-left:300px; 
+        border: 1px white solid; 
+        margin-bottom:20px;
+   }
+
+   .topNav{
+
+   }
+
+   .navBottom{
+     background-color: #FAF4EF;
+     padding:60px 0px 60px 0px;
+   }
+
+   .navBottom div h1{
+    font-size: 40px;
+    color: rgb(105, 28, 53);
+    padding: 0px;
+    margin: 0px !important;
+    text-align: center !important;
+    font-weight: 400 !important;
+    /* font-family: ABScript !important; */
+    font-family: cursive;
+   }
+
+   .navBottom .hello{
+    margin-bottom: 35px;
+   }
+
+   .cards3{
+    display:flex;
+    /* width:100px; */
+    margin-left:50px;
+    /* border: 1px red solid;  */
+   }
+
+   .cards3 img{
+    width:320px;
+   }
+
+   .cards3 div{
+    border: 1px red solid; 
+    width:320px;
+    margin-left: 30px;
+    background-color:white;
+    padding:15px;
+   }
+
+   .cards3 div p, .cards3 div h2, .cards3 div button, .cards3 div h4 {
+    border: 1px red solid;
+    text-align: center;
+   }
+
+   .cards3Pic1 img{
+      width:100%;
+      margin-bottom:60px;
+   }
+
+   .pic1here h1{
+    font-size: 40px;
+    color: rgb(105, 28, 53);
+    padding: 0px;
+    margin: 0px !important;
+    text-align: center !important;
+    font-weight: 400 !important;
+    /* font-family: ABScript !important; */
+    font-family: cursive;
+    /* padding:60px; */
+   }
+
+   .pic1here{
+      margin-bottom:30px;
+      
+   }
+
+   .photo1{
+    display:flex;
+    justify-content: center;
+    margin:50px;
+    border: 1px red solid;
+    /* text-align:center; */
+    margin-bottom: 55px;
+    
+   }
+
+   .photo1 img{
+    width:600px;
+    height:350px;
+    /* padding:0px 15px; */
+   }
+
+   .photo1 div{
+    width:500px;
+    height:288px;
+    border: 1px red solid;
+    padding:30px 30px;
+    background-color:#FAF4EF;
+   }
+
+   .photo1 div div{
+    width:116px;
+    height:27px;
+    font-size:11px;
+    padding:0px;
+   }
+
+   .photo1 div .anchor1{
+    border: 1px black solid;
+    width:128px
+   }
+
+   .partners{
+    display:flex;
+    border: 1px red solid;
+    justify-content:space-evenly;
+    height:50px;
+    padding: 37px;
+   }
+
+   .partners h4, .partners img{
+    /* width:12%; */
+    /* border: 1px red solid; */
+    /* margin-left:30px; */
+   }
+
+
+
+   
+
+/* body{
+  margin: 0;
+  padding: 0; */
+  
+  /* make it look decent enough */
+  /* background: white;
+  color: white;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+} */
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  /* color: tomato; */
+  text-decoration: underline;
+  
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+            
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+  
+
+
+
+
+ </style>
+
+<body>
+    <div class="topNav">
+        <!-- <div class="topNavLeft"> -->
+        <div><p>join the party your way!</p></div> 
+        <div><h5>FIND A STORE ></h5></div> 
+        <!-- </div> -->
+
+        <!-- <div class="topNavRight"> -->
+        <div class="para1"><p>></p></div>
+           
+          
+            <div> <h6>DIAMOND LOYALTY</h6></div>
+            <div><h6>TUXEDO'S AND SUITS</h6></div>
+        <!-- </div> -->
+    </div>
+
+    <!-- <nav role="navigation">
+  <div id="menuToggle"> -->
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <!-- <input type="checkbox" > -->
+    
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+     <span></span>
+    <span></span>
+    <span></span> 
+     
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <a href="#"><li>sign in/sign up</li></a>
+      <a href="#"><li>favourites</li></a>
+      <a href="#"><li>find a store</li></a>
+      <a href="#"><li>book appointment</li></a>
+      <a href="#"><li>order status & returns</li></a>
+      <a href="#"><li>diamond loyalty</li></a>
+      <a href="#"><li>alterations</li></a>
+      <hr>
+      <h4>SHOP</h4>
+      <a href="#"><li>brides</li></a>
+       <a href="#"><li>bridesmaids</li></a>
+        <a href="#"><li>dresses</li></a>
+         <a href="#"><li>juniors</li></a>
+          <a href="#"><li>accessories</li></a>
+          <a href="#"><li>lingerie & shapewear</li></a>
+          <a href="#"><li>shoes</li></a>
+          <a href="#"><li>gifts & decor</li></a>
+          <a href="#"><li>fragrance</li></a>
+          <a href="#"><li>sale</li></a>
+          <a href="#"><li>tuxedos & suits</li></a>
+          <a href="#"><li>fragrance</li></a>
+      <a href="" target="_blank"><li>Show me more</li></a>
+    </ul>
+  </div>
+
+
+    <img src="https://d1k0rbiro50qe0.cloudfront.net/logo-full.svg" alt="">
+ 
+</nav>
+
+
+<div class="navBottom">
+
+  <div class="hello">
+    <h1>hello, beautiful!</h1>
+    <h1>select appointment type</h1>
+  </div>
+
+  <div class="cards3">
+      <div>
+      <img src="https://d1k0rbiro50qe0.cloudfront.net/book-appointment-landing/make-appointment-in-store.jpg" alt="">
+      <h2>in-store</h2>
+      <p>At your free styling session, you’ll tell<br> us all about your dream day and we’ll<br> play matchmaker, bringing you an<br>
+         array of styles to try on. 
+        After you find<br> THE dress, our alterations specialists<br> will make it a perfect fit.</p>
+        <button>BOOK FREE IN-STORE APPOINTMENT</button>
+        <h4>STORE SAFETY<hr></h4>
+
+    </div>
+
+  
+    <div>
+        <img src="https://d1k0rbiro50qe0.cloudfront.net/book-appointment-landing/make-appointment-video.jpg" alt="">
+        <h2>video</h2>
+        <p>We’ll help you find the one, figure out sizing, and place your order. You’ll meet one-on-one with a stylist via Zoom video chat or phone, and get free, personalized dress recs based on your style profile and vision board.</p>
+          <button>BOOK VIRTUAL APPOINTMENT</button>
+          <h4>VIRTUAL APPOINTMENTS 101<hr></h4>
+  
+      </div>
+
+        <div>
+          <img src="https://d1k0rbiro50qe0.cloudfront.net/book-appointment-landing/make-appointment-chat.jpg" alt="">
+          <h2>chat</h2>
+          <p>Our expert stylists are just a text away! Get complimentary help placing an order with tips on measuring yourself, delivery timeframes, and accessorizing. Or ask a follow-up question after an in-store appointment.</p>
+            <button>CHAT WITH A STYLIST</button>
+            <h4>available 24/7<hr></h4>
+    
+        </div>
+      </div>
+</div>
+
+<div class="cards3Pic1">
+  <img src="https://d1k0rbiro50qe0.cloudfront.net/book-appointment-landing/planning-your-appointment.jpg" alt="">
+</div>
+
+<div class="pic1here">
+  <h1>here to help</h1>
+  <h1>at every step</h1>
+</div>
+
+<div class="here2Photos">
+  <div class="photo1">
+    <img src="https://d1k0rbiro50qe0.cloudfront.net/book-appointment-landing/help-alterations.jpg" alt="">
+    <div>
+      <h3>all-in-one-place</h3>
+        <h2>alterations</h2>
+        <p>Discover how you can customize dresses and other garments</p>
+        <div class="anchor"><a href="">ABOUT ALTERATIONS<hr></a></div>
+    </div>
+  </div>
+
+  <div class="here2Photos">
+    <div class="photo1">
+      <img src="https://d1k0rbiro50qe0.cloudfront.net/book-appointment-landing/help-tuxedos-suits.jpg" alt="">
+      <div>
+        <h3>perfectly coordinated</h3>
+          <h2>tuxedos & suits</h2>
+          <p>Put together your whole party with looks from The Black Tux.</p>
+          <div class="anchor1"><a href="">ABOUT THE BLACK TUX<hr></a></div>
+      </div>
+     
+    </div>
+
+    <hr>
+    <div class="partners">
+      <h4 style="height:15px; width:200px;">EXCLUSIVE PARTNERS</h4>
+      <img style="height:55px; width:55px;" src="https://www.davidsbridal.com/media/footer_logo/footer_logo/01-the-blk-tux.png" alt="">
+      <img style="height:55px; width:110px;" src="https://www.davidsbridal.com/media/footer_logo/footer_logo/02-pearl.png" alt="">
+      <img style="height:26px; width:118px;" src="https://www.davidsbridal.com/media/footer_logo/footer_logo/03-DN_logo_3_1.png" alt="">
+      <img style="height:55px; width:102.6px;" src="https://www.davidsbridal.com/media/footer_logo/footer_logo/04-shutterfly.png" alt="">
+      <img style="height:55px; width:55px;" src="https://www.davidsbridal.com/media/footer_logo/footer_logo/7fe9cb08ce11419ca542d2bce2f1f814.jpeg" alt="">
+      
+  </div>
+  <hr>
+
+
+</div>
+  
+
+    <script>
+    
+    </script>
+</body>
+</html>
