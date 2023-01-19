@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Step to The Basket</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@300&family=Noto+Sans+Mono&family=Poppins:wght@300&family=Satisfy&display=swap');
+
+        *{
+            font-family: poppins;
+        }
+        #reference {
+            display: flex;
+            padding: 20px 80px;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgb(192, 192, 192);
+            border-top: 1px solid rgb(192, 192, 192);
+        }
+
+        #footerMain {
+            display: flex;
+            padding: 20px 70px;
+        }
+
+        #first {
+            font-size: 12px;
+            width: 300px;
+            padding: 20px;
+        }
+
+        #second {
+            font-size: 12px;
+            width: 400px;
+            padding: 20px;
+        }
+
+        #third {
+            font-size: 12px;
+            width: 200px;
+            padding: 20px;
+        }
+
+        #fourth {
+            font-size: 12px;
+            width: 400px;
+            padding: 20px;
+        }
+
+        #fifth {
+            font-size: 12px;
+            width: 500px;
+            padding: 20px;
+        }
+        .bigBox{
+            display: flex;
+            padding: 20px;
+        }
+        .leftItems,.rightItems{
+            width: 600px;
+            padding: 20px;
+            border: 1px solid black;
+        }
+        #listOfExtraProducts{
+            display: flex;
+            gap: 20px;
+            padding: 70px;
+        }
+        .smallCards{
+            width: 200px;
+        }
+        #buyBtn{
+            width: 1248px;
+            height: 80px;
+            position: fixed;
+            background-color: #FAF4F0;
+            bottom: 0px;
+            left: 0px;
+        }
+        .bottomBar{
+            display: flex;
+            align-items: center;
+            margin-left: 60px;
+            gap: 20px;
+        }
+        .quantity{
+            padding: 10px 20px;
+            border: 1px solid black;
+        }
+        .addBTN{
+            background-color: #E8184C;
+            padding: 10px 120px;
+            color: white;
+            font-weight: bolder;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="main_box">
+        <div id="header">
+            <!-- Inside header here -->
+        </div>
+
+
+        <div id="insertFromBack">
+            <!-- Append your data using JS -->
+        </div>
+
+        <div id="lowerPart">
+            <h1>
+                <!-- Provide the heading  -->
+            </h1>
+            <div id="listOfExtraProducts">
+                <div class="smallCards">
+                    <img src="https://img.davidsbridal.com/is/image/DavidsBridalInc/482586NE002_MROSEGOLD_JWLY_PROD5_185?wid=510&hei=760&fit=constrain,1&resmode=sharp2&op_usm=2.5,0.3,4" width="200px">
+                    <p>Galina Signature</p>
+                    <h4>Scalloped Teardrop Necklace and Earring Set</h4>
+                    <p>regular</p>
+                    <p>$39.95</p>
+                </div>
+                <div class="smallCards">
+                    <img src="https://img.davidsbridal.com/is/image/DavidsBridalInc/EWGB1062_WHITE_GB_PROD3_20?wid=510&hei=760&fit=constrain,1&resmode=sharp2&op_usm=2.5,0.3,4" width="200px">
+                    <p>David's Bridal</p>
+                    <h4>The Essential Bridal Garment Bag</h4>
+                    <p>regular</p>
+                    <p>$29.95</p>
+                </div>
+                <div class="smallCards">
+                    <img src="https://img.davidsbridal.com/is/image/DavidsBridalInc/ARYA_MNUDE_SHOE_PROD7_004?wid=510&hei=760&fit=constrain,1&resmode=sharp2&op_usm=2.5,0.3,4" width="200px">
+                    <p>David's Bridal</p>
+                    <h4>Block Heel Ankle Strap Sandal</h4>
+                    <p>regular</p>
+                    <p>$39.95</p>
+                </div>
+                <div class="smallCards">
+                    <img src="https://img.davidsbridal.com/is/image/DavidsBridalInc/Image-OW2129-11085963-Regency?wid=510&hei=760&fit=constrain,1&resmode=sharp2&op_usm=2.5,0.3,4" width="200px">
+                    <p>David's Bridal</p>
+                    <h4>Sheer Chiffon Wrap</h4>
+                    <p>regular</p>
+                    <p>$19.95</p>
+                </div>
+                <div class="smallCards">
+                    <img src="https://img.davidsbridal.com/is/image/DavidsBridalInc/DB29073_MWHITE_LING_OM_PROD7_065?wid=510&hei=760&fit=constrain,1&resmode=sharp2&op_usm=2.5,0.3,4" width="200px">
+                    <p>Fashion Farms</p>
+                    <h4>Fashion Forms Lace Backless Strapless</h4>
+                    <p>regular</p>
+                    <p>$29.99</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="reference">
+            <div>
+                <h4 style="letter-spacing: 4px;font-size: 13px;">EXCLUSIVE PARTNERS</h4>
+            </div>
+            <div><img src="https://www.davidsbridal.com/media/footer_logo/footer_logo/01-the-blk-tux.png" width="100px">
+            </div>
+            <div><img src="https://www.davidsbridal.com/media/footer_logo/footer_logo/02-pearl.png" width="100px"></div>
+            <div><img src="https://www.davidsbridal.com/media/footer_logo/footer_logo/03-DN_logo_3_1.png" width="100px">
+            </div>
+            <div><img src="https://www.davidsbridal.com/media/footer_logo/footer_logo/04-shutterfly.png" width="100px">
+            </div>
+            <div><img
+                    src="https://www.davidsbridal.com/media/footer_logo/footer_logo/7fe9cb08ce11419ca542d2bce2f1f814.jpeg"
+                    width="100px"></div>
+        </div>
+
+
+        <div id="footerMain">
+            <div id="first">
+                <img src="">
+                <h4>START PLANNING</h4>
+                <p>Our planning app makes the process a breeze,24/7</p>
+                <div style="display: flex;gap: 20px;">
+                    <img src="https://www.davidsbridal.com/media/footer/download-app-store.png" width="110px" alt="">
+                    <img src="https://www.davidsbridal.com/media/footer/download-google-play.png" width="110px" alt="">
+                </div>
+                <h4>FOLLOW</h4>
+                <div style="display: flex; align-items: center;gap: 10px;">
+                    <img src="https://www.bing.com/th?id=OIP.Rn_QAhme1VqwnvwmPObtXgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+                        width="40px" alt="">
+                    <img src="https://www.bing.com/th?id=OIP.vEwWMNNIVJn5wg8VnExRwwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+                        width="30px" alt="">
+                    <img src="https://www.bing.com/th?id=OIP.5kfepkzG4frnKAVCXiR81wHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+                        width="40px" alt="">
+                    <img src="https://www.bing.com/th?id=OIP.ZdaV2zOEKzHqRo9olgLZagHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+                        width="40px" alt="">
+                    <img src="https://www.bing.com/th?id=OIP.fhZrJF2Bb2lAZTnIFWWIvAHaHa&w=150&h=150&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+                        width="30px" alt="">
+                    <img src="https://www.bing.com/th?id=OIP.NKBPigTOU0UJm6pFXpFIIQHaHu&w=244&h=255&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+                        width="40px" alt="">
+                </div>
+            </div>
+            <div id="second">
+                <h4>ONLINE ORDERS</h4>
+                <div style="line-height: 6px;">
+                    <p>Order Status</p>
+                    <p>Returns & Exchanges</p>
+                    <p>Your Account</p>
+                    <p>International Orders</p>
+                </div>
+                <h4>OUR STORIES</h4>
+                <div style="line-height: 6px;">
+                    <p>Find a Store</p>
+                    <p>Make an Appointment</p>
+                </div>
+            </div>
+            <div id="third">
+                <h4>HELP</h4>
+                <div style="line-height: 6px;">
+                    <p>Contact Us</p>
+                    <p>Help & FAQs</p>
+                </div>
+            </div>
+            <div id="fourth">
+                <h4>ABOUT</h4>
+                <div style="line-height: 10px;font-size: 12px;">
+                    <p>About Davvid's Bridal</p>
+                    <p>Quality & Creaftsmanship</p>
+                    <p>Frontline Fierce</p>
+                    <p>Events</p>
+                    <p>Careers</p>
+                    <p>Media Room</p>
+                    <p>Blog</p>
+                    <p>Media & Investor Relations</p>
+                    <p>Influencer Program</p>
+                </div>
+            </div>
+            <div id="fifth">
+                <h4>REWARDS</h4>
+                <div style="display: flex;gap: 10px;">
+                    <img src="https://d1k0rbiro50qe0.cloudfront.net/footer/aside_0.svg" alt="">
+                    <div>
+                        <h6>Diamond Loyalty Program</h6>
+                        <p>*See Loyalty program details & restrictions, gifts tier descriptions & disclaimers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="buyBtn">
+        </div>
+    </div>
+</body>
+<script>
+    let itemView = JSON.parse(localStorage.getItem("item-view"));
+
+    let insertFromBack = document.getElementById("insertFromBack");
+
+    function renderData(data){
+        data.forEach((element,index)=>{
+            let bigBox = document.createElement("div");
+            bigBox.setAttribute("class","bigBox")
+            let leftItems = document.createElement("div");
+            leftItems.setAttribute("class","leftItems")
+            let bigImage = document.createElement("img");
+            bigImage.setAttribute("src",element.image);
+            bigImage.style.width="550px"
+            let rightItems = document.createElement("div");
+            rightItems.setAttribute("class","rightItems")
+            let title = document.createElement("p");
+            title.innerText = element.title;
+            let name = document.createElement("h2");
+            name.innerText = element.name.toUpperCase()
+            let regular = document.createElement("p");
+            regular.innerText = "regular";
+            let price = document.createElement("p");
+            price.innerText = "$" + element.price;
+            let description = document.createElement("p");
+            description.innerText = element.description;
+            rightItems.append(title,name,regular,price,description);
+            leftItems.append(bigImage);
+            bigBox.append(leftItems,rightItems);
+            insertFromBack.append(bigBox)
+        })
+    }
+    renderData(itemView)
+
+
+
+    let buyBtn = document.getElementById("buyBtn");
+    let count = 1;
+    itemView.forEach((element,index)=>{
+        let bottomBar = document.createElement("div");
+        bottomBar.setAttribute("class","bottomBar")
+        let secondaryDiv = document.createElement("div");
+        let title = document.createElement("h5");
+        title.innerText = element.title;
+        let name = document.createElement("h2");
+        name.innerText = element.name;
+        name.style.marginTop="-20px"
+        let price = document.createElement("h1");
+        price.innerText = "$"+ element.price;
+        price.style.color = "#E8184C";
+        let quantity = document.createElement("p");
+        quantity.innerText = count;
+        quantity.setAttribute("class","quantity");
+        let button = document.createElement("button");
+        button.innerText = "ADD TO BAG";
+        button.setAttribute("class","addBTN")
+        secondaryDiv.append(title,name);
+        bottomBar.append(secondaryDiv,price,quantity,button);
+        buyBtn.append(bottomBar);
+    })
+</script>
+</html>

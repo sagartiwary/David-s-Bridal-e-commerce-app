@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the SignUp Portal</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@300&family=Noto+Sans+Mono&family=Poppins:wght@300&family=Satisfy&display=swap');
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: poppins;
+        }
+
+        #signup {
+            width: 700px;
+            height: 700px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            position: relative;
+            top: 30px;
+        }
+
+        #imgContainer {
+            /* border: 1px solid black; */
+            text-align: center;
+        }
+
+        #boxes {
+            display: flex;
+            padding: 20px;
+        }
+
+        #googleLink {
+            width: 360px;
+        }
+
+        input {
+            width: 270px;
+            padding: 10px;
+            border-radius: 6px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        #submit {
+            margin-top: 30px;
+            width: 290px;
+            background-color: red;
+            color: white;
+            border: none;
+            font-weight: bolder;
+            padding: 15px;
+        }
+
+        #already {
+            font-size: 13px;
+            text-align: center;
+             /* margin-top: ; */
+        }
+
+        label {
+            font-weight: 600;
+        }
+
+        #first {
+            color: gray;
+            font-size: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body bgcolor="grey">
+    <div id="mainBody">
+        <div id="signup">
+            <div id="imgContainer">
+                <img src="./Screenshot__291_-removebg-preview.png" width="200px"
+                    style="margin-top: 20px;margin-bottom: 10px;">
+            </div>
+            <div id="boxes">
+                <div id="googleLink">
+                    <h4 style="padding: 10px;">Sign In with your social account</h4>
+                    <div
+                        style="display: flex;align-items: center;width:300px;background-color: rgb(62, 147, 244);padding: 2px;margin: 10px;">
+                        <img src="data:image/jpeg;base64,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"
+                            width="30px">
+                        <p style="font-weight: bolder;color: white;padding: 0px 10px;">Continue with Google</p>
+                    </div>
+                    <div
+                        style="display: flex;align-items: center;width:300px;background-color: rgb(44, 68, 190);padding: 2px;margin: 10px;">
+                        <img src="https://th.bing.com/th/id/OIP.AxhGzH6wRUIyA8v_ftyLdQHaHw?w=163&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+                            width="30px" alt="">
+                        <p style="font-weight: bolder;color: white;padding: 0px 10px;">Continue with Facebook</p>
+                    </div>
+                    <p id="first">We won't post to any of your accounts without asking first</p>
+                </div>
+                <div>
+                    <form id="form">
+                        <h3>Sign up with a new account</h3>
+                        <label>Email</label><br>
+                        <input type="email" id="email" placeholder="name@host.com" required><br>
+                        <label>Given name</label><br>
+                        <input type="text" id="name" required><br>
+                        <label>Family Name</label><br>
+                        <input type="text" id="fname" required><br>
+                        <label>Password</label><br>
+                        <input type="password" id="password" required><br>
+                        <input type="submit" value="Sign up" id="submit">
+                    </form>
+                    <p id="already">Already have an account?<a href="./signin.html">Sign in</a></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script>
+    let myForm = document.getElementById("form");
+    let userEmail = document.getElementById("email");
+    let username = document.getElementById("name");
+    let familyName = document.getElementById("fname");
+    let passCode = document.getElementById("password");
+
+
+
+    myForm.addEventListener("submit",(e)=>{
+        e.preventDefault();
+
+        let formData = {
+        email : userEmail.value,
+        name : username.value,
+        nickName : familyName.value,
+        password : passCode.value
+        }
+
+
+        let userData = JSON.parse(localStorage.getItem("user-data")) || [] ;
+
+        userData.push(formData);
+        localStorage.setItem("user-data",JSON.stringify(userData));
+    })
+    
+</script>
+
+</html>
