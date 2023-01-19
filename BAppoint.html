@@ -61,7 +61,7 @@
 
    .cards3{
     display:flex;
-    margin-left:50px;
+    justify-content:center;
    }
 
    .cards3 img{
@@ -109,62 +109,130 @@
     line-height: 15px;
     border-radius: 0px;
     font-family: Objektiv;
-    /* font-weight: 700; */
     font-size: 11px;
     letter-spacing: 1.65px;
     text-transform: uppercase;
-    /* box-shadow: none; */
     cursor: pointer;
     text-align: center;
-    /* text-decoration: none; */
-    /* appearance: none !important; */
     margin-bottom:15px;
    }
 
-   .cards3Pic1 img{
-      width:100%;
-      margin-bottom:60px;
+   .cards3 div button:hover{
+    background-color:black;
    }
 
-   .pic1here h1{
+   .cards3 div h3{
+    font-size: 28px;
+    padding: 0px;
+    margin: 12px 0px 20px ;
+    text-align: center;
+   }
+
+   .pic1here h2{
     font-size: 40px;
     color: rgb(105, 28, 53);
     padding: 0px;
     margin: 0px !important;
     text-align: center !important;
     font-weight: 400 !important;
-    font-family: ABScript !important;
+   }
+
+   .pic1here h1{
+    margin: -38px 0px 18px;
+    text-align:center;
     font-size:40px;
-    /* font-family: cursive; */
-    /* padding:60px; */
+    
    }
 
    .pic1here{
-      margin-bottom:30px;
-      
+      margin-bottom:30px;   
+   }
+
+   .cards3Pic1 img{
+      width:100%;
+      height:350px;
+      margin-bottom:50px;
+   }
+
+   .cards3Pic1{
+    position: relative;
+   }
+
+   .cards3Pic1 div h3{
+    border:1px red solid;
+   }
+
+   .cursive1{
+    font-family: ABScript !important;
+    font-size:100px;
+    font-weight: 400px;
+
+   }
+
+   .cursive2{
+    font-family: ABScript;
+    font-size:100px;
+    font-weight: 400px;
+    margin:auto;
+   }
+
+   .cursive22{
+    font-family: ABScript;
+    font-weight: 40px;
+    margin:auto;
+   }   
+
+   .cursive3{
+    font-family: ABScript;
+    font-size:75px;
+   }
+
+   .altTux{
+    margin:-90px 0px 30px;
+    font-size:32px;
+   }
+
+   .onPhoto1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-130%, -75%);
+    margin-bottom:20px;
+   }
+
+   .onPhoto1 h1{
+    margin:-30px 0px 30px;
+   }
+
+   .onPhoto1 button{
+    background-color: transparent;
+    border: 1px black solid;
+    padding:15px;
+    cursor: pointer;
+    color:black;
+   }
+
+   .onPhoto1 button:hover{
+    background-color: black;
+    color:white;
    }
 
    .photo1{
     display:flex;
     justify-content: center;
     margin:50px;
-    border: 1px red solid;
-    /* text-align:center; */
     margin-bottom: 55px;
-    
    }
 
    .photo1 img{
     width:600px;
     height:350px;
-    /* padding:0px 15px; */
    }
 
    .photo1 div{
     width:500px;
-    height:288px;
-    border: 1px red solid;
-    padding:30px 30px;
+    height:350px;
+    padding:0px 30px;
     background-color:#FAF4EF;
    }
 
@@ -176,185 +244,52 @@
    }
 
    .photo1 div .anchor1{
-    border: 1px black solid;
     width:128px
    }
 
    .partners{
     display:flex;
-    border: 1px red solid;
     justify-content:space-evenly;
     height:50px;
-    padding: 37px;
+    padding: 30px;
    }
 
-   .partners h4, .partners img{
-    /* width:12%; */
-    /* border: 1px red solid; */
-    /* margin-left:30px; */
-   }
+  /* FFFFFFFFFFOOOOOOOOOTTTTTTTTTTTTTTTTTTTEEEEEEEEEEEEERRRRRRRRRRRRRRRRR CSS */
 
+  #footerMain {
+            display: flex;
+            padding: 20px 70px;
+        }
 
+        #first {
+            font-size: 12px;
+            width: 300px;
+            padding: 20px;
+        }
 
-   
+        #second {
+            font-size: 12px;
+            width: 400px;
+            padding: 20px;
+        }
 
-/* body{
-  margin: 0;
-  padding: 0; */
-  
-  /* make it look decent enough */
-  /* background: white;
-  color: white;
-  font-family: "Avenir Next", "Avenir", sans-serif;
-} */
+        #third {
+            font-size: 12px;
+            width: 200px;
+            padding: 20px;
+        }
 
-#menuToggle
-{
-  display: block;
-  position: relative;
-  top: 50px;
-  left: 50px;
-  
-  z-index: 1;
-  
-  -webkit-user-select: none;
-  user-select: none;
-}
+        #fourth {
+            font-size: 12px;
+            width: 400px;
+            padding: 20px;
+        }
 
-#menuToggle a
-{
-  text-decoration: none;
-  color: #232323;
-  
-  transition: color 0.3s ease;
-}
-
-#menuToggle a:hover
-{
-  /* color: tomato; */
-  text-decoration: underline;
-  
-}
-
-
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  
-  cursor: pointer;
-  
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-  
-  -webkit-touch-callout: none;
-}
-
-/*
- * Just a quick hamburger
- */
-#menuToggle span
-{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  
-  background: #cdcdcd;
-  border-radius: 3px;
-  
-  z-index: 1;
-  
-  transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-            
-              opacity 0.55s ease;
-}
-
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-/* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
-}
-
-/*
- * But let's hide the middle one.
- */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/*
- * Ohyeah and the last one should go the other direction
- */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu
-{
-  position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  
-  background: #ededed;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#menu li
-{
-  padding: 10px 0;
-  font-size: 22px;
-}
-
-/*
- * And let's slide it in from the left
- */
-#menuToggle input:checked ~ ul
-{
-  transform: none;
-}
-  
-
-
-
+        #fifth {
+            font-size: 12px;
+            width: 500px;
+            padding: 20px;
+        }
 
  </style>
 
@@ -374,71 +309,22 @@
         <!-- </div> -->
     </div>
 
-    <!-- <nav role="navigation">
-  <div id="menuToggle"> -->
-    <!--
-    A fake / hidden checkbox is used as click reciever,
-    so you can use the :checked selector on it.
-    -->
-    <!-- <input type="checkbox" > -->
-    
-    <!--
-    Some spans to act as a hamburger.
-    
-    They are acting like a real hamburger,
-    not that McDonalds stuff.
-    -->
-     <span></span>
-    <span></span>
-    <span></span> 
-     
-    <!--
-    Too bad the menu has to be inside of the button
-    but hey, it's pure CSS magic.
-    -->
-    <ul id="menu">
-      <a href="#"><li>sign in/sign up</li></a>
-      <a href="#"><li>favourites</li></a>
-      <a href="#"><li>find a store</li></a>
-      <a href="#"><li>book appointment</li></a>
-      <a href="#"><li>order status & returns</li></a>
-      <a href="#"><li>diamond loyalty</li></a>
-      <a href="#"><li>alterations</li></a>
-      <hr>
-      <h4>SHOP</h4>
-      <a href="#"><li>brides</li></a>
-       <a href="#"><li>bridesmaids</li></a>
-        <a href="#"><li>dresses</li></a>
-         <a href="#"><li>juniors</li></a>
-          <a href="#"><li>accessories</li></a>
-          <a href="#"><li>lingerie & shapewear</li></a>
-          <a href="#"><li>shoes</li></a>
-          <a href="#"><li>gifts & decor</li></a>
-          <a href="#"><li>fragrance</li></a>
-          <a href="#"><li>sale</li></a>
-          <a href="#"><li>tuxedos & suits</li></a>
-          <a href="#"><li>fragrance</li></a>
-      <a href="" target="_blank"><li>Show me more</li></a>
-    </ul>
-  </div>
-
 
     <img src="https://d1k0rbiro50qe0.cloudfront.net/logo-full.svg" alt="">
  
-</nav>
 
 
 <div class="navBottom">
 
   <div class="hello">
-    <h2>hello, beautiful!</h2>
+    <h2 class="cursive1">hello, beautiful!</h2>
     <h1>select appointment type</h1>
   </div>
 
   <div class="cards3">
       <div>
       <img src="https://d1k0rbiro50qe0.cloudfront.net/book-appointment-landing/make-appointment-in-store.jpg" alt="">
-      <h2>in-store</h2>
+      <h3 class="noncursive">in-store</h3>
       <p>At your free styling session, you’ll tell us all about your dream day and we’ll play matchmaker, bringing you an
          array of styles to try on. 
         After you find THE dress, our alterations specialists will make it a perfect fit.</p>
@@ -450,7 +336,7 @@
   
     <div>
         <img src="https://d1k0rbiro50qe0.cloudfront.net/book-appointment-landing/make-appointment-video.jpg" alt="">
-        <h2>video</h2>
+        <h3 class="noncursive">video</h3>
         <p>We’ll help you find the one, figure out sizing, and place your order. You’ll meet one-on-one with a stylist via Zoom video chat or phone, and get free, personalized dress recs based on your style profile and vision board.</p>
           <button>BOOK VIRTUAL APPOINTMENT</button>
           <a href=""><h5 style="width:200px; height:27px;">VIRTUAL APPOINTMENTS 101</h5></a>
@@ -459,7 +345,7 @@
 
         <div>
           <img src="https://d1k0rbiro50qe0.cloudfront.net/book-appointment-landing/make-appointment-chat.jpg" alt="">
-          <h2>chat</h2>
+          <h3 class="noncursive">chat</h3>
           <p>Our expert stylists are just a text away! Get complimentary help placing an order with tips on measuring yourself, delivery timeframes, and accessorizing. Or ask a follow-up question after an in-store appointment.</p>
             <button>CHAT WITH A STYLIST</button>
             <h4>available 24/7</h4>
@@ -470,10 +356,16 @@
 
 <div class="cards3Pic1">
   <img src="https://d1k0rbiro50qe0.cloudfront.net/book-appointment-landing/planning-your-appointment.jpg" alt="">
+  <div class="onPhoto1">
+    <h2 class="cursive2">what to expect</h2>
+    <h1>planning your appointment</h1>
+    <p>Learn what happens at a styling session and how to prep for yours.</p>
+    <button>GET STARTED</button>
+  </div>
 </div>
 
 <div class="pic1here">
-  <h1>here to help</h1>
+  <h2 class="cursive22" style="font-size:100px; margin:0px;">here to help</h2>
   <h1>at every step</h1>
 </div>
 
@@ -481,10 +373,10 @@
   <div class="photo1">
     <img src="https://d1k0rbiro50qe0.cloudfront.net/book-appointment-landing/help-alterations.jpg" alt="">
     <div>
-      <h3>all-in-one-place</h3>
-        <h2>alterations</h2>
+      <h3 class="cursive3">all-in-one-place</h3>
+        <h2 class="altTux">alterations</h2>
         <p>Discover how you can customize dresses and other garments</p>
-        <div class="anchor"><a href="">ABOUT ALTERATIONS<hr></a></div>
+        <div class="anchor"><a href="">ABOUT ALTERATIONS</a></div>
     </div>
   </div>
 
@@ -492,10 +384,10 @@
     <div class="photo1">
       <img src="https://d1k0rbiro50qe0.cloudfront.net/book-appointment-landing/help-tuxedos-suits.jpg" alt="">
       <div>
-        <h3>perfectly coordinated</h3>
-          <h2>tuxedos & suits</h2>
+        <h3 class="cursive3">perfectly coordinated</h3>
+          <h2 class="altTux">tuxedos & suits</h2>
           <p>Put together your whole party with looks from The Black Tux.</p>
-          <div class="anchor1"><a href="">ABOUT THE BLACK TUX<hr></a></div>
+          <div class="anchor1"><a href="">ABOUT THE BLACK TUX</a></div>
       </div>
      
     </div>
@@ -512,6 +404,80 @@
   </div>
   <hr>
 
+
+  <!-- FOOOOOOOOOTTTTTTTTTTEEEEEEEEEEEEEEEERRRRRRRRRRRRRRRRRR -->
+  
+  <div id="footerMain">
+    <div id="first">
+        <img src="">
+        <h4>START PLANNING</h4>
+        <p>Our planning app makes the process a breeze,24/7</p>
+        <div style="display: flex;gap: 20px;">
+            <img src="https://www.davidsbridal.com/media/footer/download-app-store.png" width="110px" alt="">
+            <img src="https://www.davidsbridal.com/media/footer/download-google-play.png" width="110px" alt="">
+        </div>
+        <h4>FOLLOW</h4>
+        <div style="display: flex; align-items: center;gap: 10px;">
+            <img src="https://www.bing.com/th?id=OIP.Rn_QAhme1VqwnvwmPObtXgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+                width="40px" alt="">
+            <img src="https://www.bing.com/th?id=OIP.vEwWMNNIVJn5wg8VnExRwwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+                width="30px" alt="">
+            <img src="https://www.bing.com/th?id=OIP.5kfepkzG4frnKAVCXiR81wHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+                width="40px" alt="">
+            <img src="https://www.bing.com/th?id=OIP.ZdaV2zOEKzHqRo9olgLZagHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+                width="40px" alt="">
+            <img src="https://www.bing.com/th?id=OIP.fhZrJF2Bb2lAZTnIFWWIvAHaHa&w=150&h=150&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+                width="30px" alt="">
+            <img src="https://www.bing.com/th?id=OIP.NKBPigTOU0UJm6pFXpFIIQHaHu&w=244&h=255&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+                width="40px" alt="">
+        </div>
+    </div>
+    <div id="second">
+        <h4>ONLINE ORDERS</h4>
+        <div style="line-height: 6px;">
+            <p>Order Status</p>
+            <p>Returns & Exchanges</p>
+            <p>Your Account</p>
+            <p>International Orders</p>
+        </div>
+        <h4>OUR STORIES</h4>
+        <div style="line-height: 6px;">
+            <p>Find a Store</p>
+            <p>Make an Appointment</p>
+        </div>
+    </div>
+    <div id="third">
+        <h4>HELP</h4>
+        <div style="line-height: 6px;">
+            <p>Contact Us</p>
+            <p>Help & FAQs</p>
+        </div>
+    </div>
+    <div id="fourth">
+        <h4>ABOUT</h4>
+        <div style="line-height: 10px;font-size: 12px;">
+            <p>About Davvid's Bridal</p>
+            <p>Quality & Creaftsmanship</p>
+            <p>Frontline Fierce</p>
+            <p>Events</p>
+            <p>Careers</p>
+            <p>Media Room</p>
+            <p>Blog</p>
+            <p>Media & Investor Relations</p>
+            <p>Influencer Program</p>
+        </div>
+    </div>
+    <div id="fifth">
+        <h4>REWARDS</h4>
+        <div style="display: flex;gap: 10px;">
+            <img src="https://d1k0rbiro50qe0.cloudfront.net/footer/aside_0.svg" alt="">
+            <div>
+                <h6>Diamond Loyalty Program</h6>
+                <p>*See Loyalty program details & restrictions, gifts tier descriptions & disclaimers</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 </div>
     <script>
