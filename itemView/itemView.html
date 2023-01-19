@@ -209,6 +209,9 @@
         .card>h4{
             margin-top: -10px;
         }
+        .card:hover{
+            cursor: pointer;
+        }
         .priceList{
             margin-top: -10px;
         }
@@ -605,6 +608,7 @@
                 let itemView = [];
                 itemView.push(element);
                 localStorage.setItem("item-view",JSON.stringify(itemView));
+                window.location.href="./viewBig.html"
             })
 
 
@@ -620,6 +624,8 @@
             let price = document.createElement("p");
             price.innerText = "$" + element.price;
             price.setAttribute("class","priceList")
+            let description = document.createElement("p");
+            description.innerText = element.description;
             card.append(image, title, name, regular, price);
             itemsLoader.append(card);
         })
