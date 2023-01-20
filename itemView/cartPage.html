@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@300&family=Noto+Sans+Mono&family=Poppins:wght@300&family=Satisfy&display=swap');
+        *{
+            font-family: poppins;
+        }
+        #mainContent{
+            width: 1220px;
+            margin: 0 auto;
+        }
+        #navBar{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #searchBar {
+            width: 250px;
+            border: none;
+            border-bottom: 1px solid black;
+        }
+        .material-icons{
+            font-size: 28px;
+        }
+    </style>
+</head>
+<body>
+    <div id="mainContainer">
+        <div id="header">
+            <!-- Inside header here -->
+            <div id="navBar">
+                <div id="burgerMenu">
+                    <!-- WORK FOR THE BURGER MENU -->
+                </div>
+                <div id="imgContainer">
+                    <img src="../signIn/Screenshot__291_-removebg-preview.png" width="200px">
+                </div>
+                <div>
+                    <h4>SHOP</h4>
+                </div>
+                <div>
+                    <h4>HOT DEALS</h4>
+                </div>
+                <div>
+                    <h4>PLANNING</h4>
+                </div>
+                <div>
+                    <h4>ABOUT</h4>
+                </div>
+                <div>
+                    <h4>BOOK APPOINTMENT</h4>
+                </div>
+                <div>
+                    <input type="search" placeholder="Search..." id="searchBar">
+                </div>
+                <div style="display: flex; gap: 15px;">
+                    <i class="material-icons">search</i>
+                    <i class="material-icons">location_on</i>
+                    <i class="material-icons">person</i>
+                    <i class="material-icons">shopping_bag</i>
+                </div>
+            </div>
+        </div>
+        <div id="mainContent"></div>
+    </div>
+</body>
+
+</html>
