@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +10,10 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@300&family=Noto+Sans+Mono&family=Poppins:wght@300&family=Satisfy&display=swap');
 
-        *{
+        * {
             font-family: poppins;
         }
+
         #reference {
             display: flex;
             padding: 20px 80px;
@@ -55,24 +57,30 @@
             width: 500px;
             padding: 20px;
         }
-        .bigBox{
+
+        .bigBox {
             display: flex;
             padding: 20px;
         }
-        .leftItems,.rightItems{
+
+        .leftItems,
+        .rightItems {
             width: 600px;
             padding: 20px;
             /* border: 1px solid black; */
         }
-        #listOfExtraProducts{
+
+        #listOfExtraProducts {
             display: flex;
             gap: 20px;
             padding: 70px;
         }
-        .smallCards{
+
+        .smallCards {
             width: 200px;
         }
-        #buyBtn{
+
+        #buyBtn {
             width: 100%;
             height: 100px;
             position: fixed;
@@ -80,68 +88,124 @@
             bottom: 3px;
             left: 0px;
         }
-        .bottomBar{
+
+        .bottomBar {
             display: flex;
             align-items: center;
             margin-left: 60px;
             justify-content: space-around;
             /* padding: ; */
             gap: 20px;
-            
+
         }
-        .quantity{
+
+        .quantity {
             padding: 10px 20px;
             border: 1px solid black;
         }
-        .addBTN{
+
+        .addBTN {
             background-color: #E8184C;
             padding: 10px 120px;
             color: white;
             font-weight: bolder;
             border: none;
         }
-        .addBTN:hover{
+
+        .addBTN:hover {
             cursor: pointer;
             background-color: #c5123f;
         }
-        #mainContent{
+
+        #mainContent {
             width: 1220px;
             margin: 0 auto;
         }
-        #navBar{
+
+        #navBar {
             display: flex;
             justify-content: space-around;
             align-items: center;
             border-bottom: 1px solid rgb(192, 192, 192);
         }
+
         #searchBar {
             width: 250px;
             border: none;
             border-bottom: 1px solid black;
         }
-        .material-icons{
+
+        .material-icons {
             font-size: 28px;
         }
-        #navBar>div>h4:hover{
+
+        #navBar>div>h4:hover {
             color: #E8184C;
             cursor: pointer;
         }
-        #burgerMenu{
-            border: 1px solid ;
+
+        #burgerMenu {
+            border: 1px solid;
             padding: 2px 10px;
         }
-        #menu{
+
+        #menu {
             font-size: 30px;
         }
-        .description{
+
+        .description {
             display: none;
         }
-        .descDiv{
+
+        .descDiv {
             display: flex;
             justify-content: space-between;
         }
+
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            color: black;
+            background-color: white;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 14px;
+            color: #080808;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover{
+            text-decoration: underline;
+            font-weight: bolder;
+        }
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        .menuBarIcons {
+            display: flex;
+            justify-items: space-around;
+            padding: 0px 20px;
+        }
     </style>
 </head>
+
 <body>
     <div id="main_box">
         <div id="header">
@@ -149,7 +213,102 @@
             <div id="navBar">
                 <div id="burgerMenu">
                     <!-- WORK FOR THE BURGER MENU -->
-                    <i class="material-icons" id="menu">menu</i>
+                    <i class="material-icons" id="menu" onclick="openNav()">menu</i>
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="menuBarIcons">
+                            <i class="material-icons">person</i>
+                            <a href="#">sign in/sign up</a>
+                        </div>
+                        <div class="menuBarIcons">
+                            <i class="material-icons">favorite</i>
+                            <a href="#">favorites</a>
+                        </div>
+                        <div class="menuBarIcons">
+                            <i class="material-icons">location_on</i>
+                            <a href="#">find a store</a>
+                        </div>
+                        <div class="menuBarIcons">
+                            <i class="material-icons">event_available</i>
+                            <a href="#">book appointment</a>
+                        </div>
+                        <div class="menuBarIcons">
+                            <i class="material-icons">local_shipping</i>
+                            <a href="#">order status</a>
+                        </div>
+                        <div class="menuBarIcons">
+                            <i class="material-icons">diamond</i>
+                            <a href="#">diamond loyalty</a>
+                        </div>
+                        <div class="menuBarIcons">
+                            <i class="material-icons">satellite_alt</i>
+                            <a href="#">alterations</a>
+                        </div>
+                        <!-- SHOP -->
+                        <div style="border-bottom:1px solid gray ;border-top:1px solid gray ;padding: 10px 0px;">
+                            <div class="menuBarIcons">
+                                <h3>SHOP</h3>
+                            </div>
+                            <div>
+                                <a href="#">brides</a>
+                                <a href="#">bridesmaids</a>
+                                <a href="#">dresses</a>
+                                <a href="#">juniors</a>
+                                <a href="#">accessories</a>
+                                <a href="#">lingerie & shapewear</a>
+                                <a href="#">shoes</a>
+                                <a href="#">gifts & decor</a>
+                                <a href="#">fragrance</a>
+                                <a href="#">sale</a>
+                                <a href="#">tuxedos & suits</a>
+                            </div>
+                        </div>
+                        <!-- HOT DEALS -->
+                        <div style="border-bottom:1px solid gray ;padding: 10px 0px;">
+                            <div class="menuBarIcons">
+                                <h3>HOT DEALS</h3>
+                            </div>
+                        </div>
+                        <!-- PLANNING -->
+                        <div style="border-bottom:1px solid gray ;padding: 10px 0px;">
+                            <div class="menuBarIcons">
+                                <h3>PLANNING</h3>
+                            </div>
+                            <div>
+                                <a href="#">wedding planning</a>
+                                <a href="#">preferred wedding partners</a>
+                                <a href="#">inspiration & guides</a>
+                                <a href="#">invitations</a>
+                                <a href="#">fine jewelry</a>
+                            </div>
+                        </div>
+                        <!-- ABOUT -->
+                        <div style="border-bottom:1px solid gray ;padding: 10px 0px;">
+                            <div class="menuBarIcons">
+                                <h3>ABOUT</h3>
+                            </div>
+                            <div>
+                                <a href="#">virtual & store appointments</a>
+                                <a href="#">online wedding lookbooks</a>
+                                <a href="#">our stores</a>
+                                <a href="#">payment options</a>
+                                <a href="#">frontline fierce</a>
+                                <a href="#">lingerie & shapewear</a>
+                                <div class="menuBarIcons">
+                                    <i class="material-icons">person</i>
+                                    <a href="#">youtube live 24/7</a>
+                                </div>
+                                <div class="menuBarIcons">
+                                    <i class="material-icons">event</i>
+                                    <a href="#">events</a>
+                                </div>
+                                <div class="menuBarIcons">
+                                    <i class="material-icons">help</i>
+                                    <a href="#">help & faq's</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div id="imgContainer">
                     <img src="../signIn/Screenshot__291_-removebg-preview.png" width="200px">
@@ -180,46 +339,52 @@
                 </div>
             </div>
         </div>
+        <!-- Copy till here -->
         <div id="mainContent">
             <div id="insertFromBack">
                 <!-- Append your data using JS -->
             </div>
-    
+
             <div id="lowerPart">
                 <h1>
                     <!-- Provide the heading  -->
                 </h1>
                 <div id="listOfExtraProducts">
                     <div class="smallCards">
-                        <img src="https://img.davidsbridal.com/is/image/DavidsBridalInc/482586NE002_MROSEGOLD_JWLY_PROD5_185?wid=510&hei=760&fit=constrain,1&resmode=sharp2&op_usm=2.5,0.3,4" width="200px">
+                        <img src="https://img.davidsbridal.com/is/image/DavidsBridalInc/482586NE002_MROSEGOLD_JWLY_PROD5_185?wid=510&hei=760&fit=constrain,1&resmode=sharp2&op_usm=2.5,0.3,4"
+                            width="200px">
                         <p>Galina Signature</p>
                         <h4>Scalloped Teardrop Necklace and Earring Set</h4>
                         <p>regular</p>
                         <p>$39.95</p>
                     </div>
                     <div class="smallCards">
-                        <img src="https://img.davidsbridal.com/is/image/DavidsBridalInc/EWGB1062_WHITE_GB_PROD3_20?wid=510&hei=760&fit=constrain,1&resmode=sharp2&op_usm=2.5,0.3,4" width="200px">
+                        <img src="https://img.davidsbridal.com/is/image/DavidsBridalInc/EWGB1062_WHITE_GB_PROD3_20?wid=510&hei=760&fit=constrain,1&resmode=sharp2&op_usm=2.5,0.3,4"
+                            width="200px">
                         <p>David's Bridal</p>
                         <h4>The Essential Bridal Garment Bag</h4>
                         <p>regular</p>
                         <p>$29.95</p>
                     </div>
                     <div class="smallCards">
-                        <img src="https://img.davidsbridal.com/is/image/DavidsBridalInc/ARYA_MNUDE_SHOE_PROD7_004?wid=510&hei=760&fit=constrain,1&resmode=sharp2&op_usm=2.5,0.3,4" width="200px">
+                        <img src="https://img.davidsbridal.com/is/image/DavidsBridalInc/ARYA_MNUDE_SHOE_PROD7_004?wid=510&hei=760&fit=constrain,1&resmode=sharp2&op_usm=2.5,0.3,4"
+                            width="200px">
                         <p>David's Bridal</p>
                         <h4>Block Heel Ankle Strap Sandal</h4>
                         <p>regular</p>
                         <p>$39.95</p>
                     </div>
                     <div class="smallCards">
-                        <img src="https://img.davidsbridal.com/is/image/DavidsBridalInc/Image-OW2129-11085963-Regency?wid=510&hei=760&fit=constrain,1&resmode=sharp2&op_usm=2.5,0.3,4" width="200px">
+                        <img src="https://img.davidsbridal.com/is/image/DavidsBridalInc/Image-OW2129-11085963-Regency?wid=510&hei=760&fit=constrain,1&resmode=sharp2&op_usm=2.5,0.3,4"
+                            width="200px">
                         <p>David's Bridal</p>
                         <h4>Sheer Chiffon Wrap</h4>
                         <p>regular</p>
                         <p>$19.95</p>
                     </div>
                     <div class="smallCards">
-                        <img src="https://img.davidsbridal.com/is/image/DavidsBridalInc/DB29073_MWHITE_LING_OM_PROD7_065?wid=510&hei=760&fit=constrain,1&resmode=sharp2&op_usm=2.5,0.3,4" width="200px">
+                        <img src="https://img.davidsbridal.com/is/image/DavidsBridalInc/DB29073_MWHITE_LING_OM_PROD7_065?wid=510&hei=760&fit=constrain,1&resmode=sharp2&op_usm=2.5,0.3,4"
+                            width="200px">
                         <p>Fashion Farms</p>
                         <h4>Fashion Forms Lace Backless Strapless</h4>
                         <p>regular</p>
@@ -227,33 +392,39 @@
                     </div>
                 </div>
             </div>
-    
-    
+
+
             <div id="reference">
                 <div>
                     <h4 style="letter-spacing: 4px;font-size: 13px;">EXCLUSIVE PARTNERS</h4>
                 </div>
-                <div><img src="https://www.davidsbridal.com/media/footer_logo/footer_logo/01-the-blk-tux.png" width="100px">
+                <div><img src="https://www.davidsbridal.com/media/footer_logo/footer_logo/01-the-blk-tux.png"
+                        width="100px">
                 </div>
-                <div><img src="https://www.davidsbridal.com/media/footer_logo/footer_logo/02-pearl.png" width="100px"></div>
-                <div><img src="https://www.davidsbridal.com/media/footer_logo/footer_logo/03-DN_logo_3_1.png" width="100px">
+                <div><img src="https://www.davidsbridal.com/media/footer_logo/footer_logo/02-pearl.png" width="100px">
                 </div>
-                <div><img src="https://www.davidsbridal.com/media/footer_logo/footer_logo/04-shutterfly.png" width="100px">
+                <div><img src="https://www.davidsbridal.com/media/footer_logo/footer_logo/03-DN_logo_3_1.png"
+                        width="100px">
+                </div>
+                <div><img src="https://www.davidsbridal.com/media/footer_logo/footer_logo/04-shutterfly.png"
+                        width="100px">
                 </div>
                 <div><img
                         src="https://www.davidsbridal.com/media/footer_logo/footer_logo/7fe9cb08ce11419ca542d2bce2f1f814.jpeg"
                         width="100px"></div>
             </div>
-    
-    
+
+
             <div id="footerMain">
                 <div id="first">
                     <img src="">
                     <h4>START PLANNING</h4>
                     <p>Our planning app makes the process a breeze,24/7</p>
                     <div style="display: flex;gap: 20px;">
-                        <img src="https://www.davidsbridal.com/media/footer/download-app-store.png" width="110px" alt="">
-                        <img src="https://www.davidsbridal.com/media/footer/download-google-play.png" width="110px" alt="">
+                        <img src="https://www.davidsbridal.com/media/footer/download-app-store.png" width="110px"
+                            alt="">
+                        <img src="https://www.davidsbridal.com/media/footer/download-google-play.png" width="110px"
+                            alt="">
                     </div>
                     <h4>FOLLOW</h4>
                     <div style="display: flex; align-items: center;gap: 10px;">
@@ -317,8 +488,8 @@
                     </div>
                 </div>
             </div>
-    
-    
+
+
             <div id="buyBtn">
             </div>
         </div>
@@ -329,17 +500,17 @@
 
     let insertFromBack = document.getElementById("insertFromBack");
 
-    function renderData(data){
-        data.forEach((element,index)=>{
+    function renderData(data) {
+        data.forEach((element, index) => {
             let bigBox = document.createElement("div");
-            bigBox.setAttribute("class","bigBox")
+            bigBox.setAttribute("class", "bigBox")
             let leftItems = document.createElement("div");
-            leftItems.setAttribute("class","leftItems")
+            leftItems.setAttribute("class", "leftItems")
             let bigImage = document.createElement("img");
-            bigImage.setAttribute("src",element.image);
-            bigImage.style.width="550px"
+            bigImage.setAttribute("src", element.image);
+            bigImage.style.width = "550px"
             let rightItems = document.createElement("div");
-            rightItems.setAttribute("class","rightItems")
+            rightItems.setAttribute("class", "rightItems")
             let title = document.createElement("p");
             title.innerText = element.title;
             let name = document.createElement("h2");
@@ -349,14 +520,14 @@
             let price = document.createElement("p");
             price.innerText = "$" + element.price;
             let descDiv = document.createElement("div");
-            descDiv.setAttribute("class","descDiv");
+            descDiv.setAttribute("class", "descDiv");
 
             // Add functionality to descDiv 
-            descDiv.addEventListener("click",()=>{
-                description.style.display="block";
-                plusSymbol.innerText="-";
+            descDiv.addEventListener("click", () => {
+                description.style.display = "block";
+                plusSymbol.innerText = "-";
             })
-            
+
 
 
             let desc = document.createElement("h4");
@@ -365,22 +536,22 @@
             plusSymbol.innerText = "+";
             let description = document.createElement("p");
             description.innerText = element.description;
-            description.setAttribute("class","description");
+            description.setAttribute("class", "description");
 
             //Add functionality to the description to hide it
 
-            description.addEventListener("click",()=>{
-                description.style.display="none";
-                plusSymbol.innerText="+";
+            description.addEventListener("click", () => {
+                description.style.display = "none";
+                plusSymbol.innerText = "+";
             })
 
 
 
 
-            descDiv.append(desc,plusSymbol)
-            rightItems.append(title,name,regular,price,descDiv,description);
+            descDiv.append(desc, plusSymbol)
+            rightItems.append(title, name, regular, price, descDiv, description);
             leftItems.append(bigImage);
-            bigBox.append(leftItems,rightItems);
+            bigBox.append(leftItems, rightItems);
             insertFromBack.append(bigBox);
         })
     }
@@ -390,26 +561,30 @@
 
     let buyBtn = document.getElementById("buyBtn");
     let count = 1;
-    itemView.forEach((element,index)=>{
+    itemView.forEach((element, index) => {
         let bottomBar = document.createElement("div");
-        bottomBar.setAttribute("class","bottomBar")
+        bottomBar.setAttribute("class", "bottomBar")
         let secondaryDiv = document.createElement("div");
         let title = document.createElement("h5");
         title.innerText = element.title;
         let name = document.createElement("h3");
         name.innerText = element.name;
-        name.style.marginTop="-25px"
+        name.style.marginTop = "-25px"
         let price = document.createElement("h1");
-        price.innerText = "$"+ element.price;
+        price.innerText = "$" + element.price;
         price.style.color = "#E8184C";
         let quantity = document.createElement("p");
         quantity.innerText = count;
-        quantity.setAttribute("class","quantity");
-        let button = document.createElement("button");
-        button.innerText = "ADD TO BAG";
-        button.setAttribute("class","addBTN")
-        secondaryDiv.append(title,name);
-        bottomBar.append(secondaryDiv,price,quantity,button);
+        quantity.setAttribute("class", "quantity");
+        let buttonBUY = document.createElement("button");
+        buttonBUY.innerText = "ADD TO BAG";
+        buttonBUY.setAttribute("class", "addBTN")
+
+        buttonBUY.addEventListener("click",()=>{
+            
+        })
+        secondaryDiv.append(title, name);
+        bottomBar.append(secondaryDiv, price, buttonBUY);
         buyBtn.append(bottomBar);
     })
 
@@ -417,10 +592,20 @@
 
     let cartPage = document.getElementById("cartPage");
 
-    cartPage.addEventListener("click",()=>{
-        window.location.href="./cartPage.html"
+    cartPage.addEventListener("click", () => {
+        window.location.href = "./cartPage.html"
     })
 
 
+    // Slider Menu
+
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "320px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
 </script>
+
 </html>
