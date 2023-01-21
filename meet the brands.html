@@ -14,7 +14,7 @@
         position:sticky;
         padding:0px;
         height: 40px;
-        background-color:rgb(2, 0, 14);
+        background-color:#004D40;
 
         
         color:white;
@@ -132,7 +132,8 @@
 
             
         color:black;
-        font-weight:lighter
+        font-weight:lighter;
+        text-align:left;
         }
 
         /* box3 */
@@ -171,7 +172,8 @@
 
             .Cassini > a{
 
-                color: black
+                color: black;
+                text-align:left;
             }
 
             /* box4 */
@@ -207,7 +209,8 @@
 
         .Melissa > a{
 
-        color: black
+        color: black;
+        text-align:left;
         }
 
             /* box5*/
@@ -248,7 +251,8 @@
 
             .Studio > a{
 
-                color: black
+                color: black;
+                text-align:left;
             }
 
                      /* box6*/
@@ -285,7 +289,8 @@
 
                     .Cleo> a{
 
-                    color: black
+                    color: black;
+                    text-align:left;
                     }
 
                        /* box7*/
@@ -324,7 +329,8 @@
 
                         .Roses > a{
 
-                            color: black
+                            color: black;
+                            text-align:left;
                         }
 
                           /* base */
@@ -368,7 +374,7 @@
 
                                  /* Footer */
 
-        /* #reference {
+        #reference {
         display: flex;
         padding: 20px 80px;
         justify-content: space-between;
@@ -413,7 +419,218 @@
             width: 500px;
             padding: 20px;
         }
+
+          /* bottom footer */
+
+           .Bottom_footer{
+
+             width:100%;
+             height:100px;
+             background-color:#263238;
+             color:white;
+             font-size: small;
+
+            
+           }
+
+            .Bottom_footer >p{
+                padding-left: 50px;
+                padding-top: 10px;
+            }
+
+           .links1{
+            padding-left: 50px;
+            padding-bottom: 10px;
+           }
+
+           .links1 >a {
+            color:white
+           }
+
+           .sitemap > a{
+
+            color:white;
+            padding-left: 50px;
+           }
+
+           .flag{
+            width:100px;
+            display:flex;
+    
+           }
+
+           .flag > a{
+
+            color:white;
+            font-size: medium;
+            padding-bottom: 15px;
+            
+           }
+
+           .flag >img{
+            padding-left:1210px;
+            width:20px;
+            padding-bottom: 15px;
+           }
+
+             /* Navbar */
+
+             #menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+  /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
+  position: relative;
+  top: -8px;
+  left: 15px;
+  right: 1px;
+  
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
  */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+.sagarNav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+border: 1px solid silver;
+height: 80px;
+position: sticky;
+top: 1px;
+backdrop-filter: 45px;
+background-color:#ffffff;
+}
 
       </style>
 </head>
@@ -434,7 +651,65 @@
 
        <!-- Bottom Navbar -->
     
-       <img src="https://d1k0rbiro50qe0.cloudfront.net/logo-full.svg" alt="">
+       <!-- <img src="https://d1k0rbiro50qe0.cloudfront.net/logo-full.svg" alt=""> -->
+       <nav class="sagarNav">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul id="menu">
+            <a href="#">
+              <li>Home</li>
+            </a>
+            <a href="#">
+              <li>About</li>
+            </a>
+            <a href="#">
+              <li>Info</li>
+            </a>
+            <a href="#">
+              <li>Contact</li>
+            </a>
+            <a href="https://erikterwan.com/" target="_blank">
+              <li>Show me more</li>
+            </a>
+          </ul>
+        </div>
+        
+        <div class="image">
+          <img src="https://d1k0rbiro50qe0.cloudfront.net/logo-full.svg" alt="" />
+        </div>
+        <div class="shop">
+         <a href="#">SHOP</a>
+        </div>
+        <div class="deals">
+          <a href="#">HOT DEALS</a>
+        </div>
+        <div class="plan">
+          <a href="#">PLANNING</a>
+        </div>
+        <div class="about">
+          <a href="#">ABOUT</a>
+        </div>
+        <div class="book">
+          <a href="#">APPOINTMENT</a>
+        </div>
+        <div class="mysearch">
+          <form class="example">
+            <input type="text" placeholder="Search.." name="search" id="sea" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <div class="icon">
+          <i class="bi bi-geo-alt-fill"></i>
+        </div>
+      </nav>
+  
+
+       <!--  -->
 
          <div class ="box1">
             <div class="exclusive">
@@ -566,7 +841,7 @@
        <!-- FOOOOOOOOOTTTTTTTTTTEEEEEEEEEEEEEEEERRRRRRRRRRRRRRRRRR -->
 
         
-       <!-- <div id="reference">
+       <div id="reference">
         <div>
             <h4>EXCLUSIVE PARTNERS</h4>
         </div>
@@ -654,8 +929,32 @@
             </div>
         </div>
     </div>
-</div> -->
+</div>
 
+ 
+  <div class="Bottom_footer">
+    <p>© 2023 Davids Bridal. All Rights Reserved.</p>
+    <div class = "links1">
+        <a href="">Menu * </a>
+        <a href="">Privacy & cookies *</a>
+        <a href="">Accessibility *</a>
+        <a href="">Terms & conditions *</a>
+        <a href="">California Privacy Rights *</a>
+        <a href="">Do Not Sell My Info - CA Residents Only</a>
+        <a href=""> * Ethics/Transparency in Supply Chain</a>
+
+    </div>
+    <div class="sitemap">
+        <a href="">Sitemap * Sitemap Redirect</a>
+      
+    </div>
+    <div class = "flag">
+        <img src="https://bfx-objects.prd.borderfree.com/v1/dist/images/context-chooser/flags/US.gif
+        " alt="">
+        <a href="">EN/($)USD</a>
+    </div>
+
+  </div>
       
 </body>
 </html>
