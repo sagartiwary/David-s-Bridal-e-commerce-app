@@ -163,6 +163,49 @@
         border: none;
         border-bottom: 1px solid gray;
       }
+      #reference {
+        display: flex;
+        padding: 20px 80px;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgb(192, 192, 192);
+        border-top: 1px solid rgb(192, 192, 192);
+      }
+
+      #footerMain {
+        display: flex;
+        padding: 20px 70px;
+      }
+
+      #first {
+        font-size: 12px;
+        width: 300px;
+        padding: 20px;
+      }
+
+      #second {
+        font-size: 12px;
+        width: 400px;
+        padding: 20px;
+      }
+
+      #third {
+        font-size: 12px;
+        width: 200px;
+        padding: 20px;
+      }
+
+      #fourth {
+        font-size: 12px;
+        width: 400px;
+        padding: 20px;
+      }
+
+      #fifth {
+        font-size: 12px;
+        width: 500px;
+        padding: 20px;
+      }
       @media all and (min-width: 450px) and (max-width: 750px) {
         .firstContainer {
           display: block;
@@ -174,6 +217,9 @@
           height: 100%;
           margin-bottom: 10px;
         }
+         .secondContainer {
+        width: 100%;
+         }
         .secondContainer > div {
           height: 100%;
         }
@@ -228,6 +274,25 @@
           grid-template-rows: repeat(8, auto);
           gap: 10px;
         }
+        #reference {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(3, 150px);
+          padding: 20px 80px;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid rgb(192, 192, 192);
+          border-top: 1px solid rgb(192, 192, 192);
+        }
+        #footerMain {
+        display: block;
+        padding: 20px 70px;
+          }
+         #fifth {
+        font-size: 12px;
+        width: 500px;
+        padding: 20px;
+      }
       }
       @media all and (min-width: 100px) and (max-width: 450px) {
         .firstContainer {
@@ -240,6 +305,9 @@
           height: 100%;
           margin-bottom: 10px;
         }
+         .secondContainer {
+           width: 100%;
+         }
         .secondContainer > div {
           height: 100%;
         }
@@ -294,6 +362,15 @@
           grid-template-rows: repeat(20, auto);
           gap: 10px;
         }
+        #reference {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(6, 150px);
+          /* margin-bottom: 300px; */
+      }
+       #footerMain {
+        display: block;
+        padding: 20px 70px;
       }
     </style>
   </head>
@@ -394,6 +471,145 @@
       <h1>our preferred partners</h1>
     </div>
     <div class="thridContainer"></div>
+    <div id="reference">
+      <div>
+        <h4 style="letter-spacing: 4px; font-size: 13px">EXCLUSIVE PARTNERS</h4>
+      </div>
+      <div>
+        <img
+          src="https://www.davidsbridal.com/media/footer_logo/footer_logo/01-the-blk-tux.png"
+          width="100px"
+        />
+      </div>
+      <div>
+        <img
+          src="https://www.davidsbridal.com/media/footer_logo/footer_logo/02-pearl.png"
+          width="100px"
+        />
+      </div>
+      <div>
+        <img
+          src="https://www.davidsbridal.com/media/footer_logo/footer_logo/03-DN_logo_3_1.png"
+          width="100px"
+        />
+      </div>
+      <div>
+        <img
+          src="https://www.davidsbridal.com/media/footer_logo/footer_logo/04-shutterfly.png"
+          width="100px"
+        />
+      </div>
+      <div>
+        <img
+          src="https://www.davidsbridal.com/media/footer_logo/footer_logo/7fe9cb08ce11419ca542d2bce2f1f814.jpeg"
+          width="100px"
+        />
+      </div>
+    </div>
+
+    <div id="footerMain">
+      <div id="first">
+        <img src="" />
+        <h4>START PLANNING</h4>
+        <p>Our planning app makes the process a breeze,24/7</p>
+        <div style="display: flex; gap: 20px">
+          <img
+            src="https://www.davidsbridal.com/media/footer/download-app-store.png"
+            width="110px"
+            alt=""
+          />
+          <img
+            src="https://www.davidsbridal.com/media/footer/download-google-play.png"
+            width="110px"
+            alt=""
+          />
+        </div>
+        <h4>FOLLOW</h4>
+        <div style="display: flex; align-items: center; gap: 10px">
+          <img
+            src="https://www.bing.com/th?id=OIP.Rn_QAhme1VqwnvwmPObtXgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+            width="40px"
+            alt=""
+          />
+          <img
+            src="https://www.bing.com/th?id=OIP.vEwWMNNIVJn5wg8VnExRwwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+            width="30px"
+            alt=""
+          />
+          <img
+            src="https://www.bing.com/th?id=OIP.5kfepkzG4frnKAVCXiR81wHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+            width="40px"
+            alt=""
+          />
+          <img
+            src="https://www.bing.com/th?id=OIP.ZdaV2zOEKzHqRo9olgLZagHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+            width="40px"
+            alt=""
+          />
+          <img
+            src="https://www.bing.com/th?id=OIP.fhZrJF2Bb2lAZTnIFWWIvAHaHa&w=150&h=150&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+            width="30px"
+            alt=""
+          />
+          <img
+            src="https://www.bing.com/th?id=OIP.NKBPigTOU0UJm6pFXpFIIQHaHu&w=244&h=255&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+            width="40px"
+            alt=""
+          />
+        </div>
+      </div>
+      <div id="second">
+        <h4>ONLINE ORDERS</h4>
+        <div style="line-height: 16px">
+          <p>Order Status</p>
+          <p>Returns & Exchanges</p>
+          <p>Your Account</p>
+          <p>International Orders</p>
+        </div>
+        <h4>OUR STORIES</h4>
+        <div style="line-height: 16px">
+          <p>Find a Store</p>
+          <p>Make an Appointment</p>
+        </div>
+      </div>
+      <div id="third">
+        <h4>HELP</h4>
+        <div style="line-height: 16px">
+          <p>Contact Us</p>
+          <p>Help & FAQs</p>
+        </div>
+      </div>
+      <div id="fourth">
+        <h4>ABOUT</h4>
+        <div style="line-height: 20px; font-size: 12px">
+          <p>About Davvid's Bridal</p>
+          <p>Quality & Creaftsmanship</p>
+          <p>Frontline Fierce</p>
+          <p>Events</p>
+          <p>Careers</p>
+          <p>Media Room</p>
+          <p>Blog</p>
+          <p>Media & Investor Relations</p>
+          <p>Influencer Program</p>
+        </div>
+      </div>
+      <div id="fifth">
+        <h4>REWARDS</h4>
+        <div style="display: flex; gap: 10px">
+          <img
+            src="https://d1k0rbiro50qe0.cloudfront.net/footer/aside_0.svg"
+            alt=""
+          />
+          <div>
+            <h6>Diamond Loyalty Program</h6>
+            <p>
+              *See Loyalty program details & restrictions,<br />
+              gifts tier descriptions & disclaimers
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
 <script>
