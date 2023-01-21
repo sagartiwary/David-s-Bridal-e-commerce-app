@@ -63,6 +63,9 @@
             padding: 20px;
         }
 
+        #insertFromBack{
+            margin-top: 100px;
+        }
         .leftItems,
         .rightItems {
             width: 600px;
@@ -123,10 +126,14 @@
         }
 
         #navBar {
+            width: 100%;
             display: flex;
-            justify-content: space-around;
+            gap: 20px;
             align-items: center;
             border-bottom: 1px solid rgb(192, 192, 192);
+            position: fixed;
+            background-color: white;
+            top: 0px;
         }
 
         #searchBar {
@@ -203,6 +210,8 @@
             justify-items: space-around;
             padding: 0px 20px;
         }
+
+        
     </style>
 </head>
 
@@ -488,8 +497,7 @@
                     </div>
                 </div>
             </div>
-
-
+            
             <div id="buyBtn">
             </div>
         </div>
@@ -581,7 +589,9 @@
         buttonBUY.setAttribute("class", "addBTN")
 
         buttonBUY.addEventListener("click",()=>{
-            
+            let basket = JSON.parse(localStorage.getItem("cart-items")) || [];
+            basket.push(element);
+            localStorage.setItem("cart-items",JSON.stringify(basket));
         })
         secondaryDiv.append(title, name);
         bottomBar.append(secondaryDiv, price, buttonBUY);
