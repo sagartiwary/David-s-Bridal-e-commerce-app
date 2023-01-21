@@ -163,6 +163,138 @@
         border: none;
         border-bottom: 1px solid gray;
       }
+      @media all and (min-width: 450px) and (max-width: 750px) {
+        .firstContainer {
+          display: block;
+          height: auto;
+        }
+        .firstContainer > div {
+          /* border: 1px solid black; */
+          width: 100%;
+          height: 100%;
+          margin-bottom: 10px;
+        }
+        .secondContainer > div {
+          height: 100%;
+        }
+        .secondContainer > div > div {
+          /* border: 1px solid green; */
+          width: 100%;
+          height: auto;
+          /* line-height: 30px; */
+        }
+        .secondContainer > div:nth-child(1) > div:nth-child(2) {
+          width: 100%;
+          position: relative;
+          top: 0px;
+          left: 0px;
+          margin-bottom: 10px;
+        }
+        .secondContainer > div:nth-child(2) > div:nth-child(1) {
+          width: 100%;
+          position: relative;
+          top: 0%;
+        }
+        .secondContainer > div:nth-child(2) > div:nth-child(2) {
+          position: relative;
+          top: 0%;
+          left: 0%;
+          margin-top: 10px;
+        }
+        .secondContainer > div:nth-child(3) > div:nth-child(2) {
+          width: 100%;
+          top: 0%;
+          left: 0%;
+        }
+        .secondContainer > div:nth-child(4) > div:nth-child(1) {
+          width: 100%;
+          top: 0%;
+          margin-bottom: 10px;
+        }
+        .secondContainer > div:nth-child(4) > div:nth-child(2) {
+          /* position: relative; */
+          top: 0%;
+          left: 0%;
+        }
+        .heading {
+          font-size: 10px;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        .thridContainer {
+          width: 90%;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(8, auto);
+          gap: 10px;
+        }
+      }
+      @media all and (min-width: 100px) and (max-width: 450px) {
+        .firstContainer {
+          display: block;
+          height: auto;
+        }
+        .firstContainer > div {
+          /* border: 1px solid black; */
+          width: 100%;
+          height: 100%;
+          margin-bottom: 10px;
+        }
+        .secondContainer > div {
+          height: 100%;
+        }
+        .secondContainer > div > div {
+          /* border: 1px solid green; */
+          width: 100%;
+          height: auto;
+          /* line-height: 30px; */
+        }
+        .secondContainer > div:nth-child(1) > div:nth-child(2) {
+          width: 100%;
+          position: relative;
+          top: 0px;
+          left: 0px;
+          margin-bottom: 10px;
+        }
+        .secondContainer > div:nth-child(2) > div:nth-child(1) {
+          width: 100%;
+          position: relative;
+          top: 0%;
+        }
+        .secondContainer > div:nth-child(2) > div:nth-child(2) {
+          position: relative;
+          top: 0%;
+          left: 0%;
+          margin-top: 10px;
+        }
+        .secondContainer > div:nth-child(3) > div:nth-child(2) {
+          width: 100%;
+          top: 0%;
+          left: 0%;
+        }
+        .secondContainer > div:nth-child(4) > div:nth-child(1) {
+          width: 100%;
+          top: 0%;
+          margin-bottom: 10px;
+        }
+        .secondContainer > div:nth-child(4) > div:nth-child(2) {
+          /* position: relative; */
+          top: 0%;
+          left: 0%;
+        }
+        .heading {
+          font-size: 10px;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        .thridContainer {
+          width: 90%;
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(20, auto);
+          gap: 10px;
+        }
+      }
     </style>
   </head>
   <body>
