@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hot Deals</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <style>
@@ -14,6 +16,23 @@
         src: url("fonts/ABScript.ttf") format("truetype");
     }
 
+    @font-face {
+        font-family: "Objektiv";
+        src: url("fonts/Objektiv5.ttf") format("truetype");
+    }
+
+    *{
+       font-family:"Objektiv";
+       font-size:13px;
+    }
+
+    .content {
+    max-width: 1280px;
+    margin: auto;
+    /* text-align:center; */
+    }
+
+   
     .topNav {
         display: flex;
         text-align: center;
@@ -32,6 +51,12 @@
         margin-bottom: 20px;
     }
 
+    .topPic{
+        margin-bottom:0px;
+        padding-bottom:0px;
+        height:305px;
+    }
+
     .bigPic {
         position: relative;
         top: 0px;
@@ -42,17 +67,20 @@
     }
 
     .photo1Lines {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -100%);
-        margin-bottom: 60px;
+        position: relative;
+        /* top: 50%; */
+        /* left: 50%; */
+        transform: translate(46%, -410%);
+        margin-bottom: 0px;
         color: white;
         text-align: center;
+        width:55%;
+        height:20%;
     }
 
     .photo1Lines h1 {
         margin: -2px 0px -6px;
+        font-size:32px;
     }
 
     .gridStart {
@@ -69,13 +97,10 @@
     }
 
     .box1 {
-        /* border:1px red solid; */
         margin-top: 12px;
-
     }
 
-    .box1 div h5 {
-        /* border:1px red solid; */
+    .box1 div h6 {
         border-bottom: 1px solid;
         padding-bottom: 8px;
         width: 97px;
@@ -86,7 +111,6 @@
     .GFG {
         text-decoration: none;
         color: black;
-
     }
 
     .box1 div button {
@@ -128,41 +152,141 @@
     }
 
     .hotDeals div h2 {
-        margin: 100px;
+        margin: 35px;
         font-family: ABScript;
         font-size: 100px;
-        letter-spacing: 0px;
-        line-height: 100px;
-        /* border: 1px white solid; */
-        /* margin-top: 100px; */
     }
 
     .hotDeals div h1 {
         margin: px;
-        margin-top: -120px;
-        /* border: 1px white solid; */
+        margin-top: -70px;
+        /* letter-spacing: 3px; */
     }
 
-    /* .hotDeals div{
-       height:40px;
-       width:100%;
-       /* border:1px white solid; */
-    /* margin-top:90px; */
+       /* go to top box---------------------------------------------------------------------------------------------------------- */
+   .go-top-box{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border:1px white solid;
+    padding-top: 8px;
+    margin-right: 20px;
+    margin-top: 310px;
+    color:white;
+    border-top-left-radius:8px;
+    border-bottom-left-radius:8px;
+    position: fixed;
+    margin-left:1200px;
+  }
+
+  .go-top-box:hover{
+    cursor: pointer;
+    background-color:rgb(126, 126, 126);
+    color:black;
+  }
+
+    /* /* Navigation bar CSS ------------------------------------------------------------------------------------------ */
+    
+    #mainContent {
+            width: 1220px;
+            margin: 0 auto;
+        }
+
+        #navBar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 1px solid rgb(192, 192, 192);
+        }
+
+        #searchBar {
+            width: 250px;
+            border: none;
+            border-bottom: 1px solid black;
+        }
+
+        .material-icons {
+            font-size: 28px;
+        }
+
+        #navBar>div>h4:hover {
+            color: #E8184C;
+            cursor: pointer;
+        }
+
+        #burgerMenu {
+            border: 1px solid;
+            padding: 2px 10px;
+        }
+
+        #menu {
+            font-size: 30px;
+        }
+
+        .description {
+            display: none;
+        }
+
+        .descDiv {
+            display: flex;
+            justify-content: space-between;
+        }
+
+   /* /* BURGER MENU ----------------------------------------------------------------------------------------------- */
+   .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            color: black;
+            background-color: white;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 14px;
+            color: #080808;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover{
+            text-decoration: underline;
+            font-weight: bolder;
+        }
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        .menuBarIcons {
+            display: flex;
+            justify-items: space-around;
+            padding: 0px 20px;
+        }
 
 
-
-
-    /* FFOOOOOOTTTTTEEEEEEEEEEEEEERRRRRRRRRRRRR CSS */
+    /* /* FFOOOOOOTTTTTEEEEEEEEEEEEEERRRRRRRRRRRRR CSS ------------------------------------------------------------------------------- */
     .partners {
         display: flex;
         justify-content: space-evenly;
         height: 50px;
         padding: 30px;
-        /* margin-top:90px; */
+
     }
 
 
-    /* FFFFFFFFFFFOOOOOOOOOOOOTTTTTTTTTTTTTTTTTEEEEEEEEEEEEEEERRRRRRRRRRR 2 CSS*/
+    /* /* FFFFFFFFFFFOOOOOOOOOOOOTTTTTTTTTTTTTTTTTEEEEEEEEEEEEEEERRRRRRRRRRR 2 CSS---------------------------------------------------------------------- */
 
     #footerMain {
         display: flex;
@@ -198,37 +322,253 @@
         width: 500px;
         padding: 20px;
     }
+
+    @media only screen and (max-width: 990px) {
+
+    .gridStart div div button{
+        width:320px;
+        margin:auto;
+    }
+
+    .hotDeals {
+        width: 1200px;
+        margin-bottom: 50px;
+        margin-top: 62px;
+        display:block;
+    }
+
+    .bigPic{
+        width: 1200px;
+    }
+
+    .photo1Lines{
+        text-align:center;
+    }
+    }
+
+    @media only screen and (min-width:0px) and (max-width: 600px) {
+
+        .body{
+            margin-left:50%;
+        }
+
+        .gridStart {
+        display: block;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 16px;
+    }
+
+    .hotDeals {
+        background-color: rgb(19, 33, 34);
+        color: white;
+        width: 900px;
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 62px;
+    }
+
+    
+    .partners{
+        display:block;
+        justify-content:space-evenly;
+        height:80px;
+   }
+
+    .partners img{
+        justify-content:space-between;
+    }
+
+    .bigPic{
+            width: 900px;
+        }
+
+    .topPic div{
+        text-align:center;
+    }
+
+    /* .content {
+    max-width: 960px;
+    margin: 300px;
+    text-align:center;
+    } */
+    }
+
 </style>
 
 
 <body>
-    <div class="topNav">
-        <!-- <div class="topNavLeft"> -->
+
+    <div class="content">
+
+   
+    <!-- <div class="topNav">
         <div>
             <p>join the party your way!</p>
         </div>
         <div>
             <h5>FIND A STORE ></h5>
         </div>
-        <!-- </div> -->
-
-        <!-- <div class="topNavRight"> -->
         <div class="para1">
             <p>></p>
         </div>
-
-
         <div>
             <h6>DIAMOND LOYALTY</h6>
         </div>
         <div>
             <h6>TUXEDO'S AND SUITS</h6>
-        </div>
-        <!-- </div> -->
+        </div> -->
+    <!-- </div> -->
+
+
+
+
+    <!-- Inside header here -->
+
+    <div id="main_box">
+        <div id="header">
+                <div id="navBar">
+                    <div id="burgerMenu">
+                        <!-- WORK FOR THE BURGER MENU -->
+                        <i class="material-icons" id="menu" onclick="openNav()">menu</i>
+                        <div id="mySidenav" class="sidenav">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <div class="menuBarIcons">
+                                <i class="material-icons">person</i>
+                                <a href="#">sign in/sign up</a>
+                            </div>
+                            <div class="menuBarIcons">
+                                <i class="material-icons">favorite</i>
+                                <a href="#">favorites</a>
+                            </div>
+                            <div class="menuBarIcons">
+                                <i class="material-icons">location_on</i>
+                                <a href="#">find a store</a>
+                            </div>
+                            <div class="menuBarIcons">
+                                <i class="material-icons">event_available</i>
+                                <a href="./BAppoint.html">book appointment</a>
+                            </div>
+                            <div class="menuBarIcons">
+                                <i class="material-icons">local_shipping</i>
+                                <a href="#">order status</a>
+                            </div>
+                            <div class="menuBarIcons">
+                                <i class="material-icons">diamond</i>
+                                <a href="#">diamond loyalty</a>
+                            </div>
+                            <div class="menuBarIcons">
+                                <i class="material-icons">satellite_alt</i>
+                                <a href="#">alterations</a>
+                            </div>
+                            <!-- SHOP -->
+                            <div style="border-bottom:1px solid gray ;border-top:1px solid gray ;padding: 10px 0px;">
+                                <div class="menuBarIcons">
+                                    <h3>SHOP</h3>
+                                </div>
+                                <div>
+                                    <a href="#">brides</a>
+                                    <a href="#">bridesmaids</a>
+                                    <a href="#">dresses</a>
+                                    <a href="#">juniors</a>
+                                    <a href="#">accessories</a>
+                                    <a href="#">lingerie & shapewear</a>
+                                    <a href="#">shoes</a>
+                                    <a href="#">gifts & decor</a>
+                                    <a href="#">fragrance</a>
+                                    <a href="#">sale</a>
+                                    <a href="#">tuxedos & suits</a>
+                                </div>
+                            </div>
+                            <!-- HOT DEALS -->
+                            <div style="border-bottom:1px solid gray ;padding: 10px 0px;">
+                                <div class="menuBarIcons">
+                                  <a style="text-decoration: none; color: black;" href="./hotDeals.html"><h3>HOT DEALS</h3></a>  
+                                </div>
+                            </div>
+                            <!-- PLANNING -->
+                            <div style="border-bottom:1px solid gray ;padding: 10px 0px;">
+                                <div class="menuBarIcons">
+                                    <h3>PLANNING</h3>
+                                </div>
+                                <div>
+                                    <a href="#">wedding planning</a>
+                                    <a href="#">preferred wedding partners</a>
+                                    <a href="#">inspiration & guides</a>
+                                    <a href="#">invitations</a>
+                                    <a href="#">fine jewelry</a>
+                                </div>
+                            </div>
+                            <!-- ABOUT -->
+                            <div style="border-bottom:1px solid gray ;padding: 10px 0px;">
+                                <div class="menuBarIcons">
+                                    <h3>ABOUT</h3>
+                                </div>
+                                <div>
+                                    <a href="#">virtual & store appointments</a>
+                                    <a href="#">online wedding lookbooks</a>
+                                    <a href="#">our stores</a>
+                                    <a href="#">payment options</a>
+                                    <a href="#">frontline fierce</a>
+                                    <a href="#">lingerie & shapewear</a>
+                                    <div class="menuBarIcons">
+                                        <i class="material-icons">person</i>
+                                        <a href="#">youtube live 24/7</a>
+                                    </div>
+                                    <div class="menuBarIcons">
+                                        <i class="material-icons">event</i>
+                                        <a href="#">events</a>
+                                    </div>
+                                    <div class="menuBarIcons">
+                                        <i class="material-icons">help</i>
+                                        <a href="#">help & faq's</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="imgContainer">
+                        <img src="../signIn/Screenshot__291_-removebg-preview.png" width="200px">
+                    </div>
+                    <div>
+                        <h4>SHOP</h4>
+                    </div>
+                    <div>
+                        <a style="text-decoration: none; color: black;" href="./hotDeals.html"><h4>HOT DEALS</h4></a> 
+                     </div>
+                     <div>
+                         <h4>PLANNING</h4>
+                     </div>
+                     <div>
+                         <h4>ABOUT</h4>
+                     </div>
+                     <div>
+                       <a style="text-decoration: none; color: black;" href="./BAppoint.html"><h4>BOOK APPOINTMENT</h4></a>  
+                     </div>
+                    <div>
+                        <input type="search" placeholder="Search..." id="searchBar">
+                    </div>
+                    <div style="display: flex; gap: 15px;">
+                        <i class="material-icons">search</i>
+                        <i class="material-icons">location_on</i>
+                        <i class="material-icons">person</i>
+                        <i class="material-icons" id="cartPage">shopping_bag</i>
+                    </div>
+                </div>
+                
+      </div>
+      
+
     </div>
 
 
-    <img src="https://d1k0rbiro50qe0.cloudfront.net/logo-full.svg" alt="">
+<!-- navbar hamburger code -->
+
+<!-- go top button-------------------------------------------------------------------------------------------------------------->
+<div class="go-top-box">
+    <div><a href="#top" style= "text-decoration: none; color: white;">^</a></div>
+    <div class="topBox2"><a style= "text-decoration: none;  color: white;" href="#top">Top</a></div>
+</div>
 
 
     <!-- Begin -->
@@ -257,9 +597,9 @@
             <div>
                 <p class="para1">Price as marked online.</p>
                 <p>Discount taken at register in store.</p>
-                <button>SHOP BOGO ACCESSORIES<br></button>
+                <button style="font-size:12px; font-weight:bold;">SHOP WEDDING DRESSES</button>
                 <a class="GFG" href="">
-                    <h5>SEE DETAILS</h5>
+                    <h6 style="font-size:12px;">SEE DETAILS</h6>
                 </a>
             </div>
         </div>
@@ -272,11 +612,11 @@
                 <p>ends 1/30/23</p>
             </div>
             <div>
-                <p class="para1">Price as marked online.</p>
+                <p class="para1">Discount in cart with loyalty account number.</p>
                 <p>Discount taken at register in store.</p>
-                <button>SHOP BOGO ACCESSORIES<br></button>
+                <button style="font-size:12px; font-weight:bold;">SHOP BRIDESMADE DRESSES</button>
                 <a class="GFG" href="">
-                    <h5>SEE DETAILS</h5>
+                    <h6 style="font-size:12px;">SEE DETAILS</h6>
                 </a>
             </div>
         </div>
@@ -286,23 +626,20 @@
                 <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/1-17-hot-deals/1.17_HD_20_off_PROM.jpg"
                     alt="">
                 <h4>online & in store</h4>
-                <p>ends 1/30/23</p>
+                <p>ends 5/22/23</p>
             </div>
             <div>
-                <p class="para1">Price as marked online.</p>
+                <p class="para1">Discount in cart with loyalty account number.</p>
                 <p>Discount taken at register in store.</p>
-                <button>SHOP BOGO ACCESSORIES<br></button>
+                <button style="font-size:12px; font-weight:bold;">SHOP PROM DRESSES</button>
                 <a class="GFG" href="">
-                    <h5>SEE DETAILS</h5>
+                    <h6 style="font-size:12px;">SEE DETAILS</h6>
                 </a>
             </div>
         </div>
 
     </div>
 
-
-
-    <!-- rrrrrrrrrrreeeeeeeeeeeppppppppppppeeeeeeeaaaatttttt grid begins -->
 
     <div class="gridStart">
         <div class="box1">
@@ -313,11 +650,11 @@
                 <p>ends 1/30/23</p>
             </div>
             <div>
-                <p class="para1">Price as marked online.</p>
+                <p class="para1">Discount in cart online.</p>
                 <p>Discount taken at register in store.</p>
-                <button>SHOP BOGO ACCESSORIES<br></button>
+                <button style="font-size:12px; font-weight:bold;">SHOP BOGO ACCESSORIES</button>
                 <a class="GFG" href="">
-                    <h5>SEE DETAILS</h5>
+                    <h6 style="font-size:12px;">SEE DETAILS</h6>
                 </a>
             </div>
         </div>
@@ -330,11 +667,11 @@
                 <p>ends 1/30/23</p>
             </div>
             <div>
-                <p class="para1">Price as marked online.</p>
-                <p>Discount taken at register in store.</p>
-                <button>SHOP BOGO ACCESSORIES<br></button>
+                <p class="para1" >Price as marked Online.</p>
+                <p style="color:white">P</p>
+                <button style="font-size:12px; font-weight:bold;">SHOP MOST-LOVED WEDDING DRESSES</button>
                 <a class="GFG" href="">
-                    <h5>SEE DETAILS</h5>
+                    <h6 style="font-size:12px;">SEE DETAILS</h6>
                 </a>
             </div>
         </div>
@@ -348,10 +685,10 @@
             </div>
             <div>
                 <p class="para1">Price as marked online.</p>
-                <p>Discount taken at register in store.</p>
-                <button>SHOP BOGO ACCESSORIES<br></button>
+                <p style="color:white">""</p>
+                <button style="font-size:12px; font-weight:bold;">SHOP DB ESSENTIALS</button>
                 <a class="GFG" href="">
-                    <h5>SEE DETAILS</h5>
+                     <h6 style="font-size:12px;">SEE DETAILS</h6>
                 </a>
             </div>
         </div>
@@ -371,9 +708,9 @@
             <div>
                 <p class="para1">Price as marked online.</p>
                 <p>Discount taken at register in store.</p>
-                <button>SHOP BOGO ACCESSORIES<br></button>
+                <button style="font-size:12px; font-weight:bold;">SHOP CLEARANCE WEDDING DRESSES</button>
                 <a class="GFG" href="">
-                    <h5>SEE DETAILS</h5>
+                    <h6 style="font-size:12px;">SEE DETAILS</h6>
                 </a>
             </div>
         </div>
@@ -388,9 +725,9 @@
             <div>
                 <p class="para1">Price as marked online.</p>
                 <p>Discount taken at register in store.</p>
-                <button>SHOP BOGO ACCESSORIES<br></button>
+                <button style="font-size:12px; font-weight:bold;">SHOP BRIDESMAIDS DRESSES</button>
                 <a class="GFG" href="">
-                    <h5>SEE DETAILS</h5>
+                    <h6 style="font-size:12px;">SEE DETAILS</h6>
                 </a>
             </div>
         </div>
@@ -404,10 +741,10 @@
             </div>
             <div>
                 <p class="para1">Price as marked online.</p>
-                <p>Discount taken at register in store.</p>
-                <button>SHOP BOGO ACCESSORIES<br></button>
+                <p style="color:white">.</p>
+                <button style="font-size:12px; font-weight:bold;">SHOP FINAL SALE WEDDING DRESSES</button>
                 <a class="GFG" href="">
-                    <h5>SEE DETAILS</h5>
+                    <h6 style="font-size:12px;">SEE DETAILS</h6>
                 </a>
             </div>
         </div>
@@ -422,14 +759,14 @@
                 <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/11-1-hot-deals/11.1_Black_FriYAY_Robes_PJs_HD_Module.jpg"
                     alt="">
                 <h4>online & in store</h4>
-                <p>ends 1/30/23</p>
+                <p>ends 6/1/23</p>
             </div>
             <div>
                 <p class="para1">Price as marked online.</p>
                 <p>Discount taken at register in store.</p>
-                <button>SHOP BOGO ACCESSORIES<br></button>
+                <button style="font-size:12px; font-weight:bold;">SHOP ROBES AND PJ'S</button>
                 <a class="GFG" href="">
-                    <h5>SEE DETAILS</h5>
+                    <h6 style="font-size:12px;">SEE DETAILS</h6>
                 </a>
             </div>
         </div>
@@ -443,10 +780,10 @@
             </div>
             <div>
                 <p class="para1">Price as marked online.</p>
-                <p>Discount taken at register in store.</p>
-                <button>SHOP BOGO ACCESSORIES<br></button>
+                <p Style="color:white;">.</p>
+                <button style="font-size:12px; font-weight:bold;">SHOP SALE FLOWER GIRL DRESSES</button>
                 <a class="GFG" href="">
-                    <h5>SEE DETAILS</h5>
+                    <h6 style="font-size:12px;">SEE DETAILS</h6>
                 </a>
             </div>
         </div>
@@ -461,9 +798,9 @@
             <div>
                 <p class="para1">Price as marked online.</p>
                 <p>Discount taken at register in store.</p>
-                <button>SHOP BOGO ACCESSORIES<br></button>
+                <button style="font-size:12px; font-weight:bold;">SHOP SALE ACCESSORIES</button>
                 <a class="GFG" href="">
-                    <h5>SEE DETAILS</h5>
+                    <h6 style="font-size:12px;">SEE DETAILS</h6>
                 </a>
             </div>
         </div>
@@ -478,14 +815,14 @@
                 <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/12-6-hot-deals/12.6_Prom_HP_module.jpg"
                     alt="">
                 <h4>online & in store</h4>
-                <p>ends 1/30/23</p>
+                <p>ends 6/1/23</p>
             </div>
             <div>
-                <p class="para1">Price as marked online.</p>
-                <p>Discount taken at register in store.</p>
-                <button>SHOP BOGO ACCESSORIES<br></button>
+                <p class="para1"> Enter to win by creating a loyalty account and </p>
+                <p>completing the steps on the member page.</p>
+                <button style="font-size:12px; font-weight:bold;">SIGN UP FOR DIAMOND</button>
                 <a class="GFG" href="">
-                    <h5>SEE DETAILS</h5>
+                    <h6 style="font-size:12px;">TERMS & CONDITIONS</h6>
                 </a>
             </div>
         </div>
@@ -500,9 +837,9 @@
             <div>
                 <p class="para1">Price as marked online.</p>
                 <p>Discount taken at register in store.</p>
-                <button>SHOP BOGO ACCESSORIES<br></button>
+                <button style="font-size:12px; font-weight:bold;">SHOP PRESERVATION KITS</button>
                 <a class="GFG" href="">
-                    <h5>SEE DETAILS</h5>
+                    <h6 style="font-size:12px;">SEE DETAILS</h6>
                 </a>
             </div>
         </div>
@@ -517,9 +854,9 @@
             <div>
                 <p class="para1">Price as marked online.</p>
                 <p>Discount taken at register in store.</p>
-                <button>SHOP BOGO ACCESSORIES<br></button>
+                <button style="font-size:12px; font-weight:bold;">SHOP GARMENT BAGS</button>
                 <a class="GFG" href="">
-                    <h5>SEE DETAILS</h5>
+                    <h6 style="font-size:12px;">SEE DETAILS</h6>
                 </a>
             </div>
         </div>
@@ -539,9 +876,9 @@
             <div>
                 <p class="para1">Price as marked online.</p>
                 <p>Discount taken at register in store.</p>
-                <button>SHOP BOGO ACCESSORIES<br></button>
+                <button style="font-size:12px; font-weight:bold;">SHOP HOOP SLIP</button>
                 <a class="GFG" href="">
-                    <h5>SEE DETAILS</h5>
+                    <h6 style="font-size:12px;">SEE DETAILS</h6>
                 </a>
             </div>
         </div>
@@ -554,12 +891,12 @@
                 <p>ends 1/30/23</p>
             </div>
             <div>
-                <p class="para1">Price as marked online.</p>
-                <p>Discount taken at register in store.</p>
-                <button>SHOP BOGO ACCESSORIES<br></button>
-                <a class="GFG" href="">
+                <p class="para1">Coupons and other perks provided with loyalty<br> account registration.</p>
+                <p>*See Loyalty program <br> <a href="" style="color:black;font-weight: bold;">terms</a> & <a href="" style="color:black; font-weight: bold;">conditions</a> & gift details..</p>
+                <button style="font-size:12px; font-weight:bold;">LEARN MORE ABOUT DIAMONDS</button>
+                <!-- <a class="GFG" href="">
                     <h5>SEE DETAILS</h5>
-                </a>
+                </a> -->
             </div>
         </div>
 
@@ -573,9 +910,9 @@
             <div>
                 <p class="para1">Price as marked online.</p>
                 <p>Discount taken at register in store.</p>
-                <button>SHOP BOGO ACCESSORIES<br></button>
+                <button style="font-size:12px; font-weight:bold;">SHOP BOGO ACCESSORIES</button>
                 <a class="GFG" href="">
-                    <h5>SEE DETAILS</h5>
+                    <h6 style="font-size:12px;">SEE DETAILS</h6>
                 </a>
             </div>
         </div>
@@ -583,15 +920,13 @@
     </div>
 
     <!-- HHHHHHHHOOOOOOOOOOOOOOTTTTTTTTTTTT DEALS Card -->
-    <div class="hotDeals">
-        <div style="padding: 10px 0px 80px 0px; border: 1px solid rgb(247, 246, 246);">
-            <div>
+    <div class="hotDeals" style="height:240px;">
+            <div >
                 <h2>hot deals</h2>
             </div>
             <div>
-                <h1>from our partners</h1>
+                <h1 style="font-size:40px;">from our partners</h1>
             </div>
-        </div>
     </div>
 
     <!-- 2nd GRiD starts -->
@@ -602,14 +937,14 @@
                 <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/10-18-hot-deals/10.18_HD_BT20_diamond.jpg"
                     alt="">
                 <h4>online & in store</h4>
-                <p>ends 1/30/23</p>
+                <p>ends 3/31/23</p>
             </div>
             <div>
-                <p class="para1">Price as marked online.</p>
-                <p>Discount taken at register in store.</p>
-                <button>SHOP BOGO ACCESSORIES<br></button>
+                <p class="para1">Coupons and other perks provided with loyalty </p>
+                <p>account registration.</p>
+                <button style="font-size:12px; font-weight:bold;">LEARN MORE ABOUT THE BLACK TUX</button>
                 <a class="GFG" href="">
-                    <h5>SEE DETAILS</h5>
+                    <h6 style="font-size:12px;">SEE DETAILS</h6>
                 </a>
             </div>
         </div>
@@ -618,16 +953,16 @@
             <div>
                 <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/partner-hot-deals/June_Partner_HD_Mally.jpg"
                     alt="">
-                <h4>online & in store</h4>
-                <p>ends 1/30/23</p>
+                <h4>online only</h4>
+                <p>ends 9/19/23</p>
             </div>
             <div>
-                <p class="para1">Price as marked online.</p>
-                <p>Discount taken at register in store.</p>
-                <button>SHOP BOGO ACCESSORIES<br></button>
-                <a class="GFG" href="">
+                <p class="para1">Use Code: BRIDE </p>
+                <p>*Excludes Wedding Day Touch-Up Kit.</p>
+                <button style="font-size:12px; font-weight:bold;">SHOP MALLY BEAUTY</button>
+                <!-- <a class="GFG" href="">
                     <h5>SEE DETAILS</h5>
-                </a>
+                </a> -->
             </div>
         </div>
 
@@ -635,15 +970,15 @@
             <div>
                 <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/9-20-little-tux-hd/09.27_LT_HDs_LittleTux.jpg"
                     alt="">
-                <h4>online & in store</h4>
+                <h4>online only</h4>
                 <p>ends 1/30/23</p>
             </div>
             <div>
                 <p class="para1">Price as marked online.</p>
                 <p>Discount taken at register in store.</p>
-                <button>SHOP BOGO ACCESSORIES<br></button>
+                <button style="font-size:12px; font-weight:bold;">SHOP BOGO ACCESSORIES</button>
                 <a class="GFG" href="">
-                    <h5>SEE DETAILS</h5>
+                    <h6 style="font-size:12px;">SEE DETAILS</h6>
                 </a>
             </div>
         </div>
@@ -661,9 +996,9 @@
             <div>
                 <p class="para1">Price as marked online.</p>
                 <p>Discount taken at register in store.</p>
-                <button>SHOP BOGO ACCESSORIES<br></button>
+                <button style="font-size:12px; font-weight:bold;">SHOP BOGO ACCESSORIES</button>
                 <a class="GFG" href="">
-                    <h5>SEE DETAILS</h5>
+                    <h6 style="font-size:12px;">SEE DETAILS</h6>
                 </a>
             </div>
         </div>
@@ -678,9 +1013,9 @@
             <div>
                 <p class="para1">Price as marked online.</p>
                 <p>Discount taken at register in store.</p>
-                <button>SHOP BOGO ACCESSORIES<br></button>
+                <button style="font-size:12px; font-weight:bold;">SHOP BOGO ACCESSORIES</button>
                 <a class="GFG" href="">
-                    <h5>SEE DETAILS</h5>
+                    <h6 style="font-size:12px;">SEE DETAILS</h6>
                 </a>
             </div>
         </div>
@@ -695,9 +1030,9 @@
             <div>
                 <p class="para1">Price as marked online.</p>
                 <p>Discount taken at register in store.</p>
-                <button>SHOP BOGO ACCESSORIES<br></button>
+                <button style="font-size:12px; font-weight:bold;">SHOP BOGO ACCESSORIES</button>
                 <a class="GFG" href="">
-                    <h5>SEE DETAILS</h5>
+                    <h6 style="font-size:12px;">SEE DETAILS</h6>
                 </a>
             </div>
         </div>
@@ -715,9 +1050,9 @@
             <div>
                 <p class="para1">Price as marked online.</p>
                 <p>Discount taken at register in store.</p>
-                <button>SHOP BOGO ACCESSORIES<br></button>
+                <button style="font-size:12px; font-weight:bold;">SHOP BOGO ACCESSORIES</button>
                 <a class="GFG" href="">
-                    <h5>SEE DETAILS</h5>
+                    <h6 style="font-size:12px;">SEE DETAILS</h6>
                 </a>
             </div>
         </div>
@@ -732,9 +1067,9 @@
             <div>
                 <p class="para1">Price as marked online.</p>
                 <p>Discount taken at register in store.</p>
-                <button>SHOP BOGO ACCESSORIES<br></button>
+                <button style="font-size:12px; font-weight:bold;">SHOP BOGO ACCESSORIES</button>
                 <a class="GFG" href="">
-                    <h5>SEE DETAILS</h5>
+                    <h6 style="font-size:12px;">SEE DETAILS</h6>
                 </a>
             </div>
         </div>
@@ -749,9 +1084,9 @@
             <div>
                 <p class="para1">Price as marked online.</p>
                 <p>Discount taken at register in store.</p>
-                <button>SHOP BOGO ACCESSORIES<br></button>
+                <button style="font-size:12px; font-weight:bold;">SHOP BOGO ACCESSORIES</button>
                 <a class="GFG" href="">
-                    <h5>SEE DETAILS</h5>
+                    <h6 style="font-size:12px;">SEE DETAILS</h6>
                 </a>
             </div>
         </div>
@@ -764,15 +1099,12 @@
                 <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/1-3-hot-deals/1.3_George_Street_Photography_HD.jpg"
                     alt="">
                 <h4>online & in store</h4>
-                <p>ends 1/30/23</p>
+                <p>ends 1/31/23</p>
             </div>
             <div>
-                <p class="para1">Price as marked online.</p>
-                <p>Discount taken at register in store.</p>
-                <button>SHOP BOGO ACCESSORIES<br></button>
-                <a class="GFG" href="">
-                    <h5>SEE DETAILS</h5>
-                </a>
+                <p class="para1">Use Code: DAVIDSBRIDAL </p>
+                <p>New Bookings Only. Subject to Availability.</p>
+                <button style="font-size:12px; font-weight:bold;">LEARN MORE</button>
             </div>
         </div>
 
@@ -781,14 +1113,14 @@
                 <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/diamond-nexus-hot-deal/Diamond_Nexus_Hot_Deal_FreeGift.jpg"
                     alt="">
                 <h4>online & in store</h4>
-                <p>ends 1/30/23</p>
+                <p>ends 2/12/23</p>
             </div>
             <div>
-                <p class="para1">Price as marked online.</p>
-                <p>Discount taken at register in store.</p>
-                <button>SHOP BOGO ACCESSORIES<br></button>
+                <p class="para1">Free gift automatically added to cart with $250 </p>
+                <p>worth of merchandise when customers use link </p>
+                <button style="font-size:12px; font-weight:bold;">SHOP DIAMOND NEXUS</button>
                 <a class="GFG" href="">
-                    <h5>SEE DETAILS</h5>
+                    <h6 style="font-size:12px;">SEE DETAILS</h6>
                 </a>
             </div>
         </div>
@@ -798,15 +1130,12 @@
                 <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/1-3-hot-deals/1.3_lily_lime_HD.jpg"
                     alt="">
                 <h4>online & in store</h4>
-                <p>ends 1/30/23</p>
+                <p>ends 1/31/23</p>
             </div>
             <div>
-                <p class="para1">Price as marked online.</p>
-                <p>Discount taken at register in store.</p>
-                <button>SHOP BOGO ACCESSORIES<br></button>
-                <a class="GFG" href="">
-                    <h5>SEE DETAILS</h5>
-                </a>
+                <p class="para1">Use Code: HOTDEALS<br> </p>
+                <p> Subject to availability.</p>
+                <button style="font-size:12px; font-weight:bold;">LEARN MORE</button>
             </div>
         </div>
 
@@ -907,15 +1236,23 @@
         </div>
     </div>
 
-    </div>
+    
 
 
-
+ </div>
 
 </body>
 
-<cript>
+<script>
+    // Slider Menu
 
-</cript>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "320px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
 
 </html>
