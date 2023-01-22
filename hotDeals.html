@@ -1,408 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hot Deals</title>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
 
-<style>
+  <style>
     @font-face {
-        font-family: "ABScript";
-        src: url("fonts/ABScript.ttf") format("truetype");
+      font-family: "ABScript";
+      src: url("fonts/ABScript.ttf") format("truetype");
     }
 
     @font-face {
-        font-family: "Objektiv";
-        src: url("fonts/Objektiv5.ttf") format("truetype");
+      font-family: "Objektiv";
+      src: url("fonts/Objektiv5.ttf") format("truetype");
     }
 
-    *{
-       font-family:"Objektiv";
-       font-size:13px;
+    * {
+      font-family: "Objektiv";
+      font-size: 13px;
     }
 
     .content {
-    max-width: 1280px;
-    margin: auto;
-    /* text-align:center; */
+      max-width: 1280px;
+      margin: auto;
+      /* text-align:center; */
     }
 
-   
     .topNav {
-        display: flex;
-        text-align: center;
-        position: sticky;
-        padding: 0px;
-        height: 40px;
-        background-color: rgb(0, 6, 0);
-        color: white;
-        justify-content: space-evenly;
-        margin: auto;
+      display: flex;
+      text-align: center;
+      position: sticky;
+      padding: 0px;
+      height: 40px;
+      background-color: rgb(0, 6, 0);
+      color: white;
+      justify-content: space-evenly;
+      margin: auto;
     }
 
     .para1 {
-        margin-left: 300px;
-        border: 1px white solid;
-        margin-bottom: 20px;
+      margin-left: 300px;
+      border: 1px white solid;
+      margin-bottom: 20px;
     }
 
-    .topPic{
-        margin-bottom:0px;
-        padding-bottom:0px;
-        height:305px;
+    .topPic {
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+      height: 305px;
     }
 
     .bigPic {
-        position: relative;
-        top: 0px;
-        left: 0px;
-        width: 99.5%;
-        height: 255px;
-        margin-bottom: 45px;
+      position: relative;
+      top: 0px;
+      left: 0px;
+      width: 99.5%;
+      height: 255px;
+      margin-bottom: 45px;
     }
 
     .photo1Lines {
-        position: relative;
-        /* top: 50%; */
-        /* left: 50%; */
-        transform: translate(46%, -410%);
-        margin-bottom: 0px;
-        color: white;
-        text-align: center;
-        width:55%;
-        height:20%;
+      position: relative;
+      /* top: 50%; */
+      /* left: 50%; */
+      transform: translate(46%, -410%);
+      margin-bottom: 0px;
+      color: white;
+      text-align: center;
+      width: 55%;
+      height: 20%;
     }
 
     .photo1Lines h1 {
-        margin: -2px 0px -6px;
-        font-size:32px;
+      margin: -2px 0px -6px;
+      font-size: 32px;
     }
 
     .gridStart {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        padding-bottom: 16px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      padding-bottom: 16px;
     }
 
     .box1 div img {
-        width: 342px;
-        height: 513px;
-        margin: 0px 15px;
+      width: 342px;
+      height: 513px;
+      margin: 0px 15px;
     }
 
     .box1 {
-        margin-top: 12px;
+      margin-top: 12px;
     }
 
     .box1 div h6 {
-        border-bottom: 1px solid;
-        padding-bottom: 8px;
-        width: 97px;
-        margin: auto;
-        margin-top: 24px;
+      border-bottom: 1px solid;
+      padding-bottom: 8px;
+      width: 97px;
+      margin: auto;
+      margin-top: 24px;
     }
 
     .GFG {
-        text-decoration: none;
-        color: black;
+      text-decoration: none;
+      color: black;
     }
 
     .box1 div button {
-        margin-left: 20px;
-        display: block;
-        padding: 17px 20px;
-        width: 90%;
-        background-color: transparent;
-        cursor: pointer;
-        margin: 30px 18px -4px;
-        border: 1px black solid;
+      margin-left: 20px;
+      display: block;
+      padding: 17px 20px;
+      width: 90%;
+      background-color: transparent;
+      cursor: pointer;
+      margin: 30px 18px -4px;
+      border: 1px black solid;
     }
 
     .box1 div button:hover {
-        background-color: black;
-        color: white;
-        cursor: pointer;
+      background-color: black;
+      color: white;
+      cursor: pointer;
     }
 
     .box1 div h4 {
-        margin: 30px 0px -15px;
+      margin: 30px 0px -15px;
     }
 
     .para1 {
-        margin: 30px 0px -15px;
+      margin: 30px 0px -15px;
     }
 
     .anchor {
-        margin: 10px 0px 50px;
+      margin: 10px 0px 50px;
     }
 
     .hotDeals {
-        background-color: rgb(19, 33, 34);
-        color: white;
-        width: 100%;
-        text-align: center;
-        margin-bottom: 50px;
-        margin-top: 62px;
+      background-color: rgb(19, 33, 34);
+      color: white;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 50px;
+      margin-top: 62px;
     }
 
     .hotDeals div h2 {
-        margin: 35px;
-        font-family: ABScript;
-        font-size: 100px;
+      margin: 35px;
+      font-family: ABScript;
+      font-size: 100px;
     }
 
     .hotDeals div h1 {
-        margin: px;
-        margin-top: -70px;
-        /* letter-spacing: 3px; */
+      margin: px;
+      margin-top: -70px;
+      /* letter-spacing: 3px; */
     }
 
-       /* go to top box---------------------------------------------------------------------------------------------------------- */
-   .go-top-box{
-    text-align: center;
-    width: 50px;
-    height: 50px;
-    background-color: black;
-    border:1px white solid;
-    padding-top: 8px;
-    margin-right: 20px;
-    margin-top: 310px;
-    color:white;
-    border-top-left-radius:8px;
-    border-bottom-left-radius:8px;
-    position: fixed;
-    margin-left:1200px;
-  }
+    /* go to top box---------------------------------------------------------------------------------------------------------- */
+    .go-top-box {
+      text-align: center;
+      width: 50px;
+      height: 50px;
+      background-color: black;
+      border: 1px white solid;
+      padding-top: 8px;
+      margin-right: 20px;
+      margin-top: 310px;
+      color: white;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      position: fixed;
+      margin-left: 1200px;
+    }
 
-  .go-top-box:hover{
-    cursor: pointer;
-    background-color:rgb(126, 126, 126);
-    color:black;
-  }
+    .go-top-box:hover {
+      cursor: pointer;
+      background-color: rgb(126, 126, 126);
+      color: black;
+    }
 
     /* /* Navigation bar CSS ------------------------------------------------------------------------------------------ */
-    
+
     #mainContent {
-            width: 1220px;
-            margin: 0 auto;
-        }
+      width: 1220px;
+      margin: 0 auto;
+    }
 
-        #navBar {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            border-bottom: 1px solid rgb(192, 192, 192);
-        }
+    #navBar {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-bottom: 1px solid rgb(192, 192, 192);
+    }
 
-        #searchBar {
-            width: 250px;
-            border: none;
-            border-bottom: 1px solid black;
-        }
+    #searchBar {
+      width: 250px;
+      border: none;
+      border-bottom: 1px solid black;
+    }
 
-        .material-icons {
-            font-size: 28px;
-        }
+    .material-icons {
+      font-size: 28px;
+    }
 
-        #navBar>div>h4:hover {
-            color: #E8184C;
-            cursor: pointer;
-        }
+    #navBar > div > h4:hover {
+      color: #e8184c;
+      cursor: pointer;
+    }
 
-        #burgerMenu {
-            border: 1px solid;
-            padding: 2px 10px;
-        }
+    #burgerMenu {
+      border: 1px solid;
+      padding: 2px 10px;
+    }
 
-        #menu {
-            font-size: 30px;
-        }
+    #menu {
+      font-size: 30px;
+    }
 
-        .description {
-            display: none;
-        }
+    .description {
+      display: none;
+    }
 
-        .descDiv {
-            display: flex;
-            justify-content: space-between;
-        }
+    .descDiv {
+      display: flex;
+      justify-content: space-between;
+    }
 
-   /* /* BURGER MENU ----------------------------------------------------------------------------------------------- */
-   .sidenav {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            color: black;
-            background-color: white;
-            overflow-x: hidden;
-            transition: 0.5s;
-            padding-top: 60px;
-        }
+    /* /* BURGER MENU ----------------------------------------------------------------------------------------------- */
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      color: black;
+      background-color: white;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
 
-        .sidenav a {
-            padding: 8px 8px 8px 32px;
-            text-decoration: none;
-            font-size: 14px;
-            color: #080808;
-            display: block;
-            transition: 0.3s;
-        }
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 14px;
+      color: #080808;
+      display: block;
+      transition: 0.3s;
+    }
 
-        .sidenav a:hover{
-            text-decoration: underline;
-            font-weight: bolder;
-        }
-        .sidenav .closebtn {
-            position: absolute;
-            top: 0;
-            right: 25px;
-            font-size: 36px;
-            margin-left: 50px;
-        }
+    .sidenav a:hover {
+      text-decoration: underline;
+      font-weight: bolder;
+    }
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
 
-        .menuBarIcons {
-            display: flex;
-            justify-items: space-around;
-            padding: 0px 20px;
-        }
-
+    .menuBarIcons {
+      display: flex;
+      justify-items: space-around;
+      padding: 0px 20px;
+    }
 
     /* /* FFOOOOOOTTTTTEEEEEEEEEEEEEERRRRRRRRRRRRR CSS ------------------------------------------------------------------------------- */
     .partners {
-        display: flex;
-        justify-content: space-evenly;
-        height: 50px;
-        padding: 30px;
-
+      display: flex;
+      justify-content: space-evenly;
+      height: 50px;
+      padding: 30px;
     }
-
 
     /* /* FFFFFFFFFFFOOOOOOOOOOOOTTTTTTTTTTTTTTTTTEEEEEEEEEEEEEEERRRRRRRRRRR 2 CSS---------------------------------------------------------------------- */
 
     #footerMain {
-        display: flex;
-        padding: 20px 70px;
+      display: flex;
+      padding: 20px 70px;
     }
 
     #first {
-        font-size: 12px;
-        width: 300px;
-        padding: 20px;
+      font-size: 12px;
+      width: 300px;
+      padding: 20px;
     }
 
     #second {
-        font-size: 12px;
-        width: 400px;
-        padding: 20px;
+      font-size: 12px;
+      width: 400px;
+      padding: 20px;
     }
 
     #third {
-        font-size: 12px;
-        width: 200px;
-        padding: 20px;
+      font-size: 12px;
+      width: 200px;
+      padding: 20px;
     }
 
     #fourth {
-        font-size: 12px;
-        width: 400px;
-        padding: 20px;
+      font-size: 12px;
+      width: 400px;
+      padding: 20px;
     }
 
     #fifth {
-        font-size: 12px;
-        width: 500px;
-        padding: 20px;
+      font-size: 12px;
+      width: 500px;
+      padding: 20px;
     }
 
     @media only screen and (max-width: 990px) {
+      .gridStart div div button {
+        width: 320px;
+        margin: auto;
+      }
 
-    .gridStart div div button{
-        width:320px;
-        margin:auto;
-    }
-
-    .hotDeals {
+      .hotDeals {
         width: 1200px;
         margin-bottom: 50px;
         margin-top: 62px;
-        display:block;
-    }
+        display: block;
+      }
 
-    .bigPic{
+      .bigPic {
         width: 1200px;
+      }
+
+      .photo1Lines {
+        text-align: center;
+      }
     }
 
-    .photo1Lines{
-        text-align:center;
-    }
-    }
+    @media only screen and (min-width: 0px) and (max-width: 600px) {
+      .body {
+        margin-left: 50%;
+      }
 
-    @media only screen and (min-width:0px) and (max-width: 600px) {
-
-        .body{
-            margin-left:50%;
-        }
-
-        .gridStart {
+      .gridStart {
         display: block;
         justify-content: center;
         text-align: center;
         padding-bottom: 16px;
-    }
+      }
 
-    .hotDeals {
+      .hotDeals {
         background-color: rgb(19, 33, 34);
         color: white;
         width: 900px;
         text-align: center;
         margin-bottom: 50px;
         margin-top: 62px;
-    }
+      }
 
-    
-    .partners{
-        display:block;
-        justify-content:space-evenly;
-        height:80px;
-   }
+      .partners {
+        display: block;
+        justify-content: space-evenly;
+        height: 80px;
+      }
 
-    .partners img{
-        justify-content:space-between;
-    }
+      .partners img {
+        justify-content: space-between;
+      }
 
-    .bigPic{
-            width: 900px;
-        }
+      .bigPic {
+        width: 900px;
+      }
 
-    .topPic div{
-        text-align:center;
-    }
+      .topPic div {
+        text-align: center;
+      }
 
-    /* .content {
+      /* .content {
     max-width: 960px;
     margin: 300px;
     text-align:center;
     } */
     }
+  </style>
 
-</style>
-
-
-<body>
-
+  <body>
     <div class="content">
-
-   
-    <!-- <div class="topNav">
+      <!-- <div class="topNav">
         <div>
             <p>join the party your way!</p>
         </div>
@@ -418,841 +408,1016 @@
         <div>
             <h6>TUXEDO'S AND SUITS</h6>
         </div> -->
-    <!-- </div> -->
+      <!-- </div> -->
 
+      <!-- Inside header here -->
 
-
-
-    <!-- Inside header here -->
-
-    <div id="main_box">
+      <div id="main_box">
         <div id="header">
-                <div id="navBar">
-                    <div id="burgerMenu">
-                        <!-- WORK FOR THE BURGER MENU -->
-                        <i class="material-icons" id="menu" onclick="openNav()">menu</i>
-                        <div id="mySidenav" class="sidenav">
-                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                            <div class="menuBarIcons">
-                                <i class="material-icons">person</i>
-                                <a href="#">sign in/sign up</a>
-                            </div>
-                            <div class="menuBarIcons">
-                                <i class="material-icons">favorite</i>
-                                <a href="#">favorites</a>
-                            </div>
-                            <div class="menuBarIcons">
-                                <i class="material-icons">location_on</i>
-                                <a href="#">find a store</a>
-                            </div>
-                            <div class="menuBarIcons">
-                                <i class="material-icons">event_available</i>
-                                <a href="./BAppoint.html">book appointment</a>
-                            </div>
-                            <div class="menuBarIcons">
-                                <i class="material-icons">local_shipping</i>
-                                <a href="#">order status</a>
-                            </div>
-                            <div class="menuBarIcons">
-                                <i class="material-icons">diamond</i>
-                                <a href="#">diamond loyalty</a>
-                            </div>
-                            <div class="menuBarIcons">
-                                <i class="material-icons">satellite_alt</i>
-                                <a href="#">alterations</a>
-                            </div>
-                            <!-- SHOP -->
-                            <div style="border-bottom:1px solid gray ;border-top:1px solid gray ;padding: 10px 0px;">
-                                <div class="menuBarIcons">
-                                    <h3>SHOP</h3>
-                                </div>
-                                <div>
-                                    <a href="#">brides</a>
-                                    <a href="#">bridesmaids</a>
-                                    <a href="#">dresses</a>
-                                    <a href="#">juniors</a>
-                                    <a href="#">accessories</a>
-                                    <a href="#">lingerie & shapewear</a>
-                                    <a href="#">shoes</a>
-                                    <a href="#">gifts & decor</a>
-                                    <a href="#">fragrance</a>
-                                    <a href="#">sale</a>
-                                    <a href="#">tuxedos & suits</a>
-                                </div>
-                            </div>
-                            <!-- HOT DEALS -->
-                            <div style="border-bottom:1px solid gray ;padding: 10px 0px;">
-                                <div class="menuBarIcons">
-                                  <a style="text-decoration: none; color: black;" href="./hotDeals.html"><h3>HOT DEALS</h3></a>  
-                                </div>
-                            </div>
-                            <!-- PLANNING -->
-                            <div style="border-bottom:1px solid gray ;padding: 10px 0px;">
-                                <div class="menuBarIcons">
-                                    <h3>PLANNING</h3>
-                                </div>
-                                <div>
-                                    <a href="#">wedding planning</a>
-                                    <a href="#">preferred wedding partners</a>
-                                    <a href="#">inspiration & guides</a>
-                                    <a href="#">invitations</a>
-                                    <a href="#">fine jewelry</a>
-                                </div>
-                            </div>
-                            <!-- ABOUT -->
-                            <div style="border-bottom:1px solid gray ;padding: 10px 0px;">
-                                <div class="menuBarIcons">
-                                    <h3>ABOUT</h3>
-                                </div>
-                                <div>
-                                    <a href="#">virtual & store appointments</a>
-                                    <a href="#">online wedding lookbooks</a>
-                                    <a href="#">our stores</a>
-                                    <a href="#">payment options</a>
-                                    <a href="#">frontline fierce</a>
-                                    <a href="#">lingerie & shapewear</a>
-                                    <div class="menuBarIcons">
-                                        <i class="material-icons">person</i>
-                                        <a href="#">youtube live 24/7</a>
-                                    </div>
-                                    <div class="menuBarIcons">
-                                        <i class="material-icons">event</i>
-                                        <a href="#">events</a>
-                                    </div>
-                                    <div class="menuBarIcons">
-                                        <i class="material-icons">help</i>
-                                        <a href="#">help & faq's</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="imgContainer">
-                        <img src="../signIn/Screenshot__291_-removebg-preview.png" width="200px">
-                    </div>
-                    <div>
-                        <h4>SHOP</h4>
-                    </div>
-                    <div>
-                        <a style="text-decoration: none; color: black;" href="./hotDeals.html"><h4>HOT DEALS</h4></a> 
-                     </div>
-                     <div>
-                         <h4>PLANNING</h4>
-                     </div>
-                     <div>
-                         <h4>ABOUT</h4>
-                     </div>
-                     <div>
-                       <a style="text-decoration: none; color: black;" href="./BAppoint.html"><h4>BOOK APPOINTMENT</h4></a>  
-                     </div>
-                    <div>
-                        <input type="search" placeholder="Search..." id="searchBar">
-                    </div>
-                    <div style="display: flex; gap: 15px;">
-                        <i class="material-icons">search</i>
-                        <i class="material-icons">location_on</i>
-                        <i class="material-icons">person</i>
-                        <i class="material-icons" id="cartPage">shopping_bag</i>
-                    </div>
+          <div id="navBar">
+            <div id="burgerMenu">
+              <!-- WORK FOR THE BURGER MENU -->
+              <i class="material-icons" id="menu" onclick="openNav()">menu</i>
+              <div id="mySidenav" class="sidenav">
+                <a
+                  href="javascript:void(0)"
+                  class="closebtn"
+                  onclick="closeNav()"
+                  >&times;</a
+                >
+                <div class="menuBarIcons">
+                  <i class="material-icons">person</i>
+                  <a href="#">sign in/sign up</a>
                 </div>
-                
+                <div class="menuBarIcons">
+                  <i class="material-icons">favorite</i>
+                  <a href="#">favorites</a>
+                </div>
+                <div class="menuBarIcons">
+                  <i class="material-icons">location_on</i>
+                  <a href="#">find a store</a>
+                </div>
+                <div class="menuBarIcons">
+                  <i class="material-icons">event_available</i>
+                  <a href="./BAppoint.html">book appointment</a>
+                </div>
+                <div class="menuBarIcons">
+                  <i class="material-icons">local_shipping</i>
+                  <a href="#">order status</a>
+                </div>
+                <div class="menuBarIcons">
+                  <i class="material-icons">diamond</i>
+                  <a href="#">diamond loyalty</a>
+                </div>
+                <div class="menuBarIcons">
+                  <i class="material-icons">satellite_alt</i>
+                  <a href="#">alterations</a>
+                </div>
+                <!-- SHOP -->
+                <div
+                  style="
+                    border-bottom: 1px solid gray;
+                    border-top: 1px solid gray;
+                    padding: 10px 0px;
+                  "
+                >
+                  <div class="menuBarIcons">
+                    <h3>SHOP</h3>
+                  </div>
+                  <div>
+                    <a href="#">brides</a>
+                    <a href="#">bridesmaids</a>
+                    <a href="#">dresses</a>
+                    <a href="#">juniors</a>
+                    <a href="#">accessories</a>
+                    <a href="#">lingerie & shapewear</a>
+                    <a href="#">shoes</a>
+                    <a href="#">gifts & decor</a>
+                    <a href="#">fragrance</a>
+                    <a href="#">sale</a>
+                    <a href="#">tuxedos & suits</a>
+                  </div>
+                </div>
+                <!-- HOT DEALS -->
+                <div style="border-bottom: 1px solid gray; padding: 10px 0px">
+                  <div class="menuBarIcons">
+                    <a
+                      style="text-decoration: none; color: black"
+                      href="./hotDeals.html"
+                      ><h3>HOT DEALS</h3></a
+                    >
+                  </div>
+                </div>
+                <!-- PLANNING -->
+                <div style="border-bottom: 1px solid gray; padding: 10px 0px">
+                  <div class="menuBarIcons">
+                    <h3>PLANNING</h3>
+                  </div>
+                  <div>
+                    <a href="#">wedding planning</a>
+                    <a href="#">preferred wedding partners</a>
+                    <a href="#">inspiration & guides</a>
+                    <a href="#">invitations</a>
+                    <a href="#">fine jewelry</a>
+                  </div>
+                </div>
+                <!-- ABOUT -->
+                <div style="border-bottom: 1px solid gray; padding: 10px 0px">
+                  <div class="menuBarIcons">
+                    <h3>ABOUT</h3>
+                  </div>
+                  <div>
+                    <a href="#">virtual & store appointments</a>
+                    <a href="#">online wedding lookbooks</a>
+                    <a href="#">our stores</a>
+                    <a href="#">payment options</a>
+                    <a href="#">frontline fierce</a>
+                    <a href="#">lingerie & shapewear</a>
+                    <div class="menuBarIcons">
+                      <i class="material-icons">person</i>
+                      <a href="#">youtube live 24/7</a>
+                    </div>
+                    <div class="menuBarIcons">
+                      <i class="material-icons">event</i>
+                      <a href="#">events</a>
+                    </div>
+                    <div class="menuBarIcons">
+                      <i class="material-icons">help</i>
+                      <a href="#">help & faq's</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="imgContainer">
+              <img
+                src="../signIn/Screenshot__291_-removebg-preview.png"
+                width="200px"
+              />
+            </div>
+            <div>
+              <h4><a href="/itemView/itemView.html">SHOP</a></h4>
+            </div>
+            <div>
+              <a
+                style="text-decoration: none; color: black"
+                href="./hotDeals.html"
+                ><h4>HOT DEALS</h4></a
+              >
+            </div>
+            <div>
+              <h4><a href="/planning.html">PLANNING</a></h4>
+            </div>
+            <div>
+              <h4><a href="/meet the brands.html">ABOUT</a></h4>
+            </div>
+            <div>
+              <a
+                style="text-decoration: none; color: black"
+                href="./BAppoint.html"
+                ><h4>BOOK APPOINTMENT</h4></a
+              >
+            </div>
+            <div>
+              <input type="search" placeholder="Search..." id="searchBar" />
+            </div>
+            <div style="display: flex; gap: 15px">
+              <i class="material-icons">search</i>
+              <i class="material-icons">location_on</i>
+              <i class="material-icons">person</i>
+              <i class="material-icons" id="cartPage">shopping_bag</i>
+            </div>
+          </div>
+        </div>
       </div>
-      
 
-    </div>
+      <!-- navbar hamburger code -->
 
+      <!-- go top button-------------------------------------------------------------------------------------------------------------->
+      <div class="go-top-box">
+        <div>
+          <a href="#top" style="text-decoration: none; color: white">^</a>
+        </div>
+        <div class="topBox2">
+          <a style="text-decoration: none; color: white" href="#top">Top</a>
+        </div>
+      </div>
 
-<!-- navbar hamburger code -->
-
-<!-- go top button-------------------------------------------------------------------------------------------------------------->
-<div class="go-top-box">
-    <div><a href="#top" style= "text-decoration: none; color: white;">^</a></div>
-    <div class="topBox2"><a style= "text-decoration: none;  color: white;" href="#top">Top</a></div>
-</div>
-
-
-    <!-- Begin -->
-    <div class="topPic">
-        <img class="bigPic"
-            src="https://prod.davidsbridal.com/content/dam/aem-integration/sale/hot_deals/A21436_MRED_STU_PROM_Q119_Desktop1_RESIZED.jpg"
-            alt="">
+      <!-- Begin -->
+      <div class="topPic">
+        <img
+          class="bigPic"
+          src="https://prod.davidsbridal.com/content/dam/aem-integration/sale/hot_deals/A21436_MRED_STU_PROM_Q119_Desktop1_RESIZED.jpg"
+          alt=""
+        />
         <div class="photo1Lines">
-            <img src="https://prod.davidsbridal.com/content/dam/aem-integration/_icons/icon_flame-emoji.png" alt="">
-            <h1>hot deals</h1>
-            <p>Limited-time offers that sizzle! Here’s the latest David’s Bridal coupons and specials – check back to
-                see new ways to save</p>
+          <img
+            src="https://prod.davidsbridal.com/content/dam/aem-integration/_icons/icon_flame-emoji.png"
+            alt=""
+          />
+          <h1>hot deals</h1>
+          <p>
+            Limited-time offers that sizzle! Here’s the latest David’s Bridal
+            coupons and specials – check back to see new ways to save
+          </p>
         </div>
-    </div>
+      </div>
 
-
-    <!-- GGGGGGGRRRRRRRRRRRIIIIIIIIIIIDDDDDDDDDDDD START -->
-    <div class="gridStart">
+      <!-- GGGGGGGRRRRRRRRRRRIIIIIIIIIIIDDDDDDDDDDDD START -->
+      <div class="gridStart">
         <div class="box1">
-            <div>
-                <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/1-17-hot-deals/1.17_HD_up_to_125_off_BR.jpg"
-                    alt="">
-                <h4>online & in store</h4>
-                <p>ends 1/30/23</p>
-            </div>
-            <div>
-                <p class="para1">Price as marked online.</p>
-                <p>Discount taken at register in store.</p>
-                <button style="font-size:12px; font-weight:bold;">SHOP WEDDING DRESSES</button>
-                <a class="GFG" href="">
-                    <h6 style="font-size:12px;">SEE DETAILS</h6>
-                </a>
-            </div>
-        </div>
-
-        <div class="box1">
-            <div>
-                <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/1-17-hot-deals/1.17_HD_US_20_off_BM.jpg"
-                    alt="">
-                <h4>online & in store</h4>
-                <p>ends 1/30/23</p>
-            </div>
-            <div>
-                <p class="para1">Discount in cart with loyalty account number.</p>
-                <p>Discount taken at register in store.</p>
-                <button style="font-size:12px; font-weight:bold;">SHOP BRIDESMADE DRESSES</button>
-                <a class="GFG" href="">
-                    <h6 style="font-size:12px;">SEE DETAILS</h6>
-                </a>
-            </div>
+          <div>
+            <img
+              src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/1-17-hot-deals/1.17_HD_up_to_125_off_BR.jpg"
+              alt=""
+            />
+            <h4>online & in store</h4>
+            <p>ends 1/30/23</p>
+          </div>
+          <div>
+            <p class="para1">Price as marked online.</p>
+            <p>Discount taken at register in store.</p>
+            <button style="font-size: 12px; font-weight: bold">
+              SHOP WEDDING DRESSES
+            </button>
+            <a class="GFG" href="">
+              <h6 style="font-size: 12px">SEE DETAILS</h6>
+            </a>
+          </div>
         </div>
 
         <div class="box1">
-            <div>
-                <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/1-17-hot-deals/1.17_HD_20_off_PROM.jpg"
-                    alt="">
-                <h4>online & in store</h4>
-                <p>ends 5/22/23</p>
-            </div>
-            <div>
-                <p class="para1">Discount in cart with loyalty account number.</p>
-                <p>Discount taken at register in store.</p>
-                <button style="font-size:12px; font-weight:bold;">SHOP PROM DRESSES</button>
-                <a class="GFG" href="">
-                    <h6 style="font-size:12px;">SEE DETAILS</h6>
-                </a>
-            </div>
-        </div>
-
-    </div>
-
-
-    <div class="gridStart">
-        <div class="box1">
-            <div>
-                <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/1-17-hot-deals/1.17_HD_BOGO_50_off_ACC.jpg"
-                    alt="">
-                <h4>online & in store</h4>
-                <p>ends 1/30/23</p>
-            </div>
-            <div>
-                <p class="para1">Discount in cart online.</p>
-                <p>Discount taken at register in store.</p>
-                <button style="font-size:12px; font-weight:bold;">SHOP BOGO ACCESSORIES</button>
-                <a class="GFG" href="">
-                    <h6 style="font-size:12px;">SEE DETAILS</h6>
-                </a>
-            </div>
+          <div>
+            <img
+              src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/1-17-hot-deals/1.17_HD_US_20_off_BM.jpg"
+              alt=""
+            />
+            <h4>online & in store</h4>
+            <p>ends 1/30/23</p>
+          </div>
+          <div>
+            <p class="para1">Discount in cart with loyalty account number.</p>
+            <p>Discount taken at register in store.</p>
+            <button style="font-size: 12px; font-weight: bold">
+              SHOP BRIDESMADE DRESSES
+            </button>
+            <a class="GFG" href="">
+              <h6 style="font-size: 12px">SEE DETAILS</h6>
+            </a>
+          </div>
         </div>
 
         <div class="box1">
-            <div>
-                <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/1-5-hot-deals/1.5_HD_BR_SpecialValue_249.95.jpg"
-                    alt="">
-                <h4>online & in store</h4>
-                <p>ends 1/30/23</p>
-            </div>
-            <div>
-                <p class="para1" >Price as marked Online.</p>
-                <p style="color:white">P</p>
-                <button style="font-size:12px; font-weight:bold;">SHOP MOST-LOVED WEDDING DRESSES</button>
-                <a class="GFG" href="">
-                    <h6 style="font-size:12px;">SEE DETAILS</h6>
-                </a>
-            </div>
+          <div>
+            <img
+              src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/1-17-hot-deals/1.17_HD_20_off_PROM.jpg"
+              alt=""
+            />
+            <h4>online & in store</h4>
+            <p>ends 5/22/23</p>
+          </div>
+          <div>
+            <p class="para1">Discount in cart with loyalty account number.</p>
+            <p>Discount taken at register in store.</p>
+            <button style="font-size: 12px; font-weight: bold">
+              SHOP PROM DRESSES
+            </button>
+            <a class="GFG" href="">
+              <h6 style="font-size: 12px">SEE DETAILS</h6>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="gridStart">
+        <div class="box1">
+          <div>
+            <img
+              src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/1-17-hot-deals/1.17_HD_BOGO_50_off_ACC.jpg"
+              alt=""
+            />
+            <h4>online & in store</h4>
+            <p>ends 1/30/23</p>
+          </div>
+          <div>
+            <p class="para1">Discount in cart online.</p>
+            <p>Discount taken at register in store.</p>
+            <button style="font-size: 12px; font-weight: bold">
+              SHOP BOGO ACCESSORIES
+            </button>
+            <a class="GFG" href="">
+              <h6 style="font-size: 12px">SEE DETAILS</h6>
+            </a>
+          </div>
         </div>
 
         <div class="box1">
-            <div>
-                <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/12-18-hot-deals/12.18_HD_BM_DB_Essentials_99.95.jpg"
-                    alt="">
-                <h4>online & in store</h4>
-                <p>ends 1/30/23</p>
-            </div>
-            <div>
-                <p class="para1">Price as marked online.</p>
-                <p style="color:white">""</p>
-                <button style="font-size:12px; font-weight:bold;">SHOP DB ESSENTIALS</button>
-                <a class="GFG" href="">
-                     <h6 style="font-size:12px;">SEE DETAILS</h6>
-                </a>
-            </div>
-        </div>
-
-    </div>
-
-
-
-    <div class="gridStart">
-        <div class="box1">
-            <div>
-                <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/1-17-hot-deals/1.17_HD_30_off_BR.jpg"
-                    alt="">
-                <h4>online & in store</h4>
-                <p>ends 1/30/23</p>
-            </div>
-            <div>
-                <p class="para1">Price as marked online.</p>
-                <p>Discount taken at register in store.</p>
-                <button style="font-size:12px; font-weight:bold;">SHOP CLEARANCE WEDDING DRESSES</button>
-                <a class="GFG" href="">
-                    <h6 style="font-size:12px;">SEE DETAILS</h6>
-                </a>
-            </div>
+          <div>
+            <img
+              src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/1-5-hot-deals/1.5_HD_BR_SpecialValue_249.95.jpg"
+              alt=""
+            />
+            <h4>online & in store</h4>
+            <p>ends 1/30/23</p>
+          </div>
+          <div>
+            <p class="para1">Price as marked Online.</p>
+            <p style="color: white">P</p>
+            <button style="font-size: 12px; font-weight: bold">
+              SHOP MOST-LOVED WEDDING DRESSES
+            </button>
+            <a class="GFG" href="">
+              <h6 style="font-size: 12px">SEE DETAILS</h6>
+            </a>
+          </div>
         </div>
 
         <div class="box1">
-            <div>
-                <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/1-17-hot-deals/1.17_HD_30_off_BM.jpg"
-                    alt="">
-                <h4>online & in store</h4>
-                <p>ends 1/30/23</p>
-            </div>
-            <div>
-                <p class="para1">Price as marked online.</p>
-                <p>Discount taken at register in store.</p>
-                <button style="font-size:12px; font-weight:bold;">SHOP BRIDESMAIDS DRESSES</button>
-                <a class="GFG" href="">
-                    <h6 style="font-size:12px;">SEE DETAILS</h6>
-                </a>
-            </div>
+          <div>
+            <img
+              src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/12-18-hot-deals/12.18_HD_BM_DB_Essentials_99.95.jpg"
+              alt=""
+            />
+            <h4>online & in store</h4>
+            <p>ends 1/30/23</p>
+          </div>
+          <div>
+            <p class="para1">Price as marked online.</p>
+            <p style="color: white">""</p>
+            <button style="font-size: 12px; font-weight: bold">
+              SHOP DB ESSENTIALS
+            </button>
+            <a class="GFG" href="">
+              <h6 style="font-size: 12px">SEE DETAILS</h6>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="gridStart">
+        <div class="box1">
+          <div>
+            <img
+              src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/1-17-hot-deals/1.17_HD_30_off_BR.jpg"
+              alt=""
+            />
+            <h4>online & in store</h4>
+            <p>ends 1/30/23</p>
+          </div>
+          <div>
+            <p class="para1">Price as marked online.</p>
+            <p>Discount taken at register in store.</p>
+            <button style="font-size: 12px; font-weight: bold">
+              SHOP CLEARANCE WEDDING DRESSES
+            </button>
+            <a class="GFG" href="">
+              <h6 style="font-size: 12px">SEE DETAILS</h6>
+            </a>
+          </div>
         </div>
 
         <div class="box1">
-            <div>
-                <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/12-18-hot-deals/12.18_HD_BR_FinalSale_99.88.jpg"
-                    alt="">
-                <h4>online & in store</h4>
-                <p>ends 1/30/23</p>
-            </div>
-            <div>
-                <p class="para1">Price as marked online.</p>
-                <p style="color:white">.</p>
-                <button style="font-size:12px; font-weight:bold;">SHOP FINAL SALE WEDDING DRESSES</button>
-                <a class="GFG" href="">
-                    <h6 style="font-size:12px;">SEE DETAILS</h6>
-                </a>
-            </div>
-        </div>
-
-    </div>
-
-
-
-    <div class="gridStart">
-        <div class="box1">
-            <div>
-                <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/11-1-hot-deals/11.1_Black_FriYAY_Robes_PJs_HD_Module.jpg"
-                    alt="">
-                <h4>online & in store</h4>
-                <p>ends 6/1/23</p>
-            </div>
-            <div>
-                <p class="para1">Price as marked online.</p>
-                <p>Discount taken at register in store.</p>
-                <button style="font-size:12px; font-weight:bold;">SHOP ROBES AND PJ'S</button>
-                <a class="GFG" href="">
-                    <h6 style="font-size:12px;">SEE DETAILS</h6>
-                </a>
-            </div>
+          <div>
+            <img
+              src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/1-17-hot-deals/1.17_HD_30_off_BM.jpg"
+              alt=""
+            />
+            <h4>online & in store</h4>
+            <p>ends 1/30/23</p>
+          </div>
+          <div>
+            <p class="para1">Price as marked online.</p>
+            <p>Discount taken at register in store.</p>
+            <button style="font-size: 12px; font-weight: bold">
+              SHOP BRIDESMAIDS DRESSES
+            </button>
+            <a class="GFG" href="">
+              <h6 style="font-size: 12px">SEE DETAILS</h6>
+            </a>
+          </div>
         </div>
 
         <div class="box1">
-            <div>
-                <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/1-17-hot-deals/1.17_HD_up_to_60_off_FG.jpg"
-                    alt="">
-                <h4>online & in store</h4>
-                <p>ends 1/30/23</p>
-            </div>
-            <div>
-                <p class="para1">Price as marked online.</p>
-                <p Style="color:white;">.</p>
-                <button style="font-size:12px; font-weight:bold;">SHOP SALE FLOWER GIRL DRESSES</button>
-                <a class="GFG" href="">
-                    <h6 style="font-size:12px;">SEE DETAILS</h6>
-                </a>
-            </div>
+          <div>
+            <img
+              src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/12-18-hot-deals/12.18_HD_BR_FinalSale_99.88.jpg"
+              alt=""
+            />
+            <h4>online & in store</h4>
+            <p>ends 1/30/23</p>
+          </div>
+          <div>
+            <p class="para1">Price as marked online.</p>
+            <p style="color: white">.</p>
+            <button style="font-size: 12px; font-weight: bold">
+              SHOP FINAL SALE WEDDING DRESSES
+            </button>
+            <a class="GFG" href="">
+              <h6 style="font-size: 12px">SEE DETAILS</h6>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="gridStart">
+        <div class="box1">
+          <div>
+            <img
+              src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/11-1-hot-deals/11.1_Black_FriYAY_Robes_PJs_HD_Module.jpg"
+              alt=""
+            />
+            <h4>online & in store</h4>
+            <p>ends 6/1/23</p>
+          </div>
+          <div>
+            <p class="para1">Price as marked online.</p>
+            <p>Discount taken at register in store.</p>
+            <button style="font-size: 12px; font-weight: bold">
+              SHOP ROBES AND PJ'S
+            </button>
+            <a class="GFG" href="">
+              <h6 style="font-size: 12px">SEE DETAILS</h6>
+            </a>
+          </div>
         </div>
 
         <div class="box1">
-            <div>
-                <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/1-17-hot-deals/1.17_HD_up_to_70_off_ACC.jpg"
-                    alt="">
-                <h4>online & in store</h4>
-                <p>ends 1/30/23</p>
-            </div>
-            <div>
-                <p class="para1">Price as marked online.</p>
-                <p>Discount taken at register in store.</p>
-                <button style="font-size:12px; font-weight:bold;">SHOP SALE ACCESSORIES</button>
-                <a class="GFG" href="">
-                    <h6 style="font-size:12px;">SEE DETAILS</h6>
-                </a>
-            </div>
-        </div>
-
-    </div>
-
-
-
-    <div class="gridStart">
-        <div class="box1">
-            <div>
-                <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/12-6-hot-deals/12.6_Prom_HP_module.jpg"
-                    alt="">
-                <h4>online & in store</h4>
-                <p>ends 6/1/23</p>
-            </div>
-            <div>
-                <p class="para1"> Enter to win by creating a loyalty account and </p>
-                <p>completing the steps on the member page.</p>
-                <button style="font-size:12px; font-weight:bold;">SIGN UP FOR DIAMOND</button>
-                <a class="GFG" href="">
-                    <h6 style="font-size:12px;">TERMS & CONDITIONS</h6>
-                </a>
-            </div>
+          <div>
+            <img
+              src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/1-17-hot-deals/1.17_HD_up_to_60_off_FG.jpg"
+              alt=""
+            />
+            <h4>online & in store</h4>
+            <p>ends 1/30/23</p>
+          </div>
+          <div>
+            <p class="para1">Price as marked online.</p>
+            <p style="color: white">.</p>
+            <button style="font-size: 12px; font-weight: bold">
+              SHOP SALE FLOWER GIRL DRESSES
+            </button>
+            <a class="GFG" href="">
+              <h6 style="font-size: 12px">SEE DETAILS</h6>
+            </a>
+          </div>
         </div>
 
         <div class="box1">
-            <div>
-                <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/11-15-hot-deals/11.15_HD_ACC_20off_preservation_kit.jpg"
-                    alt="">
-                <h4>online & in store</h4>
-                <p>ends 1/30/23</p>
-            </div>
-            <div>
-                <p class="para1">Price as marked online.</p>
-                <p>Discount taken at register in store.</p>
-                <button style="font-size:12px; font-weight:bold;">SHOP PRESERVATION KITS</button>
-                <a class="GFG" href="">
-                    <h6 style="font-size:12px;">SEE DETAILS</h6>
-                </a>
-            </div>
+          <div>
+            <img
+              src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/1-17-hot-deals/1.17_HD_up_to_70_off_ACC.jpg"
+              alt=""
+            />
+            <h4>online & in store</h4>
+            <p>ends 1/30/23</p>
+          </div>
+          <div>
+            <p class="para1">Price as marked online.</p>
+            <p>Discount taken at register in store.</p>
+            <button style="font-size: 12px; font-weight: bold">
+              SHOP SALE ACCESSORIES
+            </button>
+            <a class="GFG" href="">
+              <h6 style="font-size: 12px">SEE DETAILS</h6>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="gridStart">
+        <div class="box1">
+          <div>
+            <img
+              src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/12-6-hot-deals/12.6_Prom_HP_module.jpg"
+              alt=""
+            />
+            <h4>online & in store</h4>
+            <p>ends 6/1/23</p>
+          </div>
+          <div>
+            <p class="para1">Enter to win by creating a loyalty account and</p>
+            <p>completing the steps on the member page.</p>
+            <button style="font-size: 12px; font-weight: bold">
+              SIGN UP FOR DIAMOND
+            </button>
+            <a class="GFG" href="">
+              <h6 style="font-size: 12px">TERMS & CONDITIONS</h6>
+            </a>
+          </div>
         </div>
 
         <div class="box1">
-            <div>
-                <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/11-15-hot-deals/11.15_HD_ACC_10off_garment_bag.jpg"
-                    alt="">
-                <h4>online & in store</h4>
-                <p>ends 1/30/23</p>
-            </div>
-            <div>
-                <p class="para1">Price as marked online.</p>
-                <p>Discount taken at register in store.</p>
-                <button style="font-size:12px; font-weight:bold;">SHOP GARMENT BAGS</button>
-                <a class="GFG" href="">
-                    <h6 style="font-size:12px;">SEE DETAILS</h6>
-                </a>
-            </div>
-        </div>
-
-    </div>
-
-
-
-    <div class="gridStart">
-        <div class="box1">
-            <div>
-                <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/9-7-hds/9.7_HD_ACC_99.95_hoop slip.jpg"
-                    alt="">
-                <h4>online & in store</h4>
-                <p>ends 1/30/23</p>
-            </div>
-            <div>
-                <p class="para1">Price as marked online.</p>
-                <p>Discount taken at register in store.</p>
-                <button style="font-size:12px; font-weight:bold;">SHOP HOOP SLIP</button>
-                <a class="GFG" href="">
-                    <h6 style="font-size:12px;">SEE DETAILS</h6>
-                </a>
-            </div>
+          <div>
+            <img
+              src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/11-15-hot-deals/11.15_HD_ACC_20off_preservation_kit.jpg"
+              alt=""
+            />
+            <h4>online & in store</h4>
+            <p>ends 1/30/23</p>
+          </div>
+          <div>
+            <p class="para1">Price as marked online.</p>
+            <p>Discount taken at register in store.</p>
+            <button style="font-size: 12px; font-weight: bold">
+              SHOP PRESERVATION KITS
+            </button>
+            <a class="GFG" href="">
+              <h6 style="font-size: 12px">SEE DETAILS</h6>
+            </a>
+          </div>
         </div>
 
         <div class="box1">
-            <div>
-                <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/1-13-hot-deals/1.13_HotDeals_Diamond.jpg"
-                    alt="">
-                <h4>online & in store</h4>
-                <p>ends 1/30/23</p>
-            </div>
-            <div>
-                <p class="para1">Coupons and other perks provided with loyalty<br> account registration.</p>
-                <p>*See Loyalty program <br> <a href="" style="color:black;font-weight: bold;">terms</a> & <a href="" style="color:black; font-weight: bold;">conditions</a> & gift details..</p>
-                <button style="font-size:12px; font-weight:bold;">LEARN MORE ABOUT DIAMONDS</button>
-                <!-- <a class="GFG" href="">
+          <div>
+            <img
+              src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/11-15-hot-deals/11.15_HD_ACC_10off_garment_bag.jpg"
+              alt=""
+            />
+            <h4>online & in store</h4>
+            <p>ends 1/30/23</p>
+          </div>
+          <div>
+            <p class="para1">Price as marked online.</p>
+            <p>Discount taken at register in store.</p>
+            <button style="font-size: 12px; font-weight: bold">
+              SHOP GARMENT BAGS
+            </button>
+            <a class="GFG" href="">
+              <h6 style="font-size: 12px">SEE DETAILS</h6>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="gridStart">
+        <div class="box1">
+          <div>
+            <img
+              src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/9-7-hds/9.7_HD_ACC_99.95_hoop slip.jpg"
+              alt=""
+            />
+            <h4>online & in store</h4>
+            <p>ends 1/30/23</p>
+          </div>
+          <div>
+            <p class="para1">Price as marked online.</p>
+            <p>Discount taken at register in store.</p>
+            <button style="font-size: 12px; font-weight: bold">
+              SHOP HOOP SLIP
+            </button>
+            <a class="GFG" href="">
+              <h6 style="font-size: 12px">SEE DETAILS</h6>
+            </a>
+          </div>
+        </div>
+
+        <div class="box1">
+          <div>
+            <img
+              src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/1-13-hot-deals/1.13_HotDeals_Diamond.jpg"
+              alt=""
+            />
+            <h4>online & in store</h4>
+            <p>ends 1/30/23</p>
+          </div>
+          <div>
+            <p class="para1">
+              Coupons and other perks provided with loyalty<br />
+              account registration.
+            </p>
+            <p>
+              *See Loyalty program <br />
+              <a href="" style="color: black; font-weight: bold">terms</a> &
+              <a href="" style="color: black; font-weight: bold">conditions</a>
+              & gift details..
+            </p>
+            <button style="font-size: 12px; font-weight: bold">
+              LEARN MORE ABOUT DIAMONDS
+            </button>
+            <!-- <a class="GFG" href="">
                     <h5>SEE DETAILS</h5>
                 </a> -->
-            </div>
+          </div>
         </div>
 
         <div class="box1">
-            <div>
-                <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/7-8-hot-deal/7.8_HotDeal_Free_Shipping_RESIZED.jpg"
-                    alt="">
-                <h4>online & in store</h4>
-                <p>ends 1/30/23</p>
-            </div>
-            <div>
-                <p class="para1">Price as marked online.</p>
-                <p>Discount taken at register in store.</p>
-                <button style="font-size:12px; font-weight:bold;">SHOP BOGO ACCESSORIES</button>
-                <a class="GFG" href="">
-                    <h6 style="font-size:12px;">SEE DETAILS</h6>
-                </a>
-            </div>
+          <div>
+            <img
+              src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/7-8-hot-deal/7.8_HotDeal_Free_Shipping_RESIZED.jpg"
+              alt=""
+            />
+            <h4>online & in store</h4>
+            <p>ends 1/30/23</p>
+          </div>
+          <div>
+            <p class="para1">Price as marked online.</p>
+            <p>Discount taken at register in store.</p>
+            <button style="font-size: 12px; font-weight: bold">
+              SHOP BOGO ACCESSORIES
+            </button>
+            <a class="GFG" href="">
+              <h6 style="font-size: 12px">SEE DETAILS</h6>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- HHHHHHHHOOOOOOOOOOOOOOTTTTTTTTTTTT DEALS Card -->
+      <div class="hotDeals" style="height: 240px">
+        <div>
+          <h2>hot deals</h2>
+        </div>
+        <div>
+          <h1 style="font-size: 40px">from our partners</h1>
+        </div>
+      </div>
+
+      <!-- 2nd GRiD starts -->
+
+      <div class="gridStart">
+        <div class="box1">
+          <div>
+            <img
+              src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/10-18-hot-deals/10.18_HD_BT20_diamond.jpg"
+              alt=""
+            />
+            <h4>online & in store</h4>
+            <p>ends 3/31/23</p>
+          </div>
+          <div>
+            <p class="para1">Coupons and other perks provided with loyalty</p>
+            <p>account registration.</p>
+            <button style="font-size: 12px; font-weight: bold">
+              LEARN MORE ABOUT THE BLACK TUX
+            </button>
+            <a class="GFG" href="">
+              <h6 style="font-size: 12px">SEE DETAILS</h6>
+            </a>
+          </div>
         </div>
 
-    </div>
-
-    <!-- HHHHHHHHOOOOOOOOOOOOOOTTTTTTTTTTTT DEALS Card -->
-    <div class="hotDeals" style="height:240px;">
-            <div >
-                <h2>hot deals</h2>
-            </div>
-            <div>
-                <h1 style="font-size:40px;">from our partners</h1>
-            </div>
-    </div>
-
-    <!-- 2nd GRiD starts -->
-
-    <div class="gridStart">
         <div class="box1">
-            <div>
-                <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/10-18-hot-deals/10.18_HD_BT20_diamond.jpg"
-                    alt="">
-                <h4>online & in store</h4>
-                <p>ends 3/31/23</p>
-            </div>
-            <div>
-                <p class="para1">Coupons and other perks provided with loyalty </p>
-                <p>account registration.</p>
-                <button style="font-size:12px; font-weight:bold;">LEARN MORE ABOUT THE BLACK TUX</button>
-                <a class="GFG" href="">
-                    <h6 style="font-size:12px;">SEE DETAILS</h6>
-                </a>
-            </div>
-        </div>
-
-        <div class="box1">
-            <div>
-                <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/partner-hot-deals/June_Partner_HD_Mally.jpg"
-                    alt="">
-                <h4>online only</h4>
-                <p>ends 9/19/23</p>
-            </div>
-            <div>
-                <p class="para1">Use Code: BRIDE </p>
-                <p>*Excludes Wedding Day Touch-Up Kit.</p>
-                <button style="font-size:12px; font-weight:bold;">SHOP MALLY BEAUTY</button>
-                <!-- <a class="GFG" href="">
+          <div>
+            <img
+              src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/partner-hot-deals/June_Partner_HD_Mally.jpg"
+              alt=""
+            />
+            <h4>online only</h4>
+            <p>ends 9/19/23</p>
+          </div>
+          <div>
+            <p class="para1">Use Code: BRIDE</p>
+            <p>*Excludes Wedding Day Touch-Up Kit.</p>
+            <button style="font-size: 12px; font-weight: bold">
+              SHOP MALLY BEAUTY
+            </button>
+            <!-- <a class="GFG" href="">
                     <h5>SEE DETAILS</h5>
                 </a> -->
-            </div>
+          </div>
         </div>
 
         <div class="box1">
-            <div>
-                <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/9-20-little-tux-hd/09.27_LT_HDs_LittleTux.jpg"
-                    alt="">
-                <h4>online only</h4>
-                <p>ends 1/30/23</p>
-            </div>
-            <div>
-                <p class="para1">Price as marked online.</p>
-                <p>Discount taken at register in store.</p>
-                <button style="font-size:12px; font-weight:bold;">SHOP BOGO ACCESSORIES</button>
-                <a class="GFG" href="">
-                    <h6 style="font-size:12px;">SEE DETAILS</h6>
-                </a>
-            </div>
+          <div>
+            <img
+              src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/9-20-little-tux-hd/09.27_LT_HDs_LittleTux.jpg"
+              alt=""
+            />
+            <h4>online only</h4>
+            <p>ends 1/30/23</p>
+          </div>
+          <div>
+            <p class="para1">Price as marked online.</p>
+            <p>Discount taken at register in store.</p>
+            <button style="font-size: 12px; font-weight: bold">
+              SHOP BOGO ACCESSORIES
+            </button>
+            <a class="GFG" href="">
+              <h6 style="font-size: 12px">SEE DETAILS</h6>
+            </a>
+          </div>
         </div>
+      </div>
 
-    </div>
-
-    <div class="gridStart">
+      <div class="gridStart">
         <div class="box1">
-            <div>
-                <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/partner-hot-deals/George_Street_HD_Module.jpg"
-                    alt="">
-                <h4>online & in store</h4>
-                <p>ends 1/30/23</p>
-            </div>
-            <div>
-                <p class="para1">Price as marked online.</p>
-                <p>Discount taken at register in store.</p>
-                <button style="font-size:12px; font-weight:bold;">SHOP BOGO ACCESSORIES</button>
-                <a class="GFG" href="">
-                    <h6 style="font-size:12px;">SEE DETAILS</h6>
-                </a>
-            </div>
-        </div>
-
-        <div class="box1">
-            <div>
-                <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/10-11-quince-hot-deal/10.11_Sandals_HD_RESIZED.jpg"
-                    alt="">
-                <h4>online & in store</h4>
-                <p>ends 1/30/23</p>
-            </div>
-            <div>
-                <p class="para1">Price as marked online.</p>
-                <p>Discount taken at register in store.</p>
-                <button style="font-size:12px; font-weight:bold;">SHOP BOGO ACCESSORIES</button>
-                <a class="GFG" href="">
-                    <h6 style="font-size:12px;">SEE DETAILS</h6>
-                </a>
-            </div>
+          <div>
+            <img
+              src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/partner-hot-deals/George_Street_HD_Module.jpg"
+              alt=""
+            />
+            <h4>online & in store</h4>
+            <p>ends 1/30/23</p>
+          </div>
+          <div>
+            <p class="para1">Price as marked online.</p>
+            <p>Discount taken at register in store.</p>
+            <button style="font-size: 12px; font-weight: bold">
+              SHOP BOGO ACCESSORIES
+            </button>
+            <a class="GFG" href="">
+              <h6 style="font-size: 12px">SEE DETAILS</h6>
+            </a>
+          </div>
         </div>
 
         <div class="box1">
-            <div>
-                <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/partner-hot-deals/Bride_Brite_Hot_Deals_Update.jpg"
-                    alt="">
-                <h4>online & in store</h4>
-                <p>ends 1/30/23</p>
-            </div>
-            <div>
-                <p class="para1">Price as marked online.</p>
-                <p>Discount taken at register in store.</p>
-                <button style="font-size:12px; font-weight:bold;">SHOP BOGO ACCESSORIES</button>
-                <a class="GFG" href="">
-                    <h6 style="font-size:12px;">SEE DETAILS</h6>
-                </a>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="gridStart">
-        <div class="box1">
-            <div>
-                <img src="https://prod.davidsbridal.com/content/dam/aem-integration/partners/partner_hot_deal_modules/Partner_HD_modules_Converse_RESIZED.jpg"
-                    alt="">
-                <h4>online & in store</h4>
-                <p>ends 1/30/23</p>
-            </div>
-            <div>
-                <p class="para1">Price as marked online.</p>
-                <p>Discount taken at register in store.</p>
-                <button style="font-size:12px; font-weight:bold;">SHOP BOGO ACCESSORIES</button>
-                <a class="GFG" href="">
-                    <h6 style="font-size:12px;">SEE DETAILS</h6>
-                </a>
-            </div>
+          <div>
+            <img
+              src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/10-11-quince-hot-deal/10.11_Sandals_HD_RESIZED.jpg"
+              alt=""
+            />
+            <h4>online & in store</h4>
+            <p>ends 1/30/23</p>
+          </div>
+          <div>
+            <p class="para1">Price as marked online.</p>
+            <p>Discount taken at register in store.</p>
+            <button style="font-size: 12px; font-weight: bold">
+              SHOP BOGO ACCESSORIES
+            </button>
+            <a class="GFG" href="">
+              <h6 style="font-size: 12px">SEE DETAILS</h6>
+            </a>
+          </div>
         </div>
 
         <div class="box1">
-            <div>
-                <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/partner-hot-deals/HD_Diamond_Nexus_3000.jpg"
-                    alt="">
-                <h4>online & in store</h4>
-                <p>ends 1/30/23</p>
-            </div>
-            <div>
-                <p class="para1">Price as marked online.</p>
-                <p>Discount taken at register in store.</p>
-                <button style="font-size:12px; font-weight:bold;">SHOP BOGO ACCESSORIES</button>
-                <a class="GFG" href="">
-                    <h6 style="font-size:12px;">SEE DETAILS</h6>
-                </a>
-            </div>
+          <div>
+            <img
+              src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/partner-hot-deals/Bride_Brite_Hot_Deals_Update.jpg"
+              alt=""
+            />
+            <h4>online & in store</h4>
+            <p>ends 1/30/23</p>
+          </div>
+          <div>
+            <p class="para1">Price as marked online.</p>
+            <p>Discount taken at register in store.</p>
+            <button style="font-size: 12px; font-weight: bold">
+              SHOP BOGO ACCESSORIES
+            </button>
+            <a class="GFG" href="">
+              <h6 style="font-size: 12px">SEE DETAILS</h6>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="gridStart">
+        <div class="box1">
+          <div>
+            <img
+              src="https://prod.davidsbridal.com/content/dam/aem-integration/partners/partner_hot_deal_modules/Partner_HD_modules_Converse_RESIZED.jpg"
+              alt=""
+            />
+            <h4>online & in store</h4>
+            <p>ends 1/30/23</p>
+          </div>
+          <div>
+            <p class="para1">Price as marked online.</p>
+            <p>Discount taken at register in store.</p>
+            <button style="font-size: 12px; font-weight: bold">
+              SHOP BOGO ACCESSORIES
+            </button>
+            <a class="GFG" href="">
+              <h6 style="font-size: 12px">SEE DETAILS</h6>
+            </a>
+          </div>
         </div>
 
         <div class="box1">
-            <div>
-                <img src="https://prod.davidsbridal.com/content/dam/aem-integration/partners/diamond_partner_welcome_offers_espots/11.29_Diamond_Partner_Welcome_Offers_Inline_Espot_670x1005_Hitch-Switch_RESIZED.jpg"
-                    alt="">
-                <h4>online & in store</h4>
-                <p>ends 1/30/23</p>
-            </div>
-            <div>
-                <p class="para1">Price as marked online.</p>
-                <p>Discount taken at register in store.</p>
-                <button style="font-size:12px; font-weight:bold;">SHOP BOGO ACCESSORIES</button>
-                <a class="GFG" href="">
-                    <h6 style="font-size:12px;">SEE DETAILS</h6>
-                </a>
-            </div>
-        </div>
-
-    </div>
-
-    <div style="margin-bottom:120px;" class="gridStart">
-        <div class="box1">
-            <div>
-                <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/1-3-hot-deals/1.3_George_Street_Photography_HD.jpg"
-                    alt="">
-                <h4>online & in store</h4>
-                <p>ends 1/31/23</p>
-            </div>
-            <div>
-                <p class="para1">Use Code: DAVIDSBRIDAL </p>
-                <p>New Bookings Only. Subject to Availability.</p>
-                <button style="font-size:12px; font-weight:bold;">LEARN MORE</button>
-            </div>
+          <div>
+            <img
+              src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/partner-hot-deals/HD_Diamond_Nexus_3000.jpg"
+              alt=""
+            />
+            <h4>online & in store</h4>
+            <p>ends 1/30/23</p>
+          </div>
+          <div>
+            <p class="para1">Price as marked online.</p>
+            <p>Discount taken at register in store.</p>
+            <button style="font-size: 12px; font-weight: bold">
+              SHOP BOGO ACCESSORIES
+            </button>
+            <a class="GFG" href="">
+              <h6 style="font-size: 12px">SEE DETAILS</h6>
+            </a>
+          </div>
         </div>
 
         <div class="box1">
-            <div>
-                <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/diamond-nexus-hot-deal/Diamond_Nexus_Hot_Deal_FreeGift.jpg"
-                    alt="">
-                <h4>online & in store</h4>
-                <p>ends 2/12/23</p>
-            </div>
-            <div>
-                <p class="para1">Free gift automatically added to cart with $250 </p>
-                <p>worth of merchandise when customers use link </p>
-                <button style="font-size:12px; font-weight:bold;">SHOP DIAMOND NEXUS</button>
-                <a class="GFG" href="">
-                    <h6 style="font-size:12px;">SEE DETAILS</h6>
-                </a>
-            </div>
+          <div>
+            <img
+              src="https://prod.davidsbridal.com/content/dam/aem-integration/partners/diamond_partner_welcome_offers_espots/11.29_Diamond_Partner_Welcome_Offers_Inline_Espot_670x1005_Hitch-Switch_RESIZED.jpg"
+              alt=""
+            />
+            <h4>online & in store</h4>
+            <p>ends 1/30/23</p>
+          </div>
+          <div>
+            <p class="para1">Price as marked online.</p>
+            <p>Discount taken at register in store.</p>
+            <button style="font-size: 12px; font-weight: bold">
+              SHOP BOGO ACCESSORIES
+            </button>
+            <a class="GFG" href="">
+              <h6 style="font-size: 12px">SEE DETAILS</h6>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-bottom: 120px" class="gridStart">
+        <div class="box1">
+          <div>
+            <img
+              src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/1-3-hot-deals/1.3_George_Street_Photography_HD.jpg"
+              alt=""
+            />
+            <h4>online & in store</h4>
+            <p>ends 1/31/23</p>
+          </div>
+          <div>
+            <p class="para1">Use Code: DAVIDSBRIDAL</p>
+            <p>New Bookings Only. Subject to Availability.</p>
+            <button style="font-size: 12px; font-weight: bold">
+              LEARN MORE
+            </button>
+          </div>
         </div>
 
         <div class="box1">
-            <div>
-                <img src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/1-3-hot-deals/1.3_lily_lime_HD.jpg"
-                    alt="">
-                <h4>online & in store</h4>
-                <p>ends 1/31/23</p>
-            </div>
-            <div>
-                <p class="para1">Use Code: HOTDEALS<br> </p>
-                <p> Subject to availability.</p>
-                <button style="font-size:12px; font-weight:bold;">LEARN MORE</button>
-            </div>
+          <div>
+            <img
+              src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/diamond-nexus-hot-deal/Diamond_Nexus_Hot_Deal_FreeGift.jpg"
+              alt=""
+            />
+            <h4>online & in store</h4>
+            <p>ends 2/12/23</p>
+          </div>
+          <div>
+            <p class="para1">Free gift automatically added to cart with $250</p>
+            <p>worth of merchandise when customers use link</p>
+            <button style="font-size: 12px; font-weight: bold">
+              SHOP DIAMOND NEXUS
+            </button>
+            <a class="GFG" href="">
+              <h6 style="font-size: 12px">SEE DETAILS</h6>
+            </a>
+          </div>
         </div>
 
-    </div>
+        <div class="box1">
+          <div>
+            <img
+              src="https://prod.davidsbridal.com/content/dam/aem-integration/site-promos/1-3-hot-deals/1.3_lily_lime_HD.jpg"
+              alt=""
+            />
+            <h4>online & in store</h4>
+            <p>ends 1/31/23</p>
+          </div>
+          <div>
+            <p class="para1">Use Code: HOTDEALS<br /></p>
+            <p>Subject to availability.</p>
+            <button style="font-size: 12px; font-weight: bold">
+              LEARN MORE
+            </button>
+          </div>
+        </div>
+      </div>
 
+      <!-- FFFFFFFFOOOOOOOOOOOOOOOOTTTTTTTTTTTTTTEEEEEEEEEEEERRRRRRRRRRRRRR Begins -->
 
-    <!-- FFFFFFFFOOOOOOOOOOOOOOOOTTTTTTTTTTTTTTEEEEEEEEEEEERRRRRRRRRRRRRR Begins -->
+      <hr />
+      <div style="" class="partners">
+        <h4 style="height: 15px; width: 200px">EXCLUSIVE PARTNERS</h4>
+        <img
+          style="height: 55px; width: 55px"
+          src="https://www.davidsbridal.com/media/footer_logo/footer_logo/01-the-blk-tux.png"
+          alt=""
+        />
+        <img
+          style="height: 55px; width: 110px"
+          src="https://www.davidsbridal.com/media/footer_logo/footer_logo/02-pearl.png"
+          alt=""
+        />
+        <img
+          style="height: 26px; width: 118px"
+          src="https://www.davidsbridal.com/media/footer_logo/footer_logo/03-DN_logo_3_1.png"
+          alt=""
+        />
+        <img
+          style="height: 55px; width: 102.6px"
+          src="https://www.davidsbridal.com/media/footer_logo/footer_logo/04-shutterfly.png"
+          alt=""
+        />
+        <img
+          style="height: 55px; width: 55px"
+          src="https://www.davidsbridal.com/media/footer_logo/footer_logo/7fe9cb08ce11419ca542d2bce2f1f814.jpeg"
+          alt=""
+        />
+      </div>
+      <hr />
 
-    <hr>
-    <div style="" class="partners">
-        <h4 style="height:15px; width:200px;">EXCLUSIVE PARTNERS</h4>
-        <img style="height:55px; width:55px;"
-            src="https://www.davidsbridal.com/media/footer_logo/footer_logo/01-the-blk-tux.png" alt="">
-        <img style="height:55px; width:110px;"
-            src="https://www.davidsbridal.com/media/footer_logo/footer_logo/02-pearl.png" alt="">
-        <img style="height:26px; width:118px;"
-            src="https://www.davidsbridal.com/media/footer_logo/footer_logo/03-DN_logo_3_1.png" alt="">
-        <img style="height:55px; width:102.6px;"
-            src="https://www.davidsbridal.com/media/footer_logo/footer_logo/04-shutterfly.png" alt="">
-        <img style="height:55px; width:55px;"
-            src="https://www.davidsbridal.com/media/footer_logo/footer_logo/7fe9cb08ce11419ca542d2bce2f1f814.jpeg"
-            alt="">
+      <!-- FFFFFFFFFFOOOOOOOOOOOOOTTTTTTTTTTTTTTTTTTTTEFEEEEEEEEERRRRRRRRR 2 -->
 
-    </div>
-    <hr>
-
-    <!-- FFFFFFFFFFOOOOOOOOOOOOOTTTTTTTTTTTTTTTTTTTTEFEEEEEEEEERRRRRRRRR 2 -->
-
-    <div id="footerMain">
+      <div id="footerMain">
         <div id="first">
-            <img src="">
-            <h4>START PLANNING</h4>
-            <p>Our planning app makes the process a breeze,24/7</p>
-            <div style="display: flex;gap: 20px;">
-                <img src="https://www.davidsbridal.com/media/footer/download-app-store.png" width="110px" alt="">
-                <img src="https://www.davidsbridal.com/media/footer/download-google-play.png" width="110px" alt="">
-            </div>
-            <h4>FOLLOW</h4>
-            <div style="display: flex; align-items: center;gap: 10px;">
-                <img src="https://www.bing.com/th?id=OIP.Rn_QAhme1VqwnvwmPObtXgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
-                    width="40px" alt="">
-                <img src="https://www.bing.com/th?id=OIP.vEwWMNNIVJn5wg8VnExRwwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
-                    width="30px" alt="">
-                <img src="https://www.bing.com/th?id=OIP.5kfepkzG4frnKAVCXiR81wHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
-                    width="40px" alt="">
-                <img src="https://www.bing.com/th?id=OIP.ZdaV2zOEKzHqRo9olgLZagHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
-                    width="40px" alt="">
-                <img src="https://www.bing.com/th?id=OIP.fhZrJF2Bb2lAZTnIFWWIvAHaHa&w=150&h=150&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
-                    width="30px" alt="">
-                <img src="https://www.bing.com/th?id=OIP.NKBPigTOU0UJm6pFXpFIIQHaHu&w=244&h=255&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
-                    width="40px" alt="">
-            </div>
+          <img src="" />
+          <h4>START PLANNING</h4>
+          <p>Our planning app makes the process a breeze,24/7</p>
+          <div style="display: flex; gap: 20px">
+            <img
+              src="https://www.davidsbridal.com/media/footer/download-app-store.png"
+              width="110px"
+              alt=""
+            />
+            <img
+              src="https://www.davidsbridal.com/media/footer/download-google-play.png"
+              width="110px"
+              alt=""
+            />
+          </div>
+          <h4>FOLLOW</h4>
+          <div style="display: flex; align-items: center; gap: 10px">
+            <img
+              src="https://www.bing.com/th?id=OIP.Rn_QAhme1VqwnvwmPObtXgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+              width="40px"
+              alt=""
+            />
+            <img
+              src="https://www.bing.com/th?id=OIP.vEwWMNNIVJn5wg8VnExRwwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+              width="30px"
+              alt=""
+            />
+            <img
+              src="https://www.bing.com/th?id=OIP.5kfepkzG4frnKAVCXiR81wHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+              width="40px"
+              alt=""
+            />
+            <img
+              src="https://www.bing.com/th?id=OIP.ZdaV2zOEKzHqRo9olgLZagHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+              width="40px"
+              alt=""
+            />
+            <img
+              src="https://www.bing.com/th?id=OIP.fhZrJF2Bb2lAZTnIFWWIvAHaHa&w=150&h=150&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+              width="30px"
+              alt=""
+            />
+            <img
+              src="https://www.bing.com/th?id=OIP.NKBPigTOU0UJm6pFXpFIIQHaHu&w=244&h=255&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+              width="40px"
+              alt=""
+            />
+          </div>
         </div>
         <div id="second">
-            <h4>ONLINE ORDERS</h4>
-            <div style="line-height: 6px;">
-                <p>Order Status</p>
-                <p>Returns & Exchanges</p>
-                <p>Your Account</p>
-                <p>International Orders</p>
-            </div>
-            <h4>OUR STORIES</h4>
-            <div style="line-height: 6px;">
-                <p>Find a Store</p>
-                <p>Make an Appointment</p>
-            </div>
+          <h4>ONLINE ORDERS</h4>
+          <div style="line-height: 6px">
+            <p>Order Status</p>
+            <p>Returns & Exchanges</p>
+            <p>Your Account</p>
+            <p>International Orders</p>
+          </div>
+          <h4>OUR STORIES</h4>
+          <div style="line-height: 6px">
+            <p>Find a Store</p>
+            <p>Make an Appointment</p>
+          </div>
         </div>
         <div id="third">
-            <h4>HELP</h4>
-            <div style="line-height: 6px;">
-                <p>Contact Us</p>
-                <p>Help & FAQs</p>
-            </div>
+          <h4>HELP</h4>
+          <div style="line-height: 6px">
+            <p>Contact Us</p>
+            <p>Help & FAQs</p>
+          </div>
         </div>
         <div id="fourth">
-            <h4>ABOUT</h4>
-            <div style="line-height: 10px;font-size: 12px;">
-                <p>About Davvid's Bridal</p>
-                <p>Quality & Creaftsmanship</p>
-                <p>Frontline Fierce</p>
-                <p>Events</p>
-                <p>Careers</p>
-                <p>Media Room</p>
-                <p>Blog</p>
-                <p>Media & Investor Relations</p>
-                <p>Influencer Program</p>
-            </div>
+          <h4>ABOUT</h4>
+          <div style="line-height: 10px; font-size: 12px">
+            <p>About Davvid's Bridal</p>
+            <p>Quality & Creaftsmanship</p>
+            <p>Frontline Fierce</p>
+            <p>Events</p>
+            <p>Careers</p>
+            <p>Media Room</p>
+            <p>Blog</p>
+            <p>Media & Investor Relations</p>
+            <p>Influencer Program</p>
+          </div>
         </div>
         <div id="fifth">
-            <h4>REWARDS</h4>
-            <div style="display: flex;gap: 10px;">
-                <img src="https://d1k0rbiro50qe0.cloudfront.net/footer/aside_0.svg" alt="">
-                <div>
-                    <h6>Diamond Loyalty Program</h6>
-                    <p>*See Loyalty program details & restrictions, gifts tier descriptions & disclaimers</p>
-                </div>
+          <h4>REWARDS</h4>
+          <div style="display: flex; gap: 10px">
+            <img
+              src="https://d1k0rbiro50qe0.cloudfront.net/footer/aside_0.svg"
+              alt=""
+            />
+            <div>
+              <h6>Diamond Loyalty Program</h6>
+              <p>
+                *See Loyalty program details & restrictions, gifts tier
+                descriptions & disclaimers
+              </p>
             </div>
+          </div>
         </div>
+      </div>
     </div>
+  </body>
 
-    
-
-
- </div>
-
-</body>
-
-<script>
+  <script>
     // Slider Menu
 
     function openNav() {
-        document.getElementById("mySidenav").style.width = "320px";
+      document.getElementById("mySidenav").style.width = "320px";
     }
 
     function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("mySidenav").style.width = "0";
     }
-</script>
-
+  </script>
 </html>
