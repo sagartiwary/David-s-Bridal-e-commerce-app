@@ -125,7 +125,7 @@
     let username = document.getElementById("name");
     let familyName = document.getElementById("fname");
     let passCode = document.getElementById("password");
-
+    let userData = JSON.parse(localStorage.getItem("user-data")) || [] ;
 
 
     myForm.addEventListener("submit",(e)=>{
@@ -139,7 +139,6 @@
         }
 
 
-        let userData = JSON.parse(localStorage.getItem("user-data")) || [] ;
 
         userData.push(formData);
         localStorage.setItem("user-data",JSON.stringify(userData));
