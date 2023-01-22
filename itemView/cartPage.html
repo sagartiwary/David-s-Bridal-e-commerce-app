@@ -305,7 +305,7 @@
                 </div>
             </div>
         </div>
-        <div style="width:1220px;margin: 0 auto;margin-bottom:40px: ;">
+        <div style="width:1220px;margin: 0 auto;margin-bottom:40px">
             <div id="mainContent">
                 <h1>shopping bag(<span id="totalItem"></span>)</h1>
             </div>
@@ -490,14 +490,19 @@
         document.getElementById("mySidenav").style.width = "0";
     }
 
+
+
+
+
+
+
+
     //Everything for this page starts from here.
     let basket = JSON.parse(localStorage.getItem("cart-items"))
     let totalItems = document.getElementById("totalItems");
     let totalItem = document.getElementById("totalItem");
     totalItems.innerText = basket.length;
-    totalItem.innerText = basket.length;
-
-
+   
     let tbody = document.querySelector("tbody");
 
 
@@ -525,6 +530,9 @@
         tr.append(td1,td2,td3);
         tbody.append(tr);
     })
+
+
+
 
     
 </script>
