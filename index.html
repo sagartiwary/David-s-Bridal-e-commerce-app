@@ -7,7 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MY-FASHION WEBSITE</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-
+ <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
   <link rel="stylesheet" href="nav.css" />
 
 </head>
@@ -23,68 +26,152 @@
       </div>
     </nav>
 
-    <nav class="sagarNav">
-      <div id="menuToggle">
-        <input type="checkbox" />
-        <div class="burger">
-          <span></span>
-          <span></span>
-          <span></span>
+   <div id="navBar">
+      <div id="burgerMenu">
+        <!-- WORK FOR THE BURGER MENU -->
+        <i class="material-icons" id="menu" onclick="openNav()">menu</i>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <div class="menuBarIcons">
+            <i class="material-icons">person</i>
+            <a href="../signIn/signin.html">sign in/sign up</a>
+          </div>
+          <div class="menuBarIcons">
+            <i class="material-icons">favorite</i>
+            <a href="#">favorites</a>
+          </div>
+          <div class="menuBarIcons">
+            <i class="material-icons">location_on</i>
+            <a href="#">find a store</a>
+          </div>
+          <div class="menuBarIcons">
+            <i class="material-icons">event_available</i>
+            <a href="../BAppoint.html">book appointment</a>
+          </div>
+          <div class="menuBarIcons">
+            <i class="material-icons">local_shipping</i>
+            <a href="#">order status</a>
+          </div>
+          <div class="menuBarIcons">
+            <i class="material-icons">diamond</i>
+            <a href="#">diamond loyalty</a>
+          </div>
+          <div class="menuBarIcons">
+            <i class="material-icons">satellite_alt</i>
+            <a href="#">alterations</a>
+          </div>
+          <!-- SHOP -->
+          <div
+            style="
+              border-bottom: 1px solid gray;
+              border-top: 1px solid gray;
+              padding: 10px 0px;
+            "
+          >
+            <div class="menuBarIcons">
+              <h3>SHOP</h3>
+            </div>
+            <div>
+              <a href="./itemView.html">brides</a>
+              <a href="./itemView.html">bridesmaids</a>
+              <a href="./itemView.html">dresses</a>
+              <a href="./itemView.html">juniors</a>
+              <a href="./itemView.html">accessories</a>
+              <a href="./itemView.html">lingerie & shapewear</a>
+              <a href="./itemView.html">shoes</a>
+              <a href="./itemView.html">gifts & decor</a>
+              <a href="./itemView.html">fragrance</a>
+              <a href="./itemView.html">sale</a>
+              <a href="./itemView.html">tuxedos & suits</a>
+            </div>
+          </div>
+          <!-- HOT DEALS -->
+          <div style="border-bottom: 1px solid gray; padding: 10px 0px">
+            <div class="menuBarIcons">
+              <a href="../hotDeals.html"><h3>HOT DEALS</h3></a>
+            </div>
+          </div>
+          <!-- PLANNING -->
+          <div style="border-bottom: 1px solid gray; padding: 10px 0px">
+            <div class="menuBarIcons">
+              <h3>PLANNING</h3>
+            </div>
+            <div>
+              <a href="../planning.html">wedding planning</a>
+              <a href="../planning.html">preferred wedding partners</a>
+              <a href="../planning.html">inspiration & guides</a>
+              <a href="../planning.html">invitations</a>
+              <a href="../planning.html">fine jewelry</a>
+            </div>
+          </div>
+          <!-- ABOUT -->
+          <div style="border-bottom: 1px solid gray; padding: 10px 0px">
+            <div class="menuBarIcons">
+              <h3 ><a href="/meet the brands.html">ABOUT</a></h3>
+            </div>
+            <div>
+              <a href="#">virtual & store appointments</a>
+              <a href="#">online wedding lookbooks</a>
+              <a href="#">our stores</a>
+              <a href="#">payment options</a>
+              <a href="#">frontline fierce</a>
+              <a href="#">lingerie & shapewear</a>
+              <div class="menuBarIcons">
+                <i class="material-icons">person</i>
+                <a href="#">youtube live 24/7</a>
+              </div>
+              <div class="menuBarIcons">
+                <i class="material-icons">event</i>
+                <a href="#">events</a>
+              </div>
+              <div class="menuBarIcons">
+                <i class="material-icons">help</i>
+                <a href="#">help & faq's</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <ul id="menu">
-          <a href="#">
-            <li>Home</li>
-          </a>
-          <a href="#">
-            <li>About</li>
-          </a>
-          <a href="#">
-            <li>Info</li>
-          </a>
-          <a href="#">
-            <li>Contact</li>
-          </a>
-          <a href="https://erikterwan.com/" target="_blank">
-            <li>Show me more</li>
-          </a>
-        </ul>
       </div>
-      
-      <div class="image">
-        <img src="https://d1k0rbiro50qe0.cloudfront.net/logo-full.svg" alt="" />
+      <div id="imgContainer">
+        <img
+          src="../signIn/Screenshot__291_-removebg-preview.png"
+          width="200px"
+        />
       </div>
-      <div class="shop">
-       <a href="#">SHOP</a>
+      <div>
+        <h4><a href="./itemView/itemView.html">SHOP</a></h4>
       </div>
-      <div class="deals">
-        <a href="./hotDeals.html">HOT DEALS</a>
+      <div>
+        <h4><a href="./hotDeals.html">HOT DEALS</a></h4>
       </div>
-      <div class="plan">
-        <a href="#">PLANNING</a>
+      <div>
+        <h4><a href="/planning.html">PLANNING</a></h4>
       </div>
-      <div class="about">
-        <a href="/meet the brands.html">ABOUT</a>
+      <div>
+        <h4><a href="/meet the brands.html">ABOUT</a></h4>
       </div>
-      <div class="book">
-        <a href="./BAppoint.html">APPOINTMENT</a>
+      <div>
+        <h4><a href="/BAppoint.html">BOOK APPOINTMENT</a></h4>
       </div>
-      <div class="mysearch">
-        <form class="example">
-          <input type="text" placeholder="Search.." name="search" id="sea" />
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
+      <div>
+        <input type="search" placeholder="Search..." id="searchBar" />
       </div>
-      <div class="icon">
-        <i class="bi bi-geo-alt-fill"></i>
+      <div style="display: flex; gap: 15px">
+        <i class="material-icons">search</i>
+        <i class="material-icons">location_on</i>
+        <i class="material-icons">person</i>
+        <a href="./cartPage.html"><i class="material-icons">shopping_bag</i></a>
       </div>
-    </nav>
-
+    </div>
 
     <div class="imageSet">
       Explore The Wink, with inspo for brides, maids, partygoers & prom queens, too! BROWSE THE WINK
     </div>
     <div class="photo">
-    </div </header>
+    </div> 
+  </header>
     <div class="middle">
       <h1>our exclusive brands</h1>
     </div>
@@ -490,3 +577,11 @@
 </body>
 
 </html>
+<script>
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "320px";
+  }
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+</script>
