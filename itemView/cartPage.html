@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,26 +9,32 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@300&family=Noto+Sans+Mono&family=Poppins:wght@300&family=Satisfy&display=swap');
-        *{
+
+        * {
             font-family: poppins;
         }
-        #mainContent{
+
+        #mainContent {
             width: 1220px;
             margin: 0 auto;
         }
-        #navBar{
+
+        #navBar {
             display: flex;
             justify-content: space-around;
             align-items: center;
         }
+
         #searchBar {
             width: 250px;
             border: none;
             border-bottom: 1px solid black;
         }
-        .material-icons{
+
+        .material-icons {
             font-size: 28px;
         }
+
         #reference {
             display: flex;
             padding: 20px 80px;
@@ -97,10 +104,11 @@
             transition: 0.3s;
         }
 
-        .sidenav a:hover{
+        .sidenav a:hover {
             text-decoration: underline;
             font-weight: bolder;
         }
+
         .sidenav .closebtn {
             position: absolute;
             top: 0;
@@ -114,55 +122,65 @@
             justify-items: space-around;
             padding: 0px 20px;
         }
-        #TwoContainers{
+
+        #TwoContainers {
             display: flex;
             justify-content: space-around;
         }
-        #leftBar{
+
+        #leftBar {
             width: 60%;
             padding: 0px 20px;
         }
-        #rightBar{
+
+        #rightBar {
             width: 35%;
-            
+
         }
-        #diamondImg{
+
+        #diamondImg {
             text-align: center;
             padding: 30px;
             border: 1px solid black;
         }
-        #diamondImg>h3{
+
+        #diamondImg>h3 {
             font-size: 12px;
         }
-        #diamondImg>div{
+
+        #diamondImg>div {
             width: 100%;
         }
-        #orderSummary{
+
+        #orderSummary {
             margin-top: 20px;
             padding: 0px 26px 40px 26px;
             background-color: #F9F3EE;
             text-align: center;
         }
-        .innerOrder{
+
+        .innerOrder {
             display: flex;
             justify-content: space-between;
         }
-        #checkOut{
+
+        #checkOut {
             width: 100%;
             padding: 15px;
-            background-color:#E6184B;
+            background-color: #E6184B;
             color: white;
             font-weight: bolder;
             border: none;
-            letter-spacing:4px;
+            letter-spacing: 4px;
             margin: 10px 0px;
         }
-        #payPal{
+
+        #payPal {
             width: 100%;
             height: 60px;
             padding: 15px;
             font-weight: bolder;
-            letter-spacing:4px;
+            letter-spacing: 4px;
             margin: 10px 0px;
             display: flex;
             justify-content: center;
@@ -170,8 +188,15 @@
             gap: 10px;
             background-color: #F9F3EE;
         }
+
+        #table,
+        tr,
+        td {
+            cellspacing: 20px
+        }
     </style>
 </head>
+
 <body>
     <div id="mainContainer">
         <div id="header">
@@ -274,7 +299,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                 </div>
                 <div id="imgContainer">
                     <img src="../signIn/Screenshot__291_-removebg-preview.png" width="200px">
@@ -313,11 +338,11 @@
 
                 <!-- Left Container Or The List of Items Purchased -->
                 <div id="leftBar">
-                    <table>
+                    <table id="table">
                         <thead>
                             <tr>
                                 <th>Item</th>
-                                <th>Details</th>
+                                <th style="width: 400px;">Details</th>
                                 <th>price</th>
                             </tr>
                         </thead>
@@ -336,8 +361,10 @@
                         <img src="https://d1k0rbiro50qe0.cloudfront.net/loyalty-logo.svg" alt="">
                         <h3>Don't have a number? <a href="../signIn/signup.html">Sign up for free!</a></h3>
                         <div>
-                            <input type="number" id="phnNumber" placeholder="enter phone number" style="padding: 10px 20px;">
-                            <button style="padding: 10px 25px;border: none;color: white;background-color:#E6184B ;">APPLY</button>
+                            <input type="number" id="phnNumber" placeholder="enter phone number"
+                                style="padding: 10px 20px;">
+                            <button
+                                style="padding: 10px 25px;border: none;color: white;background-color:#E6184B ;">APPLY</button>
                         </div>
                     </div>
                     <div id="orderSummary">
@@ -364,14 +391,19 @@
                         </div>
                         <button id="checkOut">CHECKOUT NOW</button>
 
-                        <button id="payPal"><p>CHECKOUT WITH</p> <img src="https://d1k0rbiro50qe0.cloudfront.net/pay-pal.svg" width="25%"> </button>
+                        <button id="payPal">
+                            <p>CHECKOUT WITH</p> <img src="https://d1k0rbiro50qe0.cloudfront.net/pay-pal.svg"
+                                width="25%">
+                        </button>
 
                         <a href="#" style="color: black;margin: 20px;">Shipping outside the United States?</a>
                         <div>
                             <h4 style="text-align: left;padding: 10px;">promo code</h4>
                             <div>
-                                <input type="text" style="padding: 10px 50px;background-color: #F9F3EE;" placeholder="Promo Code">
-                                <button style="padding: 10px 25px;border: none;color: white;background-color:#E6184B ;">APPLY</button>
+                                <input type="text" style="padding: 10px 50px;background-color: #F9F3EE;"
+                                    placeholder="Promo Code">
+                                <button
+                                    style="padding: 10px 25px;border: none;color: white;background-color:#E6184B ;">APPLY</button>
                             </div>
                         </div>
                     </div>
@@ -401,8 +433,8 @@
                         src="https://www.davidsbridal.com/media/footer_logo/footer_logo/7fe9cb08ce11419ca542d2bce2f1f814.jpeg"
                         width="100px"></div>
             </div>
-    
-    
+
+
             <div id="footerMain">
                 <div id="first">
                     <img src="">
@@ -477,7 +509,7 @@
                 </div>
             </div>
         </div>
-        </div>
+    </div>
 </body>
 <script>
     // Slider Menu
@@ -491,41 +523,60 @@
     }
 
     //Everything for this page starts from here.
+    let sumAmount = document.getElementsByClassName("sumAmount")
     let basket = JSON.parse(localStorage.getItem("cart-items"))
     let totalItems = document.getElementById("totalItems");
     let totalItem = document.getElementById("totalItem");
     totalItems.innerText = basket.length;
     totalItem.innerText = basket.length;
-
+    let sum = 0 ;
 
     let tbody = document.querySelector("tbody");
 
+    function basketCall(data) {
+        tbody.innerHTML=null;
+        data.forEach((element, index) => {
+            let tr = document.createElement("tr")
+            let td1 = document.createElement("td");
+            td1.style.padding = "20px"
+            let image = document.createElement('img');
+            image.setAttribute("src", element.image);
+            image.style.width = "100px";
+            let td2 = document.createElement("td");
+            td2.style.padding = "20px"
+            let title = document.createElement("p");
+            title.innerText = element.title;
+            let name = document.createElement("h5");
+            name.innerText = element.name.toUpperCase();
+            let styleOf = document.createElement("p");
+            styleOf.innerText = 'STYLE#SWG834'
+            let fit = document.createElement("p");
+            fit.innerText = 'FIT: PLUS';
+            let td3 = document.createElement("td");
+            td3.style.padding = "20px"
+            let priceTag = document.createElement("h3");
+            priceTag.innerText = "$" + element.price;
+            sumAmount.innerText = sum += element.price;
+            let removeBtn = document.createElement("button");
+            removeBtn.innerText = "REMOVE";
 
-    basket.forEach((element,index)=>{
-        let tr = document.createElement("tr")
-        let td1 = document.createElement("td");
-        let image = document.createElement('img');
-        image.setAttribute("src",element.image);
-        image.style.width="100px";
-        let td2 = document.createElement("td");
-        let title = document.createElement("p");
-        title.innerText = element.title;
-        let name = document.createElement("h5");
-        name.innerText = element.name.toUpperCase();
-        let styleOf = document.createElement("p");
-        styleOf.innerText = 'STYLE#SWG834'
-        let fit = document.createElement("p");
-        fit.innerText = 'FIT: PLUS';
-        let td3 = document.createElement("td");
-        let priceTag = document.createElement("h3");
-        priceTag.innerText = "$"+ element.price;
-        td3.append(priceTag)
-        td2.append(title,name,styleOf,fit)
-        td1.append(image)
-        tr.append(td1,td2,td3);
-        tbody.append(tr);
-    })
 
-    
+
+            removeBtn.addEventListener("click", () => {
+                basket.splice(index, 1);
+                localStorage.setItem("cart-items", JSON.stringify(basket));
+                basketCall(basket);
+            })
+            td3.append(priceTag, removeBtn)
+            td2.append(title, name, styleOf, fit)
+            td1.append(image)
+            tr.append(td1, td2, td3);
+            tbody.append(tr);
+        })
+    }
+
+    basketCall(basket);
+
 </script>
+
 </html>
