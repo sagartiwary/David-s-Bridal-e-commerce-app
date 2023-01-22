@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>One Step to The Basket</title>
+    <title>Cart Page</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@300&family=Noto+Sans+Mono&family=Poppins:wght@300&family=Satisfy&display=swap');
-
-        * {
+        *{
             font-family: poppins;
         }
-
+        #mainContent{
+            width: 1220px;
+            margin: 0 auto;
+        }
+        #navBar{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #searchBar {
+            width: 250px;
+            border: none;
+            border-bottom: 1px solid black;
+        }
+        .material-icons{
+            font-size: 28px;
+        }
         #reference {
             display: flex;
             padding: 20px 80px;
@@ -58,118 +72,8 @@
             padding: 20px;
         }
 
-        .bigBox {
-            display: flex;
-            padding: 20px;
-        }
 
-        #insertFromBack{
-            margin-top: 100px;
-        }
-        .leftItems,
-        .rightItems {
-            width: 600px;
-            padding: 20px;
-            /* border: 1px solid black; */
-        }
-
-        #listOfExtraProducts {
-            display: flex;
-            gap: 20px;
-            padding: 70px;
-        }
-
-        .smallCards {
-            width: 200px;
-        }
-
-        #buyBtn {
-            width: 100%;
-            height: 100px;
-            position: fixed;
-            background-color: #FAF4F0;
-            bottom: 3px;
-            left: 0px;
-        }
-
-        .bottomBar {
-            display: flex;
-            align-items: center;
-            margin-left: 60px;
-            justify-content: space-around;
-            /* padding: ; */
-            gap: 20px;
-
-        }
-
-        .quantity {
-            padding: 10px 20px;
-            border: 1px solid black;
-        }
-
-        .addBTN {
-            background-color: #E8184C;
-            padding: 10px 120px;
-            color: white;
-            font-weight: bolder;
-            border: none;
-        }
-
-        .addBTN:hover {
-            cursor: pointer;
-            background-color: #c5123f;
-        }
-
-        #mainContent {
-            width: 1220px;
-            margin: 0 auto;
-        }
-
-        #navBar {
-            width: 100%;
-            display: flex;
-            gap: 20px;
-            align-items: center;
-            border-bottom: 1px solid rgb(192, 192, 192);
-            position: fixed;
-            background-color: white;
-            top: 0px;
-        }
-
-        #searchBar {
-            width: 250px;
-            border: none;
-            border-bottom: 1px solid black;
-        }
-
-        .material-icons {
-            font-size: 28px;
-        }
-
-        #navBar>div>h4:hover {
-            color: #E8184C;
-            cursor: pointer;
-        }
-
-        #burgerMenu {
-            border: 1px solid;
-            padding: 2px 10px;
-        }
-
-        #menu {
-            font-size: 30px;
-        }
-
-        .description {
-            display: none;
-        }
-
-        .descDiv {
-            display: flex;
-            justify-content: space-between;
-        }
-
-
+        /* Burger Menu */
         .sidenav {
             height: 100%;
             width: 0;
@@ -210,13 +114,66 @@
             justify-items: space-around;
             padding: 0px 20px;
         }
-
-        
+        #TwoContainers{
+            display: flex;
+            justify-content: space-around;
+        }
+        #leftBar{
+            width: 60%;
+            padding: 0px 20px;
+        }
+        #rightBar{
+            width: 35%;
+            
+        }
+        #diamondImg{
+            text-align: center;
+            padding: 30px;
+            border: 1px solid black;
+        }
+        #diamondImg>h3{
+            font-size: 12px;
+        }
+        #diamondImg>div{
+            width: 100%;
+        }
+        #orderSummary{
+            margin-top: 20px;
+            padding: 0px 26px 40px 26px;
+            background-color: #F9F3EE;
+            text-align: center;
+        }
+        .innerOrder{
+            display: flex;
+            justify-content: space-between;
+        }
+        #checkOut{
+            width: 100%;
+            padding: 15px;
+            background-color:#E6184B;
+            color: white;
+            font-weight: bolder;
+            border: none;
+            letter-spacing:4px;
+            margin: 10px 0px;
+        }
+        #payPal{
+            width: 100%;
+            height: 60px;
+            padding: 15px;
+            font-weight: bolder;
+            letter-spacing:4px;
+            margin: 10px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            background-color: #F9F3EE;
+        }
     </style>
 </head>
-
 <body>
-    <div id="main_box">
+    <div id="mainContainer">
         <div id="header">
             <!-- Inside header here -->
             <div id="navBar">
@@ -227,7 +184,7 @@
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                         <div class="menuBarIcons">
                             <i class="material-icons">person</i>
-                            <a href="../signIn/signin.html">sign in/sign up</a>
+                            <a href="#">sign in/sign up</a>
                         </div>
                         <div class="menuBarIcons">
                             <i class="material-icons">favorite</i>
@@ -239,7 +196,7 @@
                         </div>
                         <div class="menuBarIcons">
                             <i class="material-icons">event_available</i>
-                            <a href="../BAppoint.html">book appointment</a>
+                            <a href="#">book appointment</a>
                         </div>
                         <div class="menuBarIcons">
                             <i class="material-icons">local_shipping</i>
@@ -259,23 +216,23 @@
                                 <h3>SHOP</h3>
                             </div>
                             <div>
-                                <a href="../itemView/itemView.html">brides</a>
-                                <a href="../itemView/itemView.html">bridesmaids</a>
-                                <a href="../itemView/itemView.html">dresses</a>
-                                <a href="../itemView/itemView.html">juniors</a>
-                                <a href="../itemView/itemView.html">accessories</a>
-                                <a href="../itemView/itemView.htm">lingerie & shapewear</a>
-                                <a href="../itemView/itemView.html">shoes</a>
-                                <a href="../itemView/itemView.html">gifts & decor</a>
-                                <a href="../itemView/itemView.html">fragrance</a>
-                                <a href="../itemView/itemView.html">sale</a>
-                                <a href="../itemView/itemView.html">tuxedos & suits</a>
+                                <a href="#">brides</a>
+                                <a href="#">bridesmaids</a>
+                                <a href="#">dresses</a>
+                                <a href="#">juniors</a>
+                                <a href="#">accessories</a>
+                                <a href="#">lingerie & shapewear</a>
+                                <a href="#">shoes</a>
+                                <a href="#">gifts & decor</a>
+                                <a href="#">fragrance</a>
+                                <a href="#">sale</a>
+                                <a href="#">tuxedos & suits</a>
                             </div>
                         </div>
                         <!-- HOT DEALS -->
                         <div style="border-bottom:1px solid gray ;padding: 10px 0px;">
                             <div class="menuBarIcons">
-                                <a href="../hotDeals.html"><h3>HOT DEALS</h3></a>
+                                <h3>HOT DEALS</h3>
                             </div>
                         </div>
                         <!-- PLANNING -->
@@ -284,11 +241,11 @@
                                 <h3>PLANNING</h3>
                             </div>
                             <div>
-                                <a href="../planning.html">wedding planning</a>
-                                <a href="../planning.html">preferred wedding partners</a>
-                                <a href="../planning.html">inspiration & guides</a>
-                                <a href="../planning.html">invitations</a>
-                                <a href="../planning.html">fine jewelry</a>
+                                <a href="#">wedding planning</a>
+                                <a href="#">preferred wedding partners</a>
+                                <a href="#">inspiration & guides</a>
+                                <a href="#">invitations</a>
+                                <a href="#">fine jewelry</a>
                             </div>
                         </div>
                         <!-- ABOUT -->
@@ -317,7 +274,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>    
                 </div>
                 <div id="imgContainer">
                     <img src="../signIn/Screenshot__291_-removebg-preview.png" width="200px">
@@ -344,65 +301,87 @@
                     <i class="material-icons">search</i>
                     <i class="material-icons">location_on</i>
                     <i class="material-icons">person</i>
-                    <i class="material-icons" id="cartPage">shopping_bag</i>
+                    <i class="material-icons">shopping_bag</i>
                 </div>
             </div>
         </div>
-        <!-- Copy till here -->
-        <div id="mainContent">
-            <div id="insertFromBack">
-                <!-- Append your data using JS -->
+        <div style="width:1220px;margin: 0 auto;margin-bottom:40px;">
+            <div id="mainContent">
+                <h1>shopping bag(<span id="totalItem"></span>)</h1>
             </div>
+            <div id="TwoContainers">
 
-            <div id="lowerPart">
-                <h1>
-                    <!-- Provide the heading  -->
-                </h1>
-                <div id="listOfExtraProducts">
-                    <div class="smallCards">
-                        <img src="https://img.davidsbridal.com/is/image/DavidsBridalInc/482586NE002_MROSEGOLD_JWLY_PROD5_185?wid=510&hei=760&fit=constrain,1&resmode=sharp2&op_usm=2.5,0.3,4"
-                            width="200px">
-                        <p>Galina Signature</p>
-                        <h4>Scalloped Teardrop Necklace and Earring Set</h4>
-                        <p>regular</p>
-                        <p>$39.95</p>
+                <!-- Left Container Or The List of Items Purchased -->
+                <div id="leftBar">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Details</th>
+                                <th>price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Append data here -->
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Left Container Or The List of Items Purchased -->
+
+
+
+                <!-- Right Container Or The Payment Zone -->
+                <div id="rightBar">
+                    <div id="diamondImg">
+                        <img src="https://d1k0rbiro50qe0.cloudfront.net/loyalty-logo.svg" alt="">
+                        <h3>Don't have a number? <a href="../signIn/signup.html">Sign up for free!</a></h3>
+                        <div>
+                            <input type="number" id="phnNumber" placeholder="enter phone number" style="padding: 10px 20px;">
+                            <button style="padding: 10px 25px;border: none;color: white;background-color:#E6184B ;">APPLY</button>
+                        </div>
                     </div>
-                    <div class="smallCards">
-                        <img src="https://img.davidsbridal.com/is/image/DavidsBridalInc/EWGB1062_WHITE_GB_PROD3_20?wid=510&hei=760&fit=constrain,1&resmode=sharp2&op_usm=2.5,0.3,4"
-                            width="200px">
-                        <p>David's Bridal</p>
-                        <h4>The Essential Bridal Garment Bag</h4>
-                        <p>regular</p>
-                        <p>$29.95</p>
-                    </div>
-                    <div class="smallCards">
-                        <img src="https://img.davidsbridal.com/is/image/DavidsBridalInc/ARYA_MNUDE_SHOE_PROD7_004?wid=510&hei=760&fit=constrain,1&resmode=sharp2&op_usm=2.5,0.3,4"
-                            width="200px">
-                        <p>David's Bridal</p>
-                        <h4>Block Heel Ankle Strap Sandal</h4>
-                        <p>regular</p>
-                        <p>$39.95</p>
-                    </div>
-                    <div class="smallCards">
-                        <img src="https://img.davidsbridal.com/is/image/DavidsBridalInc/Image-OW2129-11085963-Regency?wid=510&hei=760&fit=constrain,1&resmode=sharp2&op_usm=2.5,0.3,4"
-                            width="200px">
-                        <p>David's Bridal</p>
-                        <h4>Sheer Chiffon Wrap</h4>
-                        <p>regular</p>
-                        <p>$19.95</p>
-                    </div>
-                    <div class="smallCards">
-                        <img src="https://img.davidsbridal.com/is/image/DavidsBridalInc/DB29073_MWHITE_LING_OM_PROD7_065?wid=510&hei=760&fit=constrain,1&resmode=sharp2&op_usm=2.5,0.3,4"
-                            width="200px">
-                        <p>Fashion Farms</p>
-                        <h4>Fashion Forms Lace Backless Strapless</h4>
-                        <p>regular</p>
-                        <p>$29.99</p>
+                    <div id="orderSummary">
+                        <div style="background-color: #F4E8DE;padding: 4px;">
+                            <h2>
+                                order summary
+                            </h2>
+                        </div>
+                        <div class="innerOrder">
+                            <p>SUBTOTAL(<span id="totalItems"></span> items) :</span></p>
+                            <p class="sumAmount">$00.00</p>
+                        </div>
+                        <div class="innerOrder">
+                            <p>SHIPPING :</p>
+                            <p>TBD</p>
+                        </div>
+                        <div class="innerOrder">
+                            <p>EST Tax :</p>
+                            <p>$0.00</p>
+                        </div>
+                        <div class="innerOrder">
+                            <h5>EST Total :</h5>
+                            <h3 class="sumAmount">$00.00</h3>
+                        </div>
+                        <button id="checkOut">CHECKOUT NOW</button>
+
+                        <button id="payPal"><p>CHECKOUT WITH</p> <img src="https://d1k0rbiro50qe0.cloudfront.net/pay-pal.svg" width="25%"> </button>
+
+                        <a href="#" style="color: black;margin: 20px;">Shipping outside the United States?</a>
+                        <div>
+                            <h4 style="text-align: left;padding: 10px;">promo code</h4>
+                            <div>
+                                <input type="text" style="padding: 10px 50px;background-color: #F9F3EE;" placeholder="Promo Code">
+                                <button style="padding: 10px 25px;border: none;color: white;background-color:#E6184B ;">APPLY</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!-- Right Container Or The Payment Zone -->
             </div>
 
 
+
+            <!-- Footer starts from Here -->
             <div id="reference">
                 <div>
                     <h4 style="letter-spacing: 4px;font-size: 13px;">EXCLUSIVE PARTNERS</h4>
@@ -422,8 +401,8 @@
                         src="https://www.davidsbridal.com/media/footer_logo/footer_logo/7fe9cb08ce11419ca542d2bce2f1f814.jpeg"
                         width="100px"></div>
             </div>
-
-
+    
+    
             <div id="footerMain">
                 <div id="first">
                     <img src="">
@@ -497,116 +476,10 @@
                     </div>
                 </div>
             </div>
-            
-            <div id="buyBtn">
-            </div>
         </div>
-    </div>
+        </div>
 </body>
 <script>
-    let itemView = JSON.parse(localStorage.getItem("item-view"));
-
-    let insertFromBack = document.getElementById("insertFromBack");
-
-    function renderData(data) {
-        data.forEach((element, index) => {
-            let bigBox = document.createElement("div");
-            bigBox.setAttribute("class", "bigBox")
-            let leftItems = document.createElement("div");
-            leftItems.setAttribute("class", "leftItems")
-            let bigImage = document.createElement("img");
-            bigImage.setAttribute("src", element.image);
-            bigImage.style.width = "550px"
-            let rightItems = document.createElement("div");
-            rightItems.setAttribute("class", "rightItems")
-            let title = document.createElement("p");
-            title.innerText = element.title;
-            let name = document.createElement("h2");
-            name.innerText = element.name.toUpperCase()
-            let regular = document.createElement("p");
-            regular.innerText = "regular";
-            let price = document.createElement("p");
-            price.innerText = "$" + element.price;
-            let descDiv = document.createElement("div");
-            descDiv.setAttribute("class", "descDiv");
-
-            // Add functionality to descDiv 
-            descDiv.addEventListener("click", () => {
-                description.style.display = "block";
-                plusSymbol.innerText = "-";
-            })
-
-
-
-            let desc = document.createElement("h4");
-            desc.innerText = "DESCRIPTION :"
-            let plusSymbol = document.createElement("h4");
-            plusSymbol.innerText = "+";
-            let description = document.createElement("p");
-            description.innerText = element.description;
-            description.setAttribute("class", "description");
-
-            //Add functionality to the description to hide it
-
-            description.addEventListener("click", () => {
-                description.style.display = "none";
-                plusSymbol.innerText = "+";
-            })
-
-
-
-
-            descDiv.append(desc, plusSymbol)
-            rightItems.append(title, name, regular, price, descDiv, description);
-            leftItems.append(bigImage);
-            bigBox.append(leftItems, rightItems);
-            insertFromBack.append(bigBox);
-        })
-    }
-    renderData(itemView)
-
-
-
-    let buyBtn = document.getElementById("buyBtn");
-    let count = 1;
-    itemView.forEach((element, index) => {
-        let bottomBar = document.createElement("div");
-        bottomBar.setAttribute("class", "bottomBar")
-        let secondaryDiv = document.createElement("div");
-        let title = document.createElement("h5");
-        title.innerText = element.title;
-        let name = document.createElement("h3");
-        name.innerText = element.name;
-        name.style.marginTop = "-25px"
-        let price = document.createElement("h1");
-        price.innerText = "$" + element.price;
-        price.style.color = "#E8184C";
-        let quantity = document.createElement("p");
-        quantity.innerText = count;
-        quantity.setAttribute("class", "quantity");
-        let buttonBUY = document.createElement("button");
-        buttonBUY.innerText = "ADD TO BAG";
-        buttonBUY.setAttribute("class", "addBTN")
-
-        buttonBUY.addEventListener("click",()=>{
-            let basket = JSON.parse(localStorage.getItem("cart-items")) || [];
-            basket.push(element);
-            localStorage.setItem("cart-items",JSON.stringify(basket));
-        })
-        secondaryDiv.append(title, name);
-        bottomBar.append(secondaryDiv, price, buttonBUY);
-        buyBtn.append(bottomBar);
-    })
-
-
-
-    let cartPage = document.getElementById("cartPage");
-
-    cartPage.addEventListener("click", () => {
-        window.location.href = "./cartPage.html"
-    })
-
-
     // Slider Menu
 
     function openNav() {
@@ -616,6 +489,43 @@
     function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
     }
-</script>
 
+    //Everything for this page starts from here.
+    let basket = JSON.parse(localStorage.getItem("cart-items"))
+    let totalItems = document.getElementById("totalItems");
+    let totalItem = document.getElementById("totalItem");
+    totalItems.innerText = basket.length;
+    totalItem.innerText = basket.length;
+
+
+    let tbody = document.querySelector("tbody");
+
+
+    basket.forEach((element,index)=>{
+        let tr = document.createElement("tr")
+        let td1 = document.createElement("td");
+        let image = document.createElement('img');
+        image.setAttribute("src",element.image);
+        image.style.width="100px";
+        let td2 = document.createElement("td");
+        let title = document.createElement("p");
+        title.innerText = element.title;
+        let name = document.createElement("h5");
+        name.innerText = element.name.toUpperCase();
+        let styleOf = document.createElement("p");
+        styleOf.innerText = 'STYLE#SWG834'
+        let fit = document.createElement("p");
+        fit.innerText = 'FIT: PLUS';
+        let td3 = document.createElement("td");
+        let priceTag = document.createElement("h3");
+        priceTag.innerText = "$"+ element.price;
+        td3.append(priceTag)
+        td2.append(title,name,styleOf,fit)
+        td1.append(image)
+        tr.append(td1,td2,td3);
+        tbody.append(tr);
+    })
+
+    
+</script>
 </html>

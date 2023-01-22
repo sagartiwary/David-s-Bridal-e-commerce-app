@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
     <title>Document</title>
     <style>
       * {
@@ -11,6 +16,230 @@
         margin: 0%;
         box-sizing: border-box;
       }
+
+      @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@300&family=Noto+Sans+Mono&family=Poppins:wght@300&family=Satisfy&display=swap');
+        * {
+            /* margin: 0px; */
+            font-family: poppins;
+        }
+        #logo {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+        }
+        #searchBar {
+            width: 250px;
+            border: none;
+            border-bottom: 1px solid black;
+        }
+        #navBar{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #searchBar {
+            width: 250px;
+            border: none;
+            border-bottom: 1px solid black;
+        }
+        .material-icons{
+            font-size: 28px;
+        }
+        #selectors {
+            color: gray;
+        }
+        .abhi {
+            color: gray;
+            letter-spacing: 2px;
+        }
+        .abhi:hover {
+            color: red;
+            cursor: pointer;
+        }
+        #headOne {
+            display: flex;
+            justify-content: space-between;
+        }
+        .imageShow {
+            width: 265px;
+        }
+        #itemsLoader {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .card {
+            width: 265px;
+            margin: 0px 30px 45px 0px;
+        }
+        #content {
+            display: flex;
+            justify-content: space-between;
+        }
+        #leftBar {
+            position: sticky;
+            left: 50px;
+            top: 0px;
+        }
+        #rightBar {
+            width: 900px;
+        }
+        .leftItems {
+            display: flex;
+            width: 220px;
+            justify-content: space-between;
+            border-bottom: 1px solid rgb(180, 179, 179);
+            margin: 10px;
+            align-items: center;
+        }
+        .leftItems>h2 {
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+        #pagination-buttons {
+            text-align: center;
+        }
+        .pagination {
+            /* width: 50px; */
+            padding: 10px 30px;
+            text-align: center;
+        }
+        #footer>div>h4 {
+            font-size: 16px;
+        }
+        #footer>div>p {
+            font-size: 12px;
+        }
+        #footer {
+            padding: 20px 50px;
+        }
+        #mainContainer {
+            width: 1220px;
+            margin: 0 auto;
+        }
+        #footerFAQ {
+            padding: 10px 70px;
+        }
+        #footerFAQ>div {
+            display: flex;
+            justify-content: space-between;
+        }
+        #answerOne,
+        #answerTwo,
+        #answerThree,
+        #answerFour,
+        #answerFive,
+        #answerSix,
+        #answerSeven,
+        #answerEight {
+            display: none;
+        }
+        #questionOne,
+        #questionTwo,
+        #questionThree,
+        #questionFour,
+        #questionFive,
+        #questionSix,
+        #questionSeven,
+        #questionEight {
+            border-bottom: 1px solid rgb(192, 192, 192);
+        }
+        #reference {
+            display: flex;
+            padding: 20px 80px;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgb(192, 192, 192);
+        }
+        #footerMain {
+            display: flex;
+            padding: 20px 70px;
+            /* border: 1px solid silver;
+             */
+        }
+        #first {
+            font-size: 12px;
+            width: 300px;
+            padding: 20px;
+        }
+        #second {
+            font-size: 12px;
+            width: 400px;
+            padding: 20px;
+        }
+        #third {
+            font-size: 12px;
+            width: 200px;
+            padding: 20px;
+        }
+        #fourth {
+            font-size: 12px;
+            width: 400px;
+            padding: 20px;
+        }
+        #fifth {
+            font-size: 12px;
+            width: 500px;
+            padding: 20px;
+        }
+        .card>h4:hover{
+            color: red;
+            cursor: pointer;
+        }
+        .card>h4{
+            margin-top: -10px;
+        }
+        .priceList{
+            margin-top: -10px;
+        }
+        #sort{
+            border: none;
+            padding: 0px 40px 0pc 0px ;
+        }
+        .itemsInside{
+            display: flex;
+            flex-direction: column;
+            display: none;
+            /* grid-template-rows: repeat(7,1fr); */
+        }
+        /* Copy this for Burger Menu */
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            color: black;
+            background-color: white;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 14px;
+            color: #080808;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidenav a:hover{
+            text-decoration: underline;
+            font-weight: bolder;
+        }
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        .menuBarIcons {
+            display: flex;
+            justify-items: space-around;
+            padding: 0px 20px;
+        }
+      /* navbar------------------------------------------------ */
       .firstContainer {
         width: 100%;
         height: 500px;
@@ -163,9 +392,357 @@
         border: none;
         border-bottom: 1px solid gray;
       }
+      #reference {
+        display: flex;
+        padding: 20px 80px;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgb(192, 192, 192);
+        border-top: 1px solid rgb(192, 192, 192);
+      }
+
+      #footerMain {
+        display: flex;
+        padding: 20px 70px;
+      }
+
+      #first {
+        font-size: 12px;
+        width: 300px;
+        padding: 20px;
+      }
+
+      #second {
+        font-size: 12px;
+        width: 400px;
+        padding: 20px;
+      }
+
+      #third {
+        font-size: 12px;
+        width: 200px;
+        padding: 20px;
+      }
+
+      #fourth {
+        font-size: 12px;
+        width: 400px;
+        padding: 20px;
+      }
+
+      #fifth {
+        font-size: 12px;
+        width: 500px;
+        padding: 20px;
+      }
+      @media all and (min-width: 450px) and (max-width: 750px) {
+        .firstContainer {
+          display: block;
+          height: auto;
+        }
+        .firstContainer > div {
+          /* border: 1px solid black; */
+          width: 100%;
+          height: 100%;
+          margin-bottom: 10px;
+        }
+         .secondContainer {
+        width: 100%;
+         }
+        .secondContainer > div {
+          height: 100%;
+        }
+        .secondContainer > div > div {
+          /* border: 1px solid green; */
+          width: 100%;
+          height: auto;
+          /* line-height: 30px; */
+        }
+        .secondContainer > div:nth-child(1) > div:nth-child(2) {
+          width: 100%;
+          position: relative;
+          top: 0px;
+          left: 0px;
+          margin-bottom: 10px;
+        }
+        .secondContainer > div:nth-child(2) > div:nth-child(1) {
+          width: 100%;
+          position: relative;
+          top: 0%;
+        }
+        .secondContainer > div:nth-child(2) > div:nth-child(2) {
+          position: relative;
+          top: 0%;
+          left: 0%;
+          margin-top: 10px;
+        }
+        .secondContainer > div:nth-child(3) > div:nth-child(2) {
+          width: 100%;
+          top: 0%;
+          left: 0%;
+        }
+        .secondContainer > div:nth-child(4) > div:nth-child(1) {
+          width: 100%;
+          top: 0%;
+          margin-bottom: 10px;
+        }
+        .secondContainer > div:nth-child(4) > div:nth-child(2) {
+          /* position: relative; */
+          top: 0%;
+          left: 0%;
+        }
+        .heading {
+          font-size: 10px;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        .thridContainer {
+          width: 90%;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(8, auto);
+          gap: 10px;
+        }
+        #reference {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(3, 150px);
+          padding: 20px 80px;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid rgb(192, 192, 192);
+          border-top: 1px solid rgb(192, 192, 192);
+        }
+        #footerMain {
+        display: block;
+        padding: 20px 70px;
+          }
+         #fifth {
+        font-size: 12px;
+        width: 500px;
+        padding: 20px;
+      }
+      }
+      @media all and (min-width: 100px) and (max-width: 450px) {
+        .firstContainer {
+          display: block;
+          height: auto;
+        }
+        .firstContainer > div {
+          /* border: 1px solid black; */
+          width: 100%;
+          height: 100%;
+          margin-bottom: 10px;
+        }
+         .secondContainer {
+           width: 100%;
+         }
+        .secondContainer > div {
+          height: 100%;
+        }
+        .secondContainer > div > div {
+          /* border: 1px solid green; */
+          width: 100%;
+          height: auto;
+          /* line-height: 30px; */
+        }
+        .secondContainer > div:nth-child(1) > div:nth-child(2) {
+          width: 100%;
+          position: relative;
+          top: 0px;
+          left: 0px;
+          margin-bottom: 10px;
+        }
+        .secondContainer > div:nth-child(2) > div:nth-child(1) {
+          width: 100%;
+          position: relative;
+          top: 0%;
+        }
+        .secondContainer > div:nth-child(2) > div:nth-child(2) {
+          position: relative;
+          top: 0%;
+          left: 0%;
+          margin-top: 10px;
+        }
+        .secondContainer > div:nth-child(3) > div:nth-child(2) {
+          width: 100%;
+          top: 0%;
+          left: 0%;
+        }
+        .secondContainer > div:nth-child(4) > div:nth-child(1) {
+          width: 100%;
+          top: 0%;
+          margin-bottom: 10px;
+        }
+        .secondContainer > div:nth-child(4) > div:nth-child(2) {
+          /* position: relative; */
+          top: 0%;
+          left: 0%;
+        }
+        .heading {
+          font-size: 10px;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        .thridContainer {
+          width: 90%;
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(20, auto);
+          gap: 10px;
+        }
+        #reference {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(6, 150px);
+          /* margin-bottom: 300px; */
+      }
+       #footerMain {
+        display: block;
+        padding: 20px 70px;
+      }
     </style>
   </head>
   <body>
+    <div id="navBar">
+      <div id="burgerMenu">
+        <!-- WORK FOR THE BURGER MENU -->
+        <i class="material-icons" id="menu" onclick="openNav()">menu</i>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <div class="menuBarIcons">
+            <i class="material-icons">person</i>
+            <a href="../signIn/signin.html">sign in/sign up</a>
+          </div>
+          <div class="menuBarIcons">
+            <i class="material-icons">favorite</i>
+            <a href="#">favorites</a>
+          </div>
+          <div class="menuBarIcons">
+            <i class="material-icons">location_on</i>
+            <a href="#">find a store</a>
+          </div>
+          <div class="menuBarIcons">
+            <i class="material-icons">event_available</i>
+            <a href="../BAppoint.html">book appointment</a>
+          </div>
+          <div class="menuBarIcons">
+            <i class="material-icons">local_shipping</i>
+            <a href="#">order status</a>
+          </div>
+          <div class="menuBarIcons">
+            <i class="material-icons">diamond</i>
+            <a href="#">diamond loyalty</a>
+          </div>
+          <div class="menuBarIcons">
+            <i class="material-icons">satellite_alt</i>
+            <a href="#">alterations</a>
+          </div>
+          <!-- SHOP -->
+          <div
+            style="
+              border-bottom: 1px solid gray;
+              border-top: 1px solid gray;
+              padding: 10px 0px;
+            "
+          >
+            <div class="menuBarIcons">
+              <h3>SHOP</h3>
+            </div>
+            <div>
+              <a href="./itemView.html">brides</a>
+              <a href="./itemView.html">bridesmaids</a>
+              <a href="./itemView.html">dresses</a>
+              <a href="./itemView.html">juniors</a>
+              <a href="./itemView.html">accessories</a>
+              <a href="./itemView.html">lingerie & shapewear</a>
+              <a href="./itemView.html">shoes</a>
+              <a href="./itemView.html">gifts & decor</a>
+              <a href="./itemView.html">fragrance</a>
+              <a href="./itemView.html">sale</a>
+              <a href="./itemView.html">tuxedos & suits</a>
+            </div>
+          </div>
+          <!-- HOT DEALS -->
+          <div style="border-bottom: 1px solid gray; padding: 10px 0px">
+            <div class="menuBarIcons">
+              <a href="../hotDeals.html"><h3>HOT DEALS</h3></a>
+            </div>
+          </div>
+          <!-- PLANNING -->
+          <div style="border-bottom: 1px solid gray; padding: 10px 0px">
+            <div class="menuBarIcons">
+              <h3>PLANNING</h3>
+            </div>
+            <div>
+              <a href="../planning.html">wedding planning</a>
+              <a href="../planning.html">preferred wedding partners</a>
+              <a href="../planning.html">inspiration & guides</a>
+              <a href="../planning.html">invitations</a>
+              <a href="../planning.html">fine jewelry</a>
+            </div>
+          </div>
+          <!-- ABOUT -->
+          <div style="border-bottom: 1px solid gray; padding: 10px 0px">
+            <div class="menuBarIcons">
+              <h3>ABOUT</h3>
+            </div>
+            <div>
+              <a href="#">virtual & store appointments</a>
+              <a href="#">online wedding lookbooks</a>
+              <a href="#">our stores</a>
+              <a href="#">payment options</a>
+              <a href="#">frontline fierce</a>
+              <a href="#">lingerie & shapewear</a>
+              <div class="menuBarIcons">
+                <i class="material-icons">person</i>
+                <a href="#">youtube live 24/7</a>
+              </div>
+              <div class="menuBarIcons">
+                <i class="material-icons">event</i>
+                <a href="#">events</a>
+              </div>
+              <div class="menuBarIcons">
+                <i class="material-icons">help</i>
+                <a href="#">help & faq's</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="imgContainer">
+        <img
+          src="../signIn/Screenshot__291_-removebg-preview.png"
+          width="200px"
+        />
+      </div>
+      <div>
+        <h4>SHOP</h4>
+      </div>
+      <div>
+        <h4>HOT DEALS</h4>
+      </div>
+      <div>
+        <h4>PLANNING</h4>
+      </div>
+      <div>
+        <h4>ABOUT</h4>
+      </div>
+      <div>
+        <h4>BOOK APPOINTMENT</h4>
+      </div>
+      <div>
+        <input type="search" placeholder="Search..." id="searchBar" />
+      </div>
+      <div style="display: flex; gap: 15px">
+        <i class="material-icons">search</i>
+        <i class="material-icons">location_on</i>
+        <i class="material-icons">person</i>
+        <a href="./cartPage.html"><i class="material-icons">shopping_bag</i></a>
+      </div>
+    </div>
     <div class="firstContainer">
       <div>
         <h2>plan with the best</h2>
@@ -262,9 +839,154 @@
       <h1>our preferred partners</h1>
     </div>
     <div class="thridContainer"></div>
+    <div id="reference">
+      <div>
+        <h4 style="letter-spacing: 4px; font-size: 13px">EXCLUSIVE PARTNERS</h4>
+      </div>
+      <div>
+        <img
+          src="https://www.davidsbridal.com/media/footer_logo/footer_logo/01-the-blk-tux.png"
+          width="100px"
+        />
+      </div>
+      <div>
+        <img
+          src="https://www.davidsbridal.com/media/footer_logo/footer_logo/02-pearl.png"
+          width="100px"
+        />
+      </div>
+      <div>
+        <img
+          src="https://www.davidsbridal.com/media/footer_logo/footer_logo/03-DN_logo_3_1.png"
+          width="100px"
+        />
+      </div>
+      <div>
+        <img
+          src="https://www.davidsbridal.com/media/footer_logo/footer_logo/04-shutterfly.png"
+          width="100px"
+        />
+      </div>
+      <div>
+        <img
+          src="https://www.davidsbridal.com/media/footer_logo/footer_logo/7fe9cb08ce11419ca542d2bce2f1f814.jpeg"
+          width="100px"
+        />
+      </div>
+    </div>
+
+    <div id="footerMain">
+      <div id="first">
+        <img src="" />
+        <h4>START PLANNING</h4>
+        <p>Our planning app makes the process a breeze,24/7</p>
+        <div style="display: flex; gap: 20px">
+          <img
+            src="https://www.davidsbridal.com/media/footer/download-app-store.png"
+            width="110px"
+            alt=""
+          />
+          <img
+            src="https://www.davidsbridal.com/media/footer/download-google-play.png"
+            width="110px"
+            alt=""
+          />
+        </div>
+        <h4>FOLLOW</h4>
+        <div style="display: flex; align-items: center; gap: 10px">
+          <img
+            src="https://www.bing.com/th?id=OIP.Rn_QAhme1VqwnvwmPObtXgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+            width="40px"
+            alt=""
+          />
+          <img
+            src="https://www.bing.com/th?id=OIP.vEwWMNNIVJn5wg8VnExRwwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+            width="30px"
+            alt=""
+          />
+          <img
+            src="https://www.bing.com/th?id=OIP.5kfepkzG4frnKAVCXiR81wHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+            width="40px"
+            alt=""
+          />
+          <img
+            src="https://www.bing.com/th?id=OIP.ZdaV2zOEKzHqRo9olgLZagHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+            width="40px"
+            alt=""
+          />
+          <img
+            src="https://www.bing.com/th?id=OIP.fhZrJF2Bb2lAZTnIFWWIvAHaHa&w=150&h=150&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+            width="30px"
+            alt=""
+          />
+          <img
+            src="https://www.bing.com/th?id=OIP.NKBPigTOU0UJm6pFXpFIIQHaHu&w=244&h=255&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+            width="40px"
+            alt=""
+          />
+        </div>
+      </div>
+      <div id="second">
+        <h4>ONLINE ORDERS</h4>
+        <div style="line-height: 16px">
+          <p>Order Status</p>
+          <p>Returns & Exchanges</p>
+          <p>Your Account</p>
+          <p>International Orders</p>
+        </div>
+        <h4>OUR STORIES</h4>
+        <div style="line-height: 16px">
+          <p>Find a Store</p>
+          <p>Make an Appointment</p>
+        </div>
+      </div>
+      <div id="third">
+        <h4>HELP</h4>
+        <div style="line-height: 16px">
+          <p>Contact Us</p>
+          <p>Help & FAQs</p>
+        </div>
+      </div>
+      <div id="fourth">
+        <h4>ABOUT</h4>
+        <div style="line-height: 20px; font-size: 12px">
+          <p>About Davvid's Bridal</p>
+          <p>Quality & Creaftsmanship</p>
+          <p>Frontline Fierce</p>
+          <p>Events</p>
+          <p>Careers</p>
+          <p>Media Room</p>
+          <p>Blog</p>
+          <p>Media & Investor Relations</p>
+          <p>Influencer Program</p>
+        </div>
+      </div>
+      <div id="fifth">
+        <h4>REWARDS</h4>
+        <div style="display: flex; gap: 10px">
+          <img
+            src="https://d1k0rbiro50qe0.cloudfront.net/footer/aside_0.svg"
+            alt=""
+          />
+          <div>
+            <h6>Diamond Loyalty Program</h6>
+            <p>
+              *See Loyalty program details & restrictions,<br />
+              gifts tier descriptions & disclaimers
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
 <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "320px";
+  }
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
   let data = [
     {
       imgUrl:
