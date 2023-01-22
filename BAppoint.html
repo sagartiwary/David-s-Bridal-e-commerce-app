@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Appointment</title>   
+    <title>Book Appointment</title> 
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">  
 </head>
 
  <style>
@@ -13,6 +15,22 @@
   font-family: "ABScript";
   src: url("fonts/ABScript.ttf") format("truetype");
 }
+
+@font-face {
+        font-family: "Objektiv";
+        src: url("fonts/Objektiv5.ttf") format("truetype");
+    }
+
+    *{
+       font-family:"Objektiv";
+       font-size:13px;
+    }
+
+    .content {
+    max-width: 960px;
+    margin: auto;
+    text-align:center;
+    }
 
    .topNav{
         display:flex;
@@ -254,6 +272,123 @@
     padding: 30px;
    }
 
+   /* go to top box---------------------------------------------------------------------------------------------------------- */
+   .go-top-box{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border:1px white solid;
+    padding-top: 8px;
+    margin-right: 20px;
+    margin-top: 10px;
+    color:white;
+    border-top-left-radius:8px;
+    border-bottom-left-radius:8px;
+  }
+
+  .go-top-box:hover{
+    cursor: pointer;
+    background-color:white;
+    color:black;
+  }
+
+  .topBox2{
+    color:white;
+  }
+
+   /* go top box-------------------------------------------------------------------------------------------------------------------- */
+
+     /* /* Navigation bar CSS ------------------------------------------------------------------------------------------ */
+    
+     #mainContent {
+            width: 1220px;
+            margin: 0 auto;
+        }
+
+        #navBar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 1px solid rgb(192, 192, 192);
+        }
+
+        #searchBar {
+            width: 250px;
+            border: none;
+            border-bottom: 1px solid black;
+        }
+
+        .material-icons {
+            font-size: 28px;
+        }
+
+        #navBar>div>h4:hover {
+            color: #E8184C;
+            cursor: pointer;
+        }
+
+        #burgerMenu {
+            border: 1px solid;
+            padding: 2px 10px;
+        }
+
+        #menu {
+            font-size: 30px;
+        }
+
+        .description {
+            display: none;
+        }
+
+        .descDiv {
+            display: flex;
+            justify-content: space-between;
+        }
+            
+   /* /* BURGER MENU ----------------------------------------------------------------------------------------------- */
+     .sidenav{
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            color: black;
+            background-color: white;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 14px;
+            color: #080808;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover{
+            text-decoration: underline;
+            font-weight: bolder;
+        }
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        .menuBarIcons {
+            display: flex;
+            justify-items: space-around;
+            padding: 0px 20px;
+        }
+
+
   /* FFFFFFFFFFOOOOOOOOOTTTTTTTTTTTTTTTTTTTEEEEEEEEEEEEERRRRRRRRRRRRRRRRR CSS */
 
   #footerMain {
@@ -291,27 +426,225 @@
             padding: 20px;
         }
 
+        /* Media query---------------------------------------------------------------------------------- */
+
+
+        @media only screen and (max-width: 990px) {
+            .cards3{
+              display:block;
+              /* justify-content:center; */
+              /* box-sizing: border-box; */
+              width: 100%;
+              text-align: center;
+              margin: auto;
+         } 
+
+            .photo1{
+                display:block;
+                justify-content: center;
+                /* margin:50px; */
+                margin-bottom: 55px;
+            }
+
+            .photo1 div{
+            width:542px;
+            height:250px;
+            padding:0px 30px;
+            background-color:#FAF4EF;
+        }
+
+        .photo1 img{
+            border: 1px red solid;
+            margin-bottom:0px;
+            padding:0px;
+        }
+
+        .partners{
+    display:block;
+    justify-content:space-evenly;
+    height:80px;
+    padding: 30px;
+
+   }
+
+   .partners img{
+    justify-content:space-between;
+    /* width:600px; */
+  }
+
+
+
+
  </style>
 
 <body>
-    <div class="topNav">
-        <!-- <div class="topNavLeft"> -->
-        <div><p>join the party your way!</p></div> 
-        <div><h5>FIND A STORE ></h5></div> 
-        <!-- </div> -->
 
-        <!-- <div class="topNavRight"> -->
-        <div class="para1"><p>></p></div>
-           
-          
+
+    <!-- <div class="topNav">
+        <div><p>join the party your way!</p></div> 
+        <div><h5>FIND A STORE ></h5></div>
+      
+        <div class="para1"><p>></p></div>  
             <div> <h6>DIAMOND LOYALTY</h6></div>
             <div><h6>TUXEDO'S AND SUITS</h6></div>
-        <!-- </div> -->
-    </div>
-
-
-    <img src="https://d1k0rbiro50qe0.cloudfront.net/logo-full.svg" alt="">
+    </div> -->
+    <!-- <img src="https://d1k0rbiro50qe0.cloudfront.net/logo-full.svg" alt=""> -->
  
+
+
+
+
+
+    <!-- Inside header here -->
+
+    <div id="main_box">
+        <div id="header">
+                <div id="navBar">
+                    <div id="burgerMenu">
+                        <!-- WORK FOR THE BURGER MENU -->
+                        <i class="material-icons" id="menu" onclick="openNav()">menu</i>
+                        <div id="mySidenav" class="sidenav">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <div class="menuBarIcons">
+                                <i class="material-icons">person</i>
+                                <a href="#">sign in/sign up</a>
+                            </div>
+                            <div class="menuBarIcons">
+                                <i class="material-icons">favorite</i>
+                                <a href="#">favorites</a>
+                            </div>
+                            <div class="menuBarIcons">
+                                <i class="material-icons">location_on</i>
+                                <a href="#">find a store</a>
+                            </div>
+                            <div class="menuBarIcons">
+                                <i class="material-icons">event_available</i>
+                                <a href="#">book appointment</a>
+                            </div>
+                            <div class="menuBarIcons">
+                                <i class="material-icons">local_shipping</i>
+                                <a href="#">order status</a>
+                            </div>
+                            <div class="menuBarIcons">
+                                <i class="material-icons">diamond</i>
+                                <a href="#">diamond loyalty</a>
+                            </div>
+                            <div class="menuBarIcons">
+                                <i class="material-icons">satellite_alt</i>
+                                <a href="#">alterations</a>
+                            </div>
+                            <!-- SHOP -->
+                            <div style="border-bottom:1px solid gray ;border-top:1px solid gray ;padding: 10px 0px;">
+                                <div class="menuBarIcons">
+                                    <h3>SHOP</h3>
+                                </div>
+                                <div>
+                                    <a href="#">brides</a>
+                                    <a href="#">bridesmaids</a>
+                                    <a href="#">dresses</a>
+                                    <a href="#">juniors</a>
+                                    <a href="#">accessories</a>
+                                    <a href="#">lingerie & shapewear</a>
+                                    <a href="#">shoes</a>
+                                    <a href="#">gifts & decor</a>
+                                    <a href="#">fragrance</a>
+                                    <a href="#">sale</a>
+                                    <a href="#">tuxedos & suits</a>
+                                </div>
+                            </div>
+                            <!-- HOT DEALS -->
+                            <div style="border-bottom:1px solid gray ;padding: 10px 0px;">
+                                <div class="menuBarIcons">
+                                    <h3>HOT DEALS</h3>
+                                </div>
+                            </div>
+                            <!-- PLANNING -->
+                            <div style="border-bottom:1px solid gray ;padding: 10px 0px;">
+                                <div class="menuBarIcons">
+                                    <h3>PLANNING</h3>
+                                </div>
+                                <div>
+                                    <a href="#">wedding planning</a>
+                                    <a href="#">preferred wedding partners</a>
+                                    <a href="#">inspiration & guides</a>
+                                    <a href="#">invitations</a>
+                                    <a href="#">fine jewelry</a>
+                                </div>
+                            </div>
+                            <!-- ABOUT -->
+                            <div style="border-bottom:1px solid gray ;padding: 10px 0px;">
+                                <div class="menuBarIcons">
+                                    <h3>ABOUT</h3>
+                                </div>
+                                <div>
+                                    <a href="#">virtual & store appointments</a>
+                                    <a href="#">online wedding lookbooks</a>
+                                    <a href="#">our stores</a>
+                                    <a href="#">payment options</a>
+                                    <a href="#">frontline fierce</a>
+                                    <a href="#">lingerie & shapewear</a>
+                                    <div class="menuBarIcons">
+                                        <i class="material-icons">person</i>
+                                        <a href="#">youtube live 24/7</a>
+                                    </div>
+                                    <div class="menuBarIcons">
+                                        <i class="material-icons">event</i>
+                                        <a href="#">events</a>
+                                    </div>
+                                    <div class="menuBarIcons">
+                                        <i class="material-icons">help</i>
+                                        <a href="#">help & faq's</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="imgContainer">
+                        <img src="../signIn/Screenshot__291_-removebg-preview.png" width="200px">
+                    </div>
+                    <div>
+                        <h4>SHOP</h4>
+                    </div>
+                    <div>
+                        <h4>HOT DEALS</h4>
+                    </div>
+                    <div>
+                        <h4>PLANNING</h4>
+                    </div>
+                    <div>
+                        <h4>ABOUT</h4>
+                    </div>
+                    <div>
+                        <h4>BOOK APPOINTMENT</h4>
+                    </div>
+                    <div>
+                        <input type="search" placeholder="Search..." id="searchBar">
+                    </div>
+                    <div style="display: flex; gap: 15px;">
+                        <i class="material-icons">search</i>
+                        <i class="material-icons">location_on</i>
+                        <i class="material-icons">person</i>
+                        <i class="material-icons" id="cartPage">shopping_bag</i>
+                    </div>
+                </div>
+                
+      </div>
+      
+
+</div>
+
+
+<!-- Copy till here -->
+
+<!-- go top button-------------------------------------------------------------------------------------------------------------->
+<div class="go-top-box">
+    <div><a href="#top"><i class="fa-solid fa-chevron-up"></i></a></div>
+    <div class="topBox2"><a style= "text-decoration: none;" href="#top">Top</a></div>
+</div>
+
+
+
+<!-- go top button------------------------------------------------------------------------------------------------------------- -->
 
 
 <div class="navBottom">
@@ -323,7 +656,7 @@
 
   <div class="cards3">
       <div>
-      <img src="https://d1k0rbiro50qe0.cloudfront.net/book-appointment-landing/make-appointment-in-store.jpg" alt="">
+      <img style="display:block;" src="https://d1k0rbiro50qe0.cloudfront.net/book-appointment-landing/make-appointment-in-store.jpg" alt="">
       <h3 class="noncursive">in-store</h3>
       <p>At your free styling session, you’ll tell us all about your dream day and we’ll play matchmaker, bringing you an
          array of styles to try on. 
@@ -369,6 +702,8 @@
   <h1>at every step</h1>
 </div>
 
+<!-- Below two cards -->
+
 <div class="here2Photos">
   <div class="photo1">
     <img src="https://d1k0rbiro50qe0.cloudfront.net/book-appointment-landing/help-alterations.jpg" alt="">
@@ -394,7 +729,7 @@
 
     <hr>
     <div class="partners">
-      <h4 style="height:15px; width:200px;">EXCLUSIVE PARTNERS</h4>
+      <div><h4 style="height:15px; width:200px;">EXCLUSIVE PARTNERS</h4></div>
       <img style="height:55px; width:55px;" src="https://www.davidsbridal.com/media/footer_logo/footer_logo/01-the-blk-tux.png" alt="">
       <img style="height:55px; width:110px;" src="https://www.davidsbridal.com/media/footer_logo/footer_logo/02-pearl.png" alt="">
       <img style="height:26px; width:118px;" src="https://www.davidsbridal.com/media/footer_logo/footer_logo/03-DN_logo_3_1.png" alt="">
@@ -480,8 +815,19 @@
 </div>
 
 </div>
-    <script>
-    
-    </script>
+
+
 </body>
+<script>
+    // Slider Menu
+
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "320px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+
 </html>
