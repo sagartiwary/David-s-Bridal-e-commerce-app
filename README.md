@@ -6,9 +6,8 @@ The website which was given to us in this construct week DavidBridal took 4 day 
 ## Landing-page/Home-page
 The landing page is created by sagar kumar tiwary who is the team leader of the group Project.I have made the nav part,body and the footer part.Basically I first work on the navigation bar over there some pages I have created like hot deals,about and many more things. I have done this and tried my best to complete things.
 In the footer part lined all the things which is required to complete and done the job.   
-landing page :https://files.slack.com/files-pri/T04F4PRQBC2-F04KVBEPZB8/screenshot_from_2023-01-23_14-23-16.png  
-footer: https://files.slack.com/files-pri/T04F4PRQBC2-F04LRLW0ZUG/image.png
-
+landing page :<img width="960" alt="Screenshot_20230123_155121" src="https://user-images.githubusercontent.com/112796706/214016358-b8e9ec0e-539d-4440-99b5-b8e1a609df3c.png">
+footer:<img width="960" alt="Screenshot_20230123_155145" src="https://user-images.githubusercontent.com/112796706/214016426-5ca6d2ef-6e74-4e21-ae61-75e9ab66dba1.png">
 
 
 ## Sign up/Sign In page, planning page:
@@ -37,8 +36,8 @@ These pages were also created by Reena Kumari, the different kind of Appointment
 
 Hot deals page ss:https:  <img width="957" alt="Screenshot_20230123_134849" src="https://user-images.githubusercontent.com/112796706/214015614-7ec174fb-47a5-44a3-af2b-17420c558908.png">
 
-Book Appointment page ss:   https://user-images.githubusercontent.com/77038792/213995837-08c538b9-b421-4c15-8728-046093934d39.png
-Appoint page ss: https:  https://user-images.githubusercontent.com/77038792/213995879-1be8ac04-1481-4e77-867d-644ee3a24811.png
+Book Appointment page ss:  <img width="948" alt="Screenshot_20230123_135245" src="https://user-images.githubusercontent.com/112796706/214015985-0992b1b6-55d7-47ce-904e-172e23ac9828.png">
+Appoint page ss: https: <img width="957" alt="Screenshot_20230123_135839" src="https://user-images.githubusercontent.com/112796706/214016092-0aaa3b2b-2ed3-43ee-bdc8-2d1b088e5d2d.png">
 
 
 ## about page:
