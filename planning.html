@@ -435,7 +435,21 @@
         width: 500px;
         padding: 20px;
       }
+      /* style="display: flex; gap: 15px"
+       */
+       .icons{
+        display: flex;
+        gap: 15px;
+       }
       @media all and (min-width: 450px) and (max-width: 750px) {
+
+        .tab{
+          display: none;
+        }
+        .icons{
+        display: block;
+        gap: 15px;
+       }
         .firstContainer {
           display: block;
           height: auto;
@@ -524,6 +538,15 @@
       }
       }
       @media all and (min-width: 100px) and (max-width: 450px) {
+       .tab{
+        display: none;
+       }
+
+       .icons{
+        display: none;
+        border: 10px soild red;
+       }
+       /* .pagination */
         .firstContainer {
           display: block;
           height: auto;
@@ -718,7 +741,7 @@
           width="200px"
         />
       </div>
-      <div>
+      <div class="tab">
         <h4>
           <a
             style="text-decoration: none; color: black"
@@ -727,21 +750,21 @@
           >
         </h4>
       </div>
-      <div>
+      <div class="tab">
         <h4>
           <a style="text-decoration: none; color: black" href="/hotDeals.html"
             >HOT DEALS</a
           >
         </h4>
       </div>
-      <div>
+      <div class="tab">
         <h4>
           <a style="text-decoration: none; color: black" href="/planning.html"
             >PLANNING</a
           >
         </h4>
       </div>
-      <div>
+      <div class="tab">
         <h4>
           <a
             style="text-decoration: none; color: black"
@@ -750,17 +773,17 @@
           >
         </h4>
       </div>
-      <div>
+      <div class="tab">
         <h4>
           <a style="text-decoration: none; color: black" href="/BAppoint.html"
             >BOOK APPOINTMENT</a
           >
         </h4>
       </div>
-      <div>
+      <div class="tab">
         <input type="search" placeholder="Search..." id="searchBar" />
       </div>
-      <div style="display: flex; gap: 15px">
+      <div class="icons">
         <i class="material-icons">search</i>
         <i class="material-icons">location_on</i>
         <i class="material-icons">person</i>
