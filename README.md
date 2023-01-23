@@ -19,7 +19,7 @@ Basic Validation − First of all, the form must be checked to make sure all the
 Data Format Validation − Secondly, the data that is entered must be checked for the correct form and value. Your code must include appropriate logic to test the correctness of data.
 
 sign in page:https://files.slack.com/files-pri/T04F4PRQBC2-F04KMCQ0207/welcome_to_the_signup_portal_-_google_chrome_1_23_2023_12_10_52_pm.png    
-sign up page:https://files.slack.com/files-pri/T04F4PRQBC2-F04KMCQBWBH/welcome_to_the_signup_portal_-_google_chrome_1_23_2023_12_11_00_pm.png
+sign up page:![Welcome to the SignUp Portal - Google Chrome 1_23_2023 12_11_00 PM](https://user-images.githubusercontent.com/77038792/214010254-6e7f04a0-9c12-479b-bc4c-fa204455601a.png)
 
 
 ## planning page
