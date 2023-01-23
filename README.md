@@ -42,8 +42,12 @@ Appoint page ss: https:  https://user-images.githubusercontent.com/77038792/2139
 
 ## about page:
 about page Created by Rahul, He has added all the brands page associated with our website in the Navbar under About Section. He has created this page with the help of HTML CSS and Javascript.  
-about page : https://files.slack.com/files-pri/T04F4PRQBC2-F04L255P134/image.png   
-footer:https://files.slack.com/files-pri/T04F4PRQBC2-F04LRLW0ZUG/image.png
+   
+about page : ![Screenshot from 2023-01-23 15-27-21](https://user-images.githubusercontent.com/112811405/214011722-08cfc0a7-96cd-4d03-b18f-c335cae8f4dc.png)
+
+
+footer:![Screenshot from 2023-01-23 15-29-37](https://user-images.githubusercontent.com/112811405/214012021-86ca2ccb-2676-4d9c-ace4-41f3f241ab60.png)
+
 
 
 
