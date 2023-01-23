@@ -36,7 +36,10 @@ These pages were also created by Reena Kumari, the different kind of Appointment
 
 Hot deals page ss:https:  <img width="957" alt="Screenshot_20230123_134849" src="https://user-images.githubusercontent.com/112796706/214015614-7ec174fb-47a5-44a3-af2b-17420c558908.png">
 
-Book Appointment page ss:  <img width="948" alt="Screenshot_20230123_135245" src="https://user-images.githubusercontent.com/112796706/214015985-0992b1b6-55d7-47ce-904e-172e23ac9828.png">
+Book Appointment page ss:  <img width="960" alt="Screenshot_20230123_135114" src="https://user-images.githubusercontent.com/112796706/214016873-c9737e4e-a8af-4bec-8c1c-98e26a6ea848.png">
+
+<img width="948" alt="Screenshot_20230123_135245" src="https://user-images.githubusercontent.com/112796706/214015985-0992b1b6-55d7-47ce-904e-172e23ac9828.png">
+
 Appoint page ss: https: <img width="957" alt="Screenshot_20230123_135839" src="https://user-images.githubusercontent.com/112796706/214016092-0aaa3b2b-2ed3-43ee-bdc8-2d1b088e5d2d.png">
 
 
