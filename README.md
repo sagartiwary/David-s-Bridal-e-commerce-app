@@ -18,14 +18,15 @@ JavaScript provides a way to validate form data on the client's computer before 
 Basic Validation − First of all, the form must be checked to make sure all the mandatory fields are filled in. It would require just a loop through each field in the form and checking for data.
 Data Format Validation − Secondly, the data that is entered must be checked for the correct form and value. Your code must include appropriate logic to test the correctness of data.
 
-sign in page:https://files.slack.com/files-pri/T04F4PRQBC2-F04KMCQ0207/welcome_to_the_signup_portal_-_google_chrome_1_23_2023_12_10_52_pm.png    
+sign in page:   ![Welcome to the SignUp Portal - Google Chrome 1_23_2023 12_10_52 PM](https://user-images.githubusercontent.com/77038792/214010515-402936e5-2381-40a1-9363-e449e18bfbc1.png)
+
 sign up page:![Welcome to the SignUp Portal - Google Chrome 1_23_2023 12_11_00 PM](https://user-images.githubusercontent.com/77038792/214010254-6e7f04a0-9c12-479b-bc4c-fa204455601a.png)
 
 
 ## planning page
 planning page was crated by sachin, while creating planing page he has used HTML CSS Javascript, he has made responsive page
 
-planning page :https://files.slack.com/files-pri/T04F4PRQBC2-F04LEHTDUAD/document_-_google_chrome_1_23_2023_1_42_23_pm.png
+planning page :![Document - Google Chrome 1_23_2023 1_42_23 PM](https://user-images.githubusercontent.com/77038792/214010630-725d74a8-5fd7-408b-ab34-2d9e1d3d4d4b.png)
 
 
 ## Hot Deals page:
