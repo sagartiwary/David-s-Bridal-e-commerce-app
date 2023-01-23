@@ -28,6 +28,31 @@ planning page was crated by sachin, while creating planing page he has used HTML
 planning page :![Document - Google Chrome 1_23_2023 1_42_23 PM](https://user-images.githubusercontent.com/77038792/214010630-725d74a8-5fd7-408b-ab34-2d9e1d3d4d4b.png)
 
 
+## Products page :
+
+This page is created by Abhijeet Sen Gupta, a member of our team.The tech stack used to create this page is css, html and Javascript. 
+He has created a api using the mockApi server and fenched the data here.
+
+Image of the page : ![Screenshot (292)](https://user-images.githubusercontent.com/101327881/214044753-410a6f06-aabd-475b-84e0-aaeda8066a68.png)
+
+
+## Item View page :
+
+This page is created by Abhijeet Sen Gupta, a member of our team.The tech stack used to create this page is css, html and Javascript. 
+He has created this by using th help of local Storage as when a user selects a item in the product page the item gets pushed to the local Storage and is visible here.
+
+Image of the page : ![Screenshot (293)](https://user-images.githubusercontent.com/101327881/214044868-6c74c51e-b028-4188-b7a7-086694753b59.png)
+
+
+## Cart Page:
+
+This page is created by Abhijeet Sen Gupta, a member of our team.The tech stack used to create this page is css, html and Javascript. 
+He has created this by using th help of local Storage as when a user clicks on the "ADD To Basket" option in the itemView page the item gets pushed to the local Storage and is visible in the carts page in the form of a table.The user can also remove any item if he wants to.
+
+
+Itage of the page : ![Screenshot (294)](https://user-images.githubusercontent.com/101327881/214044920-f3c51eb5-35a1-40a9-82f2-b5ea78d9a3b3.png)
+
+
 ## Hot Deals page:
 This page was created by Reena Kumari, a member of our team, The tech stack used to create this page is css,html and Javscript, different kinds of current deals cards has been placed there using flex, and the required media query has been added to the divs and to the whole hot deals page, the exclusive partner card was also created, with a top to box button, and the hot deals card.
 
