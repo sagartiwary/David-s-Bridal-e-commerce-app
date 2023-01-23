@@ -7,7 +7,8 @@ The website which was given to us in this construct week DavidBridal took 4 day 
 The landing page is created by sagar kumar tiwary who is the team leader of the group Project.I have made the nav part,body and the footer part.Basically I first work on the navigation bar over there some pages I have created like hot deals,about and many more things. I have done this and tried my best to complete things.
 In the footer part lined all the things which is required to complete and done the job.   
 landing page :<img width="960" alt="Screenshot_20230123_155121" src="https://user-images.githubusercontent.com/112796706/214016358-b8e9ec0e-539d-4440-99b5-b8e1a609df3c.png">
-footer:<img width="960" alt="Screenshot_20230123_155145" src="https://user-images.githubusercontent.com/112796706/214016426-5ca6d2ef-6e74-4e21-ae61-75e9ab66dba1.png">
+footer:
+<img width="960" alt="Screenshot_20230123_155145" src="https://user-images.githubusercontent.com/112796706/214016426-5ca6d2ef-6e74-4e21-ae61-75e9ab66dba1.png">
 
 
 ## Sign up/Sign In page, planning page:
