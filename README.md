@@ -7,8 +7,7 @@ The website which was given to us in this construct week DavidBridal took 4 day 
 The landing page is created by sagar kumar tiwary who is the team leader of the group Project.I have made the nav part,body and the footer part.Basically I first work on the navigation bar over there some pages I have created like hot deals,about and many more things. I have done this and tried my best to complete things.
 In the footer part lined all the things which is required to complete and done the job.   
 landing page :<img width="960" alt="Screenshot_20230123_155121" src="https://user-images.githubusercontent.com/112796706/214016358-b8e9ec0e-539d-4440-99b5-b8e1a609df3c.png">
-footer:
-<img width="960" alt="Screenshot_20230123_155145" src="https://user-images.githubusercontent.com/112796706/214016426-5ca6d2ef-6e74-4e21-ae61-75e9ab66dba1.png">
+footer:<img width="960" alt="Screenshot_20230123_155145" src="https://user-images.githubusercontent.com/112796706/214016426-5ca6d2ef-6e74-4e21-ae61-75e9ab66dba1.png">
 
 
 ## Sign up/Sign In page, planning page:
@@ -35,13 +34,13 @@ This page was created by Reena Kumari, a member of our team, The tech stack used
 ## Book Appointment page(BAppoint.html) and Appoint page:
 These pages were also created by Reena Kumari, the different kind of Appointment needs or consumer help needs are taken care on this page, the page "Appoint page" has been attached to the Appointment buttons of the "Book Appointment" page, where they can be accessed accordingly, the appoint page provides various appointment modes to the customer as per there needs. And the navbar in the page is fixed unlike any other page of the project and the top to box button also has been added to the page, with hamburger menu and its footer accordinly, the Book Appointment page is also responive as media query has been added to the whole page.
 
-Hot deals page ss:https:  <img width="957" alt="Screenshot_20230123_134849" src="https://user-images.githubusercontent.com/112796706/214015614-7ec174fb-47a5-44a3-af2b-17420c558908.png">
+Hot deals page ss:  <img width="957" alt="Screenshot_20230123_134849" src="https://user-images.githubusercontent.com/112796706/214015614-7ec174fb-47a5-44a3-af2b-17420c558908.png">
 
 Book Appointment page ss:  <img width="960" alt="Screenshot_20230123_135114" src="https://user-images.githubusercontent.com/112796706/214016873-c9737e4e-a8af-4bec-8c1c-98e26a6ea848.png">
 
 <img width="948" alt="Screenshot_20230123_135245" src="https://user-images.githubusercontent.com/112796706/214015985-0992b1b6-55d7-47ce-904e-172e23ac9828.png">
 
-Appoint page ss: https: <img width="957" alt="Screenshot_20230123_135839" src="https://user-images.githubusercontent.com/112796706/214016092-0aaa3b2b-2ed3-43ee-bdc8-2d1b088e5d2d.png">
+Appoint page ss: <img width="957" alt="Screenshot_20230123_135839" src="https://user-images.githubusercontent.com/112796706/214016092-0aaa3b2b-2ed3-43ee-bdc8-2d1b088e5d2d.png">
 
 
 ## about page:
