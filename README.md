@@ -22,7 +22,8 @@ sign in page:https://files.slack.com/files-pri/T04F4PRQBC2-F04KMCQ0207/welcome_t
 sign up page:https://files.slack.com/files-pri/T04F4PRQBC2-F04KMCQBWBH/welcome_to_the_signup_portal_-_google_chrome_1_23_2023_12_11_00_pm.png
 
 
-## planning page was crated by sachin, while creating planing page he has used HTML CSS Javascript, he has made responsive page
+## planning page
+planning page was crated by sachin, while creating planing page he has used HTML CSS Javascript, he has made responsive page
 
 planning page :https://files.slack.com/files-pri/T04F4PRQBC2-F04LEHTDUAD/document_-_google_chrome_1_23_2023_1_42_23_pm.png
 
