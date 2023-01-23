@@ -35,7 +35,8 @@ This page was created by Reena Kumari, a member of our team, The tech stack used
 ## Book Appointment page(BAppoint.html) and Appoint page:
 These pages were also created by Reena Kumari, the different kind of Appointment needs or consumer help needs are taken care on this page, the page "Appoint page" has been attached to the Appointment buttons of the "Book Appointment" page, where they can be accessed accordingly, the appoint page provides various appointment modes to the customer as per there needs. And the navbar in the page is fixed unlike any other page of the project and the top to box button also has been added to the page, with hamburger menu and its footer accordinly, the Book Appointment page is also responive as media query has been added to the whole page.
 
-Hot deals page ss:https:  https://user-images.githubusercontent.com/77038792/213995612-21ed9b5b-ca67-4733-b426-d066553f21a1.png
+Hot deals page ss:https:  <img width="957" alt="Screenshot_20230123_134849" src="https://user-images.githubusercontent.com/112796706/214015614-7ec174fb-47a5-44a3-af2b-17420c558908.png">
+
 Book Appointment page ss:   https://user-images.githubusercontent.com/77038792/213995837-08c538b9-b421-4c15-8728-046093934d39.png
 Appoint page ss: https:  https://user-images.githubusercontent.com/77038792/213995879-1be8ac04-1481-4e77-867d-644ee3a24811.png
 
